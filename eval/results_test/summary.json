@@ -1,0 +1,386 @@
+{
+  "planner": "rules",
+  "creatives": 60,
+  "placements_per_creative": 5,
+  "thresholds": {
+    "sharpness_blurry": 2.3,
+    "sharpness_severe": 0.8,
+    "brightness_dark": 60.0,
+    "dark_pixel_share": 0.5,
+    "contrast_low": 28.0,
+    "clipped_share": 0.3,
+    "text_heavy_share": 0.25,
+    "logo_min_inliers": 12,
+    "logo_template_score": 0.8
+  },
+  "detection": [
+    {
+      "check": "blurry",
+      "positives": 19,
+      "tp": 18,
+      "fp": 2,
+      "fn": 1,
+      "tn": 39,
+      "precision": 0.9,
+      "recall": 0.9473684210526315
+    },
+    {
+      "check": "severely_blurry",
+      "positives": 6,
+      "tp": 5,
+      "fp": 5,
+      "fn": 1,
+      "tn": 49,
+      "precision": 0.5,
+      "recall": 0.8333333333333334
+    },
+    {
+      "check": "dark",
+      "positives": 15,
+      "tp": 15,
+      "fp": 1,
+      "fn": 0,
+      "tn": 44,
+      "precision": 0.9375,
+      "recall": 1.0
+    },
+    {
+      "check": "text_heavy",
+      "positives": 5,
+      "tp": 5,
+      "fp": 0,
+      "fn": 0,
+      "tn": 55,
+      "precision": 1.0,
+      "recall": 1.0
+    },
+    {
+      "check": "logo_present",
+      "positives": 43,
+      "tp": 43,
+      "fp": 2,
+      "fn": 0,
+      "tn": 15,
+      "precision": 0.9555555555555556,
+      "recall": 1.0
+    },
+    {
+      "check": "face_present",
+      "positives": 22,
+      "tp": 22,
+      "fp": 0,
+      "fn": 0,
+      "tn": 38,
+      "precision": 1.0,
+      "recall": 1.0
+    }
+  ],
+  "source_escalation": {
+    "check": "source escalated to human",
+    "positives": 24,
+    "tp": 21,
+    "fp": 11,
+    "fn": 3,
+    "tn": 25,
+    "precision": 0.65625,
+    "recall": 0.875
+  },
+  "reframing": [
+    {
+      "placement": "stories_9x16",
+      "n": 60,
+      "centre_crop_ok": 0.016666666666666666,
+      "agent_ok": 1.0,
+      "agent_auto_accepted": 0.45,
+      "agent_ok_when_accepted": 1.0,
+      "false_accepts": 0,
+      "headline_legible": 1.0,
+      "mean_steps": 2.7666666666666666,
+      "max_steps": 3
+    },
+    {
+      "placement": "reels_9x16",
+      "n": 60,
+      "centre_crop_ok": 0.016666666666666666,
+      "agent_ok": 1.0,
+      "agent_auto_accepted": 0.43333333333333335,
+      "agent_ok_when_accepted": 1.0,
+      "false_accepts": 0,
+      "headline_legible": 0.95,
+      "mean_steps": 2.7666666666666666,
+      "max_steps": 3
+    },
+    {
+      "placement": "feed_1x1",
+      "n": 60,
+      "centre_crop_ok": 0.25,
+      "agent_ok": 0.9666666666666667,
+      "agent_auto_accepted": 0.45,
+      "agent_ok_when_accepted": 0.9259259259259259,
+      "false_accepts": 2,
+      "headline_legible": 1.0,
+      "mean_steps": 2.05,
+      "max_steps": 3
+    },
+    {
+      "placement": "youtube_16x9",
+      "n": 60,
+      "centre_crop_ok": 0.15,
+      "agent_ok": 0.9666666666666667,
+      "agent_auto_accepted": 0.4,
+      "agent_ok_when_accepted": 0.9166666666666666,
+      "false_accepts": 2,
+      "headline_legible": 0.9166666666666666,
+      "mean_steps": 2.6166666666666667,
+      "max_steps": 3
+    },
+    {
+      "placement": "display_300x250",
+      "n": 60,
+      "centre_crop_ok": 0.05,
+      "agent_ok": 0.9166666666666666,
+      "agent_auto_accepted": 0.25,
+      "agent_ok_when_accepted": 0.8666666666666667,
+      "false_accepts": 2,
+      "headline_legible": 0.65,
+      "mean_steps": 2.55,
+      "max_steps": 3
+    }
+  ],
+  "overall": {
+    "centre_crop_ok": 0.09666666666666666,
+    "agent_ok": 0.97,
+    "false_accepts": 6,
+    "outputs": 300,
+    "escalated": 181
+  },
+  "runtime_seconds": {
+    "mean": 1.7085,
+    "median": 1.73,
+    "max": 2.1
+  },
+  "face_box_iou_mean": 0.9063181818181818,
+  "logo_box_iou_mean": 0.9571627906976744,
+  "failures": [
+    {
+      "file": "c006_1x1_astronaut_none_absent.png",
+      "kind": "detection",
+      "wrong": [
+        "blurry"
+      ],
+      "quality": {
+        "sharpness": 1.985,
+        "brightness": 112.1,
+        "contrast": 51.2,
+        "dark_share": 0.068,
+        "clipped_share": 0.027
+      },
+      "text_share": 0.063
+    },
+    {
+      "file": "c019_4x5_product_blur_severe_safe.png",
+      "kind": "detection",
+      "wrong": [
+        "severely_blurry"
+      ],
+      "quality": {
+        "sharpness": 2.053,
+        "brightness": 100.6,
+        "contrast": 70.9,
+        "dark_share": 0.0,
+        "clipped_share": 0.016
+      },
+      "text_share": 0.02
+    },
+    {
+      "file": "c020_1x1_rocket_blur_mild_safe.png",
+      "kind": "detection",
+      "wrong": [
+        "severely_blurry",
+        "dark"
+      ],
+      "quality": {
+        "sharpness": 0.715,
+        "brightness": 54.3,
+        "contrast": 33.4,
+        "dark_share": 0.237,
+        "clipped_share": 0.02
+      },
+      "text_share": 0.021
+    },
+    {
+      "file": "c022_4x5_astronaut_none_safe.png",
+      "kind": "false_accept",
+      "placement": "feed_1x1",
+      "gt_failed": [
+        "subject"
+      ],
+      "agent_issues": []
+    },
+    {
+      "file": "c022_4x5_astronaut_none_safe.png",
+      "kind": "false_accept",
+      "placement": "display_300x250",
+      "gt_failed": [
+        "subject"
+      ],
+      "agent_issues": []
+    },
+    {
+      "file": "c023_4x5_astronaut_blur_mild_absent.png",
+      "kind": "detection",
+      "wrong": [
+        "severely_blurry"
+      ],
+      "quality": {
+        "sharpness": 0.777,
+        "brightness": 128.2,
+        "contrast": 31.0,
+        "dark_share": 0.021,
+        "clipped_share": 0.023
+      },
+      "text_share": 0.06
+    },
+    {
+      "file": "c029_1x1_product_none_safe.png",
+      "kind": "detection",
+      "wrong": [
+        "blurry"
+      ],
+      "quality": {
+        "sharpness": 2.215,
+        "brightness": 137.3,
+        "contrast": 50.2,
+        "dark_share": 0.0,
+        "clipped_share": 0.035
+      },
+      "text_share": 0.074
+    },
+    {
+      "file": "c030_1x1_camera_blur_mild_safe.png",
+      "kind": "false_accept",
+      "placement": "youtube_16x9",
+      "gt_failed": [
+        "subject"
+      ],
+      "agent_issues": []
+    },
+    {
+      "file": "c036_9x16_camera_blur_mild_edge.png",
+      "kind": "detection",
+      "wrong": [
+        "blurry"
+      ],
+      "quality": {
+        "sharpness": 2.501,
+        "brightness": 101.3,
+        "contrast": 37.7,
+        "dark_share": 0.035,
+        "clipped_share": 0.009
+      },
+      "text_share": 0.016
+    },
+    {
+      "file": "c043_1x1_coffee_blur_mild_edge.png",
+      "kind": "detection",
+      "wrong": [
+        "severely_blurry"
+      ],
+      "quality": {
+        "sharpness": 0.434,
+        "brightness": 136.0,
+        "contrast": 32.1,
+        "dark_share": 0.027,
+        "clipped_share": 0.014
+      },
+      "text_share": 0.021
+    },
+    {
+      "file": "c045_1x1_camera_none_safe.png",
+      "kind": "false_accept",
+      "placement": "youtube_16x9",
+      "gt_failed": [
+        "subject"
+      ],
+      "agent_issues": []
+    },
+    {
+      "file": "c046_4x5_camera_none_safe.png",
+      "kind": "false_accept",
+      "placement": "feed_1x1",
+      "gt_failed": [
+        "subject"
+      ],
+      "agent_issues": []
+    },
+    {
+      "file": "c046_4x5_camera_none_safe.png",
+      "kind": "false_accept",
+      "placement": "display_300x250",
+      "gt_failed": [
+        "subject"
+      ],
+      "agent_issues": []
+    },
+    {
+      "file": "c048_1x1_astronaut_blur_mild_absent.png",
+      "kind": "detection",
+      "wrong": [
+        "severely_blurry"
+      ],
+      "quality": {
+        "sharpness": 0.423,
+        "brightness": 147.9,
+        "contrast": 32.4,
+        "dark_share": 0.026,
+        "clipped_share": 0.025
+      },
+      "text_share": 0.061
+    },
+    {
+      "file": "c051_1x1_coffee_blur_mild_edge.png",
+      "kind": "detection",
+      "wrong": [
+        "severely_blurry"
+      ],
+      "quality": {
+        "sharpness": 0.434,
+        "brightness": 108.8,
+        "contrast": 39.7,
+        "dark_share": 0.027,
+        "clipped_share": 0.017
+      },
+      "text_share": 0.027
+    },
+    {
+      "file": "c057_4x5_product_none_distractor.png",
+      "kind": "detection",
+      "wrong": [
+        "logo_present"
+      ],
+      "quality": {
+        "sharpness": 2.859,
+        "brightness": 144.8,
+        "contrast": 55.6,
+        "dark_share": 0.0,
+        "clipped_share": 0.012
+      },
+      "text_share": 0.017
+    },
+    {
+      "file": "c058_9x16_astronaut_none_distractor.png",
+      "kind": "detection",
+      "wrong": [
+        "logo_present"
+      ],
+      "quality": {
+        "sharpness": 8.98,
+        "brightness": 62.5,
+        "contrast": 42.0,
+        "dark_share": 0.208,
+        "clipped_share": 0.026
+      },
+      "text_share": 0.056
+    }
+  ]
+}

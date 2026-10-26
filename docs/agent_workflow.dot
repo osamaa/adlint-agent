@@ -1,0 +1,39 @@
+digraph workflow {
+  rankdir=TB; fontname="Helvetica"; pad=0.3; nodesep=0.3; ranksep=0.35;
+  node [shape=box, style="rounded,filled", fontname="Helvetica", fontsize=11, fillcolor="#f2f4f7", color="#98a2b3"];
+  edge [fontname="Helvetica", fontsize=9, color="#475467"];
+
+  in [label="Creative (image / video) + optional logo + target placements", fillcolor="#fff7e6", color="#f79009"];
+
+  subgraph cluster_source {
+    label="Stage 1: master creative (max 4 steps)"; style="rounded"; color="#12b76a"; fontcolor="#067647";
+    p1 [label="PERCEIVE\nsharpness · exposure · text share\nfaces · subject · logo", fillcolor="#ecfdf3", color="#12b76a"];
+    d1 [label="DECIDE", shape=diamond, fillcolor="#f4f3ff", color="#7a5af8"];
+    a1 [label="ACT: enhance_exposure / sharpen", fillcolor="#eef4ff", color="#2e90fa"];
+    h1 [label="flag for human:\nsevere blur, text-heavy,\nlogo missing, fix did not help", fillcolor="#fef3f2", color="#f04438"];
+  }
+
+  subgraph cluster_place {
+    label="Stage 2: for EACH placement (max 6 steps)"; style="rounded"; color="#12b76a"; fontcolor="#067647";
+    d2 [label="DECIDE", shape=diamond, fillcolor="#f4f3ff", color="#7a5af8"];
+    a2 [label="ACT: resize / smart_crop(all) /\nsmart_crop(priority) / fit_into_safe_zone", fillcolor="#eef4ff", color="#2e90fa"];
+    p2 [label="RE-PERCEIVE the rendered output\nmap faces/logo/text into it: cut? under platform UI?\nre-detect faces & text, look for the logo where it should be\nheadline tall enough for this size?", fillcolor="#ecfdf3", color="#12b76a"];
+    ok [label="ACCEPT\nasset + annotated preview", fillcolor="#ecfdf3", color="#12b76a"];
+    h2 [label="ESCALATE to human\nbest candidate marked PROPOSED\n+ annotated preview + reasons", fillcolor="#fef3f2", color="#f04438"];
+  }
+  out [label="report.json · report.html · trace.json (observation → decision → tool → new observation)", fillcolor="#fff7e6", color="#f79009"];
+
+  in -> p1;
+  p1 -> d1;
+  d1 -> a1 [label="dark / mildly soft"];
+  a1 -> p1 [label="re-check", style=dashed];
+  d1 -> h1 [label="unfixable"];
+  d1 -> d2 [label="ok"];
+  h1 -> d2 [label="still prepare\nproposals"];
+  d2 -> a2 [label="issues left and\nan untried tool fits"];
+  a2 -> p2;
+  p2 -> d2 [label="new issues", style=dashed];
+  d2 -> ok [label="no issues"];
+  d2 -> h2 [label="no tool left"];
+  ok -> out; h2 -> out;
+}

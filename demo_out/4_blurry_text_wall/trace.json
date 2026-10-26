@@ -1,0 +1,3990 @@
+[
+  {
+    "stage": "source",
+    "placement": null,
+    "observation": {
+      "quality": {
+        "sharpness": null,
+        "brightness": 110.8,
+        "contrast": 59.9,
+        "dark_share": 0.145,
+        "clipped_share": 0.0
+      },
+      "text_share": 0.538,
+      "text_boxes": 20,
+      "faces": 0,
+      "logo_found": false,
+      "subject": [
+        496.1,
+        1181.2,
+        533.2,
+        168.8
+      ]
+    },
+    "issues": [
+      {
+        "code": "text_heavy",
+        "detail": "text covers 54% of the frame"
+      },
+      {
+        "code": "logo_missing",
+        "detail": "supplied logo not found in the creative"
+      }
+    ],
+    "decision": {
+      "action": "escalate",
+      "args": {},
+      "reason": "cannot fix automatically: logo_missing, text_heavy"
+    },
+    "result": "escalated to human",
+    "step": 1,
+    "t_ms": 424.8
+  },
+  {
+    "stage": "placement",
+    "placement": "stories_9x16",
+    "observation": null,
+    "issues": [
+      {
+        "code": "aspect_mismatch",
+        "detail": "source 1080x1350"
+      }
+    ],
+    "decision": {
+      "action": "smart_crop",
+      "args": {
+        "strategy": "all"
+      },
+      "reason": "aspect differs: crop around faces, logo, text and subject"
+    },
+    "result": {
+      "tool": "smart_crop",
+      "args": {
+        "strategy": "all"
+      },
+      "transform": {
+        "kind": "crop",
+        "rect": [
+          161.1,
+          0.0,
+          759.4,
+          1350.0
+        ]
+      },
+      "keep_box_fits_safe_zone": false,
+      "new_issues": [
+        "text_cut",
+        "text_in_ui_zone"
+      ]
+    },
+    "step": 2,
+    "t_ms": 538.9
+  },
+  {
+    "stage": "placement",
+    "placement": "stories_9x16",
+    "observation": {
+      "faces": [],
+      "logo": null,
+      "text": [
+        {
+          "box": [
+            -175.1,
+            1734.0,
+            1430.0,
+            58.0
+          ],
+          "kept": 0.755,
+          "under_ui": 1.0
+        },
+        {
+          "box": [
+            -175.1,
+            1645.9,
+            1430.0,
+            60.0
+          ],
+          "kept": 0.755,
+          "under_ui": 1.0
+        },
+        {
+          "box": [
+            -173.1,
+            1560.0,
+            1426.0,
+            54.0
+          ],
+          "kept": 0.757,
+          "under_ui": 1.0
+        },
+        {
+          "box": [
+            -173.1,
+            1472.0,
+            1423.9,
+            54.0
+          ],
+          "kept": 0.758,
+          "under_ui": 0.12
+        },
+        {
+          "box": [
+            -173.1,
+            1384.0,
+            1423.9,
+            54.0
+          ],
+          "kept": 0.758,
+          "under_ui": 0.12
+        },
+        {
+          "box": [
+            -173.1,
+            1295.9,
+            1423.9,
+            54.0
+          ],
+          "kept": 0.758,
+          "under_ui": 0.12
+        },
+        {
+          "box": [
+            -173.1,
+            1208.0,
+            1423.9,
+            54.0
+          ],
+          "kept": 0.758,
+          "under_ui": 0.12
+        },
+        {
+          "box": [
+            -175.1,
+            1118.0,
+            1428.0,
+            56.0
+          ],
+          "kept": 0.756,
+          "under_ui": 0.12
+        },
+        {
+          "box": [
+            -175.1,
+            1028.0,
+            1428.0,
+            58.0
+          ],
+          "kept": 0.756,
+          "under_ui": 0.12
+        },
+        {
+          "box": [
+            -173.1,
+            941.9,
+            1426.0,
+            54.0
+          ],
+          "kept": 0.757,
+          "under_ui": 0.12
+        },
+        {
+          "box": [
+            -175.1,
+            852.1,
+            1430.0,
+            58.0
+          ],
+          "kept": 0.755,
+          "under_ui": 0.12
+        },
+        {
+          "box": [
+            -173.1,
+            766.0,
+            1423.9,
+            54.0
+          ],
+          "kept": 0.758,
+          "under_ui": 0.12
+        },
+        {
+          "box": [
+            -171.1,
+            678.0,
+            1421.9,
+            54.0
+          ],
+          "kept": 0.76,
+          "under_ui": 0.12
+        },
+        {
+          "box": [
+            -173.1,
+            589.9,
+            1426.0,
+            56.0
+          ],
+          "kept": 0.757,
+          "under_ui": 0.12
+        },
+        {
+          "box": [
+            -173.1,
+            502.0,
+            1426.0,
+            54.0
+          ],
+          "kept": 0.757,
+          "under_ui": 0.12
+        },
+        {
+          "box": [
+            -173.1,
+            414.0,
+            1426.0,
+            54.0
+          ],
+          "kept": 0.757,
+          "under_ui": 0.12
+        },
+        {
+          "box": [
+            -175.1,
+            322.0,
+            1428.0,
+            60.0
+          ],
+          "kept": 0.756,
+          "under_ui": 0.12
+        },
+        {
+          "box": [
+            -175.1,
+            234.0,
+            1428.0,
+            60.0
+          ],
+          "kept": 0.756,
+          "under_ui": 0.631
+        },
+        {
+          "box": [
+            -173.1,
+            150.0,
+            1426.0,
+            54.0
+          ],
+          "kept": 0.757,
+          "under_ui": 1.0
+        },
+        {
+          "box": [
+            -173.1,
+            60.0,
+            1423.9,
+            54.0
+          ],
+          "kept": 0.758,
+          "under_ui": 1.0
+        }
+      ],
+      "subject": {
+        "box": [
+          476.4,
+          1679.9,
+          758.3,
+          240.1
+        ],
+        "kept": 0.796
+      },
+      "redetected_faces": 0,
+      "redetected_text_boxes": 20
+    },
+    "issues": [
+      {
+        "code": "text_cut",
+        "detail": "text 24% outside the frame"
+      },
+      {
+        "code": "text_in_ui_zone",
+        "detail": "text 100% under platform UI"
+      }
+    ],
+    "decision": {
+      "action": "smart_crop",
+      "args": {
+        "strategy": "priority"
+      },
+      "reason": "full crop failed: keep faces and logo first, let text/subject edges go"
+    },
+    "result": {
+      "tool": "smart_crop",
+      "args": {
+        "strategy": "priority"
+      },
+      "transform": {
+        "kind": "crop",
+        "rect": [
+          160.3,
+          0.0,
+          759.4,
+          1350.0
+        ]
+      },
+      "keep_box_fits_safe_zone": true,
+      "new_issues": [
+        "text_cut",
+        "text_in_ui_zone"
+      ]
+    },
+    "step": 3,
+    "t_ms": 643.1
+  },
+  {
+    "stage": "placement",
+    "placement": "stories_9x16",
+    "observation": {
+      "faces": [],
+      "logo": null,
+      "text": [
+        {
+          "box": [
+            -173.9,
+            1734.0,
+            1430.0,
+            58.0
+          ],
+          "kept": 0.755,
+          "under_ui": 1.0
+        },
+        {
+          "box": [
+            -173.9,
+            1645.9,
+            1430.0,
+            60.0
+          ],
+          "kept": 0.755,
+          "under_ui": 1.0
+        },
+        {
+          "box": [
+            -171.9,
+            1560.0,
+            1426.0,
+            54.0
+          ],
+          "kept": 0.757,
+          "under_ui": 1.0
+        },
+        {
+          "box": [
+            -171.9,
+            1472.0,
+            1423.9,
+            54.0
+          ],
+          "kept": 0.758,
+          "under_ui": 0.12
+        },
+        {
+          "box": [
+            -171.9,
+            1384.0,
+            1423.9,
+            54.0
+          ],
+          "kept": 0.758,
+          "under_ui": 0.12
+        },
+        {
+          "box": [
+            -171.9,
+            1295.9,
+            1423.9,
+            54.0
+          ],
+          "kept": 0.758,
+          "under_ui": 0.12
+        },
+        {
+          "box": [
+            -171.9,
+            1208.0,
+            1423.9,
+            54.0
+          ],
+          "kept": 0.758,
+          "under_ui": 0.12
+        },
+        {
+          "box": [
+            -173.9,
+            1118.0,
+            1428.0,
+            56.0
+          ],
+          "kept": 0.756,
+          "under_ui": 0.12
+        },
+        {
+          "box": [
+            -173.9,
+            1028.0,
+            1428.0,
+            58.0
+          ],
+          "kept": 0.756,
+          "under_ui": 0.12
+        },
+        {
+          "box": [
+            -171.9,
+            941.9,
+            1426.0,
+            54.0
+          ],
+          "kept": 0.757,
+          "under_ui": 0.12
+        },
+        {
+          "box": [
+            -173.9,
+            852.1,
+            1430.0,
+            58.0
+          ],
+          "kept": 0.755,
+          "under_ui": 0.12
+        },
+        {
+          "box": [
+            -171.9,
+            766.0,
+            1423.9,
+            54.0
+          ],
+          "kept": 0.758,
+          "under_ui": 0.12
+        },
+        {
+          "box": [
+            -169.9,
+            678.0,
+            1421.9,
+            54.0
+          ],
+          "kept": 0.76,
+          "under_ui": 0.12
+        },
+        {
+          "box": [
+            -171.9,
+            589.9,
+            1426.0,
+            56.0
+          ],
+          "kept": 0.757,
+          "under_ui": 0.12
+        },
+        {
+          "box": [
+            -171.9,
+            502.0,
+            1426.0,
+            54.0
+          ],
+          "kept": 0.757,
+          "under_ui": 0.12
+        },
+        {
+          "box": [
+            -171.9,
+            414.0,
+            1426.0,
+            54.0
+          ],
+          "kept": 0.757,
+          "under_ui": 0.12
+        },
+        {
+          "box": [
+            -173.9,
+            322.0,
+            1428.0,
+            60.0
+          ],
+          "kept": 0.756,
+          "under_ui": 0.12
+        },
+        {
+          "box": [
+            -173.9,
+            234.0,
+            1428.0,
+            60.0
+          ],
+          "kept": 0.756,
+          "under_ui": 0.631
+        },
+        {
+          "box": [
+            -171.9,
+            150.0,
+            1426.0,
+            54.0
+          ],
+          "kept": 0.757,
+          "under_ui": 1.0
+        },
+        {
+          "box": [
+            -171.9,
+            60.0,
+            1423.9,
+            54.0
+          ],
+          "kept": 0.758,
+          "under_ui": 1.0
+        }
+      ],
+      "subject": {
+        "box": [
+          477.6,
+          1679.9,
+          758.3,
+          240.1
+        ],
+        "kept": 0.794
+      },
+      "redetected_faces": 0,
+      "redetected_text_boxes": 20
+    },
+    "issues": [
+      {
+        "code": "text_cut",
+        "detail": "text 24% outside the frame"
+      },
+      {
+        "code": "text_in_ui_zone",
+        "detail": "text 100% under platform UI"
+      }
+    ],
+    "decision": {
+      "action": "fit_into_safe_zone",
+      "args": {},
+      "reason": "crops cannot keep it all in the safe zone: shrink into the safe zone on a blurred backdrop"
+    },
+    "result": {
+      "tool": "fit_into_safe_zone",
+      "args": {},
+      "transform": {
+        "kind": "fit",
+        "scale": 0.88,
+        "offset": [
+          64.8,
+          308.4
+        ]
+      },
+      "keep_box_fits_safe_zone": true,
+      "new_issues": []
+    },
+    "step": 4,
+    "t_ms": 781.1
+  },
+  {
+    "stage": "placement",
+    "placement": "stories_9x16",
+    "observation": {
+      "faces": [],
+      "logo": null,
+      "text": [
+        {
+          "box": [
+            98.2,
+            1381.3,
+            884.8,
+            35.9
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            98.2,
+            1326.8,
+            884.8,
+            37.1
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            99.5,
+            1273.7,
+            882.4,
+            33.4
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            99.5,
+            1219.2,
+            881.1,
+            33.4
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            99.5,
+            1164.7,
+            881.1,
+            33.4
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            99.5,
+            1110.3,
+            881.1,
+            33.4
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            99.5,
+            1055.9,
+            881.1,
+            33.4
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            98.2,
+            1000.2,
+            883.6,
+            34.7
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            98.2,
+            944.5,
+            883.6,
+            35.9
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            99.5,
+            891.2,
+            882.4,
+            33.4
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            98.2,
+            835.6,
+            884.8,
+            35.9
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            99.5,
+            782.4,
+            881.1,
+            33.4
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            100.7,
+            727.9,
+            879.8,
+            33.4
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            99.5,
+            673.4,
+            882.4,
+            34.7
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            99.5,
+            619.0,
+            882.4,
+            33.4
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            99.5,
+            564.6,
+            882.4,
+            33.4
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            98.2,
+            507.6,
+            883.6,
+            37.1
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            98.2,
+            453.2,
+            883.6,
+            37.1
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            99.5,
+            401.2,
+            882.4,
+            33.4
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            99.5,
+            345.5,
+            881.1,
+            33.4
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        }
+      ],
+      "subject": {
+        "box": [
+          501.4,
+          1347.9,
+          469.2,
+          148.5
+        ],
+        "kept": 1.0
+      },
+      "redetected_faces": 0,
+      "redetected_text_boxes": 20
+    },
+    "issues": [],
+    "decision": {
+      "action": "accept",
+      "args": {},
+      "reason": "candidate passes every placement check"
+    },
+    "result": "accepted",
+    "step": 5,
+    "t_ms": 781.1
+  },
+  {
+    "stage": "placement",
+    "placement": "reels_9x16",
+    "observation": null,
+    "issues": [
+      {
+        "code": "aspect_mismatch",
+        "detail": "source 1080x1350"
+      }
+    ],
+    "decision": {
+      "action": "smart_crop",
+      "args": {
+        "strategy": "all"
+      },
+      "reason": "aspect differs: crop around faces, logo, text and subject"
+    },
+    "result": {
+      "tool": "smart_crop",
+      "args": {
+        "strategy": "all"
+      },
+      "transform": {
+        "kind": "crop",
+        "rect": [
+          199.0,
+          0.0,
+          759.4,
+          1350.0
+        ]
+      },
+      "keep_box_fits_safe_zone": false,
+      "new_issues": [
+        "text_cut",
+        "text_in_ui_zone"
+      ]
+    },
+    "step": 6,
+    "t_ms": 894.2
+  },
+  {
+    "stage": "placement",
+    "placement": "reels_9x16",
+    "observation": {
+      "faces": [],
+      "logo": null,
+      "text": [
+        {
+          "box": [
+            -229.0,
+            1734.0,
+            1430.0,
+            58.0
+          ],
+          "kept": 0.755,
+          "under_ui": 1.0
+        },
+        {
+          "box": [
+            -229.0,
+            1645.9,
+            1430.0,
+            60.0
+          ],
+          "kept": 0.755,
+          "under_ui": 1.0
+        },
+        {
+          "box": [
+            -227.0,
+            1560.0,
+            1426.0,
+            54.0
+          ],
+          "kept": 0.757,
+          "under_ui": 1.0
+        },
+        {
+          "box": [
+            -227.0,
+            1472.0,
+            1423.9,
+            54.0
+          ],
+          "kept": 0.758,
+          "under_ui": 1.0
+        },
+        {
+          "box": [
+            -227.0,
+            1384.0,
+            1423.9,
+            54.0
+          ],
+          "kept": 0.758,
+          "under_ui": 1.0
+        },
+        {
+          "box": [
+            -227.0,
+            1295.9,
+            1423.9,
+            54.0
+          ],
+          "kept": 0.758,
+          "under_ui": 1.0
+        },
+        {
+          "box": [
+            -227.0,
+            1208.0,
+            1423.9,
+            54.0
+          ],
+          "kept": 0.758,
+          "under_ui": 0.423
+        },
+        {
+          "box": [
+            -229.0,
+            1118.0,
+            1428.0,
+            56.0
+          ],
+          "kept": 0.756,
+          "under_ui": 0.22
+        },
+        {
+          "box": [
+            -229.0,
+            1028.0,
+            1428.0,
+            58.0
+          ],
+          "kept": 0.756,
+          "under_ui": 0.22
+        },
+        {
+          "box": [
+            -227.0,
+            941.9,
+            1426.0,
+            54.0
+          ],
+          "kept": 0.757,
+          "under_ui": 0.22
+        },
+        {
+          "box": [
+            -229.0,
+            852.1,
+            1430.0,
+            58.0
+          ],
+          "kept": 0.755,
+          "under_ui": 0.22
+        },
+        {
+          "box": [
+            -227.0,
+            766.0,
+            1423.9,
+            54.0
+          ],
+          "kept": 0.758,
+          "under_ui": 0.22
+        },
+        {
+          "box": [
+            -225.0,
+            678.0,
+            1421.9,
+            54.0
+          ],
+          "kept": 0.76,
+          "under_ui": 0.22
+        },
+        {
+          "box": [
+            -227.0,
+            589.9,
+            1426.0,
+            56.0
+          ],
+          "kept": 0.757,
+          "under_ui": 0.22
+        },
+        {
+          "box": [
+            -227.0,
+            502.0,
+            1426.0,
+            54.0
+          ],
+          "kept": 0.757,
+          "under_ui": 0.22
+        },
+        {
+          "box": [
+            -227.0,
+            414.0,
+            1426.0,
+            54.0
+          ],
+          "kept": 0.757,
+          "under_ui": 0.22
+        },
+        {
+          "box": [
+            -229.0,
+            322.0,
+            1428.0,
+            60.0
+          ],
+          "kept": 0.756,
+          "under_ui": 0.22
+        },
+        {
+          "box": [
+            -229.0,
+            234.0,
+            1428.0,
+            60.0
+          ],
+          "kept": 0.756,
+          "under_ui": 0.673
+        },
+        {
+          "box": [
+            -227.0,
+            150.0,
+            1426.0,
+            54.0
+          ],
+          "kept": 0.757,
+          "under_ui": 1.0
+        },
+        {
+          "box": [
+            -227.0,
+            60.0,
+            1423.9,
+            54.0
+          ],
+          "kept": 0.758,
+          "under_ui": 1.0
+        }
+      ],
+      "subject": {
+        "box": [
+          422.5,
+          1679.9,
+          758.3,
+          240.1
+        ],
+        "kept": 0.867
+      },
+      "redetected_faces": 0,
+      "redetected_text_boxes": 20
+    },
+    "issues": [
+      {
+        "code": "text_cut",
+        "detail": "text 24% outside the frame"
+      },
+      {
+        "code": "text_in_ui_zone",
+        "detail": "text 100% under platform UI"
+      }
+    ],
+    "decision": {
+      "action": "smart_crop",
+      "args": {
+        "strategy": "priority"
+      },
+      "reason": "full crop failed: keep faces and logo first, let text/subject edges go"
+    },
+    "result": {
+      "tool": "smart_crop",
+      "args": {
+        "strategy": "priority"
+      },
+      "transform": {
+        "kind": "crop",
+        "rect": [
+          198.3,
+          0.0,
+          759.4,
+          1350.0
+        ]
+      },
+      "keep_box_fits_safe_zone": true,
+      "new_issues": [
+        "text_cut",
+        "text_in_ui_zone"
+      ]
+    },
+    "step": 7,
+    "t_ms": 999.7
+  },
+  {
+    "stage": "placement",
+    "placement": "reels_9x16",
+    "observation": {
+      "faces": [],
+      "logo": null,
+      "text": [
+        {
+          "box": [
+            -228.0,
+            1734.0,
+            1430.0,
+            58.0
+          ],
+          "kept": 0.755,
+          "under_ui": 1.0
+        },
+        {
+          "box": [
+            -228.0,
+            1645.9,
+            1430.0,
+            60.0
+          ],
+          "kept": 0.755,
+          "under_ui": 1.0
+        },
+        {
+          "box": [
+            -226.0,
+            1560.0,
+            1426.0,
+            54.0
+          ],
+          "kept": 0.757,
+          "under_ui": 1.0
+        },
+        {
+          "box": [
+            -226.0,
+            1472.0,
+            1423.9,
+            54.0
+          ],
+          "kept": 0.758,
+          "under_ui": 1.0
+        },
+        {
+          "box": [
+            -226.0,
+            1384.0,
+            1423.9,
+            54.0
+          ],
+          "kept": 0.758,
+          "under_ui": 1.0
+        },
+        {
+          "box": [
+            -226.0,
+            1295.9,
+            1423.9,
+            54.0
+          ],
+          "kept": 0.758,
+          "under_ui": 1.0
+        },
+        {
+          "box": [
+            -226.0,
+            1208.0,
+            1423.9,
+            54.0
+          ],
+          "kept": 0.758,
+          "under_ui": 0.423
+        },
+        {
+          "box": [
+            -228.0,
+            1118.0,
+            1428.0,
+            56.0
+          ],
+          "kept": 0.756,
+          "under_ui": 0.22
+        },
+        {
+          "box": [
+            -228.0,
+            1028.0,
+            1428.0,
+            58.0
+          ],
+          "kept": 0.756,
+          "under_ui": 0.22
+        },
+        {
+          "box": [
+            -226.0,
+            941.9,
+            1426.0,
+            54.0
+          ],
+          "kept": 0.757,
+          "under_ui": 0.22
+        },
+        {
+          "box": [
+            -228.0,
+            852.1,
+            1430.0,
+            58.0
+          ],
+          "kept": 0.755,
+          "under_ui": 0.22
+        },
+        {
+          "box": [
+            -226.0,
+            766.0,
+            1423.9,
+            54.0
+          ],
+          "kept": 0.758,
+          "under_ui": 0.22
+        },
+        {
+          "box": [
+            -224.0,
+            678.0,
+            1421.9,
+            54.0
+          ],
+          "kept": 0.76,
+          "under_ui": 0.22
+        },
+        {
+          "box": [
+            -226.0,
+            589.9,
+            1426.0,
+            56.0
+          ],
+          "kept": 0.757,
+          "under_ui": 0.22
+        },
+        {
+          "box": [
+            -226.0,
+            502.0,
+            1426.0,
+            54.0
+          ],
+          "kept": 0.757,
+          "under_ui": 0.22
+        },
+        {
+          "box": [
+            -226.0,
+            414.0,
+            1426.0,
+            54.0
+          ],
+          "kept": 0.757,
+          "under_ui": 0.22
+        },
+        {
+          "box": [
+            -228.0,
+            322.0,
+            1428.0,
+            60.0
+          ],
+          "kept": 0.756,
+          "under_ui": 0.22
+        },
+        {
+          "box": [
+            -228.0,
+            234.0,
+            1428.0,
+            60.0
+          ],
+          "kept": 0.756,
+          "under_ui": 0.673
+        },
+        {
+          "box": [
+            -226.0,
+            150.0,
+            1426.0,
+            54.0
+          ],
+          "kept": 0.757,
+          "under_ui": 1.0
+        },
+        {
+          "box": [
+            -226.0,
+            60.0,
+            1423.9,
+            54.0
+          ],
+          "kept": 0.758,
+          "under_ui": 1.0
+        }
+      ],
+      "subject": {
+        "box": [
+          423.5,
+          1679.9,
+          758.3,
+          240.1
+        ],
+        "kept": 0.866
+      },
+      "redetected_faces": 0,
+      "redetected_text_boxes": 20
+    },
+    "issues": [
+      {
+        "code": "text_cut",
+        "detail": "text 24% outside the frame"
+      },
+      {
+        "code": "text_in_ui_zone",
+        "detail": "text 100% under platform UI"
+      }
+    ],
+    "decision": {
+      "action": "fit_into_safe_zone",
+      "args": {},
+      "reason": "crops cannot keep it all in the safe zone: shrink into the safe zone on a blurred backdrop"
+    },
+    "result": {
+      "tool": "fit_into_safe_zone",
+      "args": {},
+      "transform": {
+        "kind": "fit",
+        "scale": 0.72533,
+        "offset": [
+          94.3,
+          268.8
+        ]
+      },
+      "keep_box_fits_safe_zone": true,
+      "new_issues": []
+    },
+    "step": 8,
+    "t_ms": 1123.8
+  },
+  {
+    "stage": "placement",
+    "placement": "reels_9x16",
+    "observation": {
+      "faces": [],
+      "logo": null,
+      "text": [
+        {
+          "box": [
+            121.9,
+            1153.1,
+            729.3,
+            29.6
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            121.9,
+            1108.2,
+            729.3,
+            30.6
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            122.9,
+            1064.4,
+            727.3,
+            27.6
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            122.9,
+            1019.5,
+            726.2,
+            27.6
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            122.9,
+            974.6,
+            726.2,
+            27.6
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            122.9,
+            929.7,
+            726.2,
+            27.6
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            122.9,
+            884.9,
+            726.2,
+            27.6
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            121.9,
+            839.0,
+            728.3,
+            28.6
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            121.9,
+            793.1,
+            728.3,
+            29.6
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            122.9,
+            749.2,
+            727.3,
+            27.6
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            121.9,
+            703.3,
+            729.3,
+            29.6
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            122.9,
+            659.5,
+            726.2,
+            27.6
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            123.9,
+            614.6,
+            725.2,
+            27.6
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            122.9,
+            569.7,
+            727.3,
+            28.6
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            122.9,
+            524.8,
+            727.3,
+            27.6
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            122.9,
+            479.9,
+            727.3,
+            27.6
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            121.9,
+            433.0,
+            728.3,
+            30.6
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            121.9,
+            388.1,
+            728.3,
+            30.6
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            122.9,
+            345.3,
+            727.3,
+            27.6
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            122.9,
+            299.4,
+            726.2,
+            27.6
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        }
+      ],
+      "subject": {
+        "box": [
+          454.1,
+          1125.6,
+          386.7,
+          122.4
+        ],
+        "kept": 1.0
+      },
+      "redetected_faces": 0,
+      "redetected_text_boxes": 20
+    },
+    "issues": [],
+    "decision": {
+      "action": "accept",
+      "args": {},
+      "reason": "candidate passes every placement check"
+    },
+    "result": "accepted",
+    "step": 9,
+    "t_ms": 1123.8
+  },
+  {
+    "stage": "placement",
+    "placement": "feed_1x1",
+    "observation": null,
+    "issues": [
+      {
+        "code": "aspect_mismatch",
+        "detail": "source 1080x1350"
+      }
+    ],
+    "decision": {
+      "action": "smart_crop",
+      "args": {
+        "strategy": "all"
+      },
+      "reason": "aspect differs: crop around faces, logo, text and subject"
+    },
+    "result": {
+      "tool": "smart_crop",
+      "args": {
+        "strategy": "all"
+      },
+      "transform": {
+        "kind": "crop",
+        "rect": [
+          0,
+          156.1,
+          1080,
+          1080.0
+        ]
+      },
+      "keep_box_fits_safe_zone": false,
+      "new_issues": [
+        "text_cut",
+        "text_in_ui_zone",
+        "subject_cut"
+      ]
+    },
+    "step": 10,
+    "t_ms": 1322.5
+  },
+  {
+    "stage": "placement",
+    "placement": "feed_1x1",
+    "observation": {
+      "faces": [],
+      "logo": null,
+      "text": [
+        {
+          "box": [
+            38.0,
+            1063.1,
+            1005.5,
+            40.8
+          ],
+          "kept": 0.414,
+          "under_ui": 1.0
+        },
+        {
+          "box": [
+            38.0,
+            1001.2,
+            1005.5,
+            42.2
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            39.4,
+            940.8,
+            1002.7,
+            38.0
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            39.4,
+            878.9,
+            1001.2,
+            38.0
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            39.4,
+            817.0,
+            1001.2,
+            38.0
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            39.4,
+            755.1,
+            1001.2,
+            38.0
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            39.4,
+            693.3,
+            1001.2,
+            38.0
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            38.0,
+            630.0,
+            1004.1,
+            39.4
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            38.0,
+            566.7,
+            1004.1,
+            40.8
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            39.4,
+            506.2,
+            1002.7,
+            38.0
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            38.0,
+            443.0,
+            1005.5,
+            40.8
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            39.4,
+            382.5,
+            1001.2,
+            38.0
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            40.8,
+            320.6,
+            999.8,
+            38.0
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            39.4,
+            258.7,
+            1002.7,
+            39.4
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            39.4,
+            196.9,
+            1002.7,
+            38.0
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            39.4,
+            135.0,
+            1002.7,
+            38.0
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            38.0,
+            70.3,
+            1004.1,
+            42.2
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            38.0,
+            8.4,
+            1004.1,
+            42.2
+          ],
+          "kept": 1.0,
+          "under_ui": 0.569
+        },
+        {
+          "box": [
+            39.4,
+            -50.6,
+            1002.7,
+            38.0
+          ],
+          "kept": 0.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            39.4,
+            -113.9,
+            1001.2,
+            38.0
+          ],
+          "kept": 0.0,
+          "under_ui": 0.0
+        }
+      ],
+      "subject": {
+        "box": [
+          496.1,
+          1025.1,
+          533.2,
+          168.8
+        ],
+        "kept": 0.325
+      },
+      "redetected_faces": 0,
+      "redetected_text_boxes": 17
+    },
+    "issues": [
+      {
+        "code": "text_cut",
+        "detail": "text 59% outside the frame"
+      },
+      {
+        "code": "text_in_ui_zone",
+        "detail": "text 100% under platform UI"
+      },
+      {
+        "code": "subject_cut",
+        "detail": "main subject 67% outside the frame"
+      }
+    ],
+    "decision": {
+      "action": "smart_crop",
+      "args": {
+        "strategy": "priority"
+      },
+      "reason": "full crop failed: keep faces and logo first, let text/subject edges go"
+    },
+    "result": {
+      "tool": "smart_crop",
+      "args": {
+        "strategy": "priority"
+      },
+      "transform": {
+        "kind": "crop",
+        "rect": [
+          0.0,
+          135.0,
+          1080,
+          1080.0
+        ]
+      },
+      "keep_box_fits_safe_zone": true,
+      "new_issues": [
+        "text_cut",
+        "text_in_ui_zone",
+        "subject_cut"
+      ]
+    },
+    "step": 11,
+    "t_ms": 1470.5
+  },
+  {
+    "stage": "placement",
+    "placement": "feed_1x1",
+    "observation": {
+      "faces": [],
+      "logo": null,
+      "text": [
+        {
+          "box": [
+            38.0,
+            1084.2,
+            1005.5,
+            40.8
+          ],
+          "kept": 0.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            38.0,
+            1022.3,
+            1005.5,
+            42.2
+          ],
+          "kept": 1.0,
+          "under_ui": 0.4
+        },
+        {
+          "box": [
+            39.4,
+            961.9,
+            1002.7,
+            38.0
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            39.4,
+            900.0,
+            1001.2,
+            38.0
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            39.4,
+            838.1,
+            1001.2,
+            38.0
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            39.4,
+            776.2,
+            1001.2,
+            38.0
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            39.4,
+            714.4,
+            1001.2,
+            38.0
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            38.0,
+            651.1,
+            1004.1,
+            39.4
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            38.0,
+            587.8,
+            1004.1,
+            40.8
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            39.4,
+            527.3,
+            1002.7,
+            38.0
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            38.0,
+            464.1,
+            1005.5,
+            40.8
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            39.4,
+            403.6,
+            1001.2,
+            38.0
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            40.8,
+            341.7,
+            999.8,
+            38.0
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            39.4,
+            279.8,
+            1002.7,
+            39.4
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            39.4,
+            218.0,
+            1002.7,
+            38.0
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            39.4,
+            156.1,
+            1002.7,
+            38.0
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            38.0,
+            91.4,
+            1004.1,
+            42.2
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            38.0,
+            29.5,
+            1004.1,
+            42.2
+          ],
+          "kept": 1.0,
+          "under_ui": 0.069
+        },
+        {
+          "box": [
+            39.4,
+            -29.5,
+            1002.7,
+            38.0
+          ],
+          "kept": 0.224,
+          "under_ui": 1.0
+        },
+        {
+          "box": [
+            39.4,
+            -92.8,
+            1001.2,
+            38.0
+          ],
+          "kept": 0.0,
+          "under_ui": 0.0
+        }
+      ],
+      "subject": {
+        "box": [
+          496.1,
+          1046.2,
+          533.2,
+          168.8
+        ],
+        "kept": 0.2
+      },
+      "redetected_faces": 0,
+      "redetected_text_boxes": 17
+    },
+    "issues": [
+      {
+        "code": "text_cut",
+        "detail": "text 100% outside the frame"
+      },
+      {
+        "code": "text_in_ui_zone",
+        "detail": "text 40% under platform UI"
+      },
+      {
+        "code": "subject_cut",
+        "detail": "main subject 80% outside the frame"
+      }
+    ],
+    "decision": {
+      "action": "fit_into_safe_zone",
+      "args": {},
+      "reason": "crops cannot keep it all in the safe zone: shrink into the safe zone on a blurred backdrop"
+    },
+    "result": {
+      "tool": "fit_into_safe_zone",
+      "args": {},
+      "transform": {
+        "kind": "fit",
+        "scale": 0.752,
+        "offset": [
+          133.9,
+          32.4
+        ]
+      },
+      "keep_box_fits_safe_zone": true,
+      "new_issues": []
+    },
+    "step": 12,
+    "t_ms": 1640.1
+  },
+  {
+    "stage": "placement",
+    "placement": "feed_1x1",
+    "observation": {
+      "faces": [],
+      "logo": null,
+      "text": [
+        {
+          "box": [
+            162.5,
+            949.2,
+            756.1,
+            30.7
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            162.5,
+            902.7,
+            756.1,
+            31.7
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            163.5,
+            857.3,
+            754.0,
+            28.6
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            163.5,
+            810.7,
+            752.9,
+            28.6
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            163.5,
+            764.2,
+            752.9,
+            28.6
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            163.5,
+            717.6,
+            752.9,
+            28.6
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            163.5,
+            671.1,
+            752.9,
+            28.6
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            162.5,
+            623.5,
+            755.1,
+            29.6
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            162.5,
+            575.9,
+            755.1,
+            30.7
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            163.5,
+            530.4,
+            754.0,
+            28.6
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            162.5,
+            482.9,
+            756.1,
+            30.7
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            163.5,
+            437.4,
+            752.9,
+            28.6
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            164.6,
+            390.9,
+            751.8,
+            28.6
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            163.5,
+            344.3,
+            754.0,
+            29.6
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            163.5,
+            297.9,
+            754.0,
+            28.6
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            163.5,
+            251.3,
+            754.0,
+            28.6
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            162.5,
+            202.7,
+            755.1,
+            31.7
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            162.5,
+            156.1,
+            755.1,
+            31.7
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            163.5,
+            111.7,
+            754.0,
+            28.6
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            163.5,
+            64.1,
+            752.9,
+            28.6
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        }
+      ],
+      "subject": {
+        "box": [
+          507.0,
+          920.7,
+          401.0,
+          126.9
+        ],
+        "kept": 1.0
+      },
+      "redetected_faces": 0,
+      "redetected_text_boxes": 20
+    },
+    "issues": [],
+    "decision": {
+      "action": "accept",
+      "args": {},
+      "reason": "candidate passes every placement check"
+    },
+    "result": "accepted",
+    "step": 13,
+    "t_ms": 1640.1
+  },
+  {
+    "stage": "placement",
+    "placement": "youtube_16x9",
+    "observation": null,
+    "issues": [
+      {
+        "code": "aspect_mismatch",
+        "detail": "source 1080x1350"
+      }
+    ],
+    "decision": {
+      "action": "smart_crop",
+      "args": {
+        "strategy": "all"
+      },
+      "reason": "aspect differs: crop around faces, logo, text and subject"
+    },
+    "result": {
+      "tool": "smart_crop",
+      "args": {
+        "strategy": "all"
+      },
+      "transform": {
+        "kind": "crop",
+        "rect": [
+          0,
+          422.7,
+          1080,
+          607.5
+        ]
+      },
+      "keep_box_fits_safe_zone": false,
+      "new_issues": [
+        "text_cut",
+        "text_in_ui_zone",
+        "subject_cut"
+      ]
+    },
+    "step": 14,
+    "t_ms": 1748.3
+  },
+  {
+    "stage": "placement",
+    "placement": "youtube_16x9",
+    "observation": {
+      "faces": [],
+      "logo": null,
+      "text": [
+        {
+          "box": [
+            67.6,
+            1416.0,
+            1787.6,
+            72.5
+          ],
+          "kept": 0.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            67.6,
+            1306.0,
+            1787.6,
+            75.0
+          ],
+          "kept": 0.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            70.0,
+            1198.6,
+            1782.6,
+            67.6
+          ],
+          "kept": 0.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            70.0,
+            1088.5,
+            1779.9,
+            67.6
+          ],
+          "kept": 0.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            70.0,
+            978.5,
+            1779.9,
+            67.6
+          ],
+          "kept": 1.0,
+          "under_ui": 1.0
+        },
+        {
+          "box": [
+            70.0,
+            868.4,
+            1779.9,
+            67.6
+          ],
+          "kept": 1.0,
+          "under_ui": 0.746
+        },
+        {
+          "box": [
+            70.0,
+            758.6,
+            1779.9,
+            67.6
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            67.6,
+            646.0,
+            1785.1,
+            70.0
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            67.6,
+            533.5,
+            1785.1,
+            72.5
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            70.0,
+            426.0,
+            1782.6,
+            67.6
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            67.6,
+            313.6,
+            1787.6,
+            72.5
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            70.0,
+            206.0,
+            1779.9,
+            67.6
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            72.5,
+            96.0,
+            1777.4,
+            67.6
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            70.0,
+            -14.0,
+            1782.6,
+            70.0
+          ],
+          "kept": 0.799,
+          "under_ui": 1.0
+        },
+        {
+          "box": [
+            70.0,
+            -123.9,
+            1782.6,
+            67.6
+          ],
+          "kept": 0.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            70.0,
+            -234.0,
+            1782.6,
+            67.6
+          ],
+          "kept": 0.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            67.6,
+            -349.0,
+            1785.1,
+            75.0
+          ],
+          "kept": 0.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            67.6,
+            -459.0,
+            1785.1,
+            75.0
+          ],
+          "kept": 0.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            70.0,
+            -563.9,
+            1782.6,
+            67.6
+          ],
+          "kept": 0.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            70.0,
+            -676.4,
+            1779.9,
+            67.6
+          ],
+          "kept": 0.0,
+          "under_ui": 0.0
+        }
+      ],
+      "subject": {
+        "box": [
+          882.0,
+          1348.4,
+          947.9,
+          300.1
+        ],
+        "kept": 0.0
+      },
+      "redetected_faces": 0,
+      "redetected_text_boxes": 10
+    },
+    "issues": [
+      {
+        "code": "text_cut",
+        "detail": "text 100% outside the frame"
+      },
+      {
+        "code": "text_in_ui_zone",
+        "detail": "text 100% under platform UI"
+      },
+      {
+        "code": "subject_cut",
+        "detail": "main subject 100% outside the frame"
+      }
+    ],
+    "decision": {
+      "action": "smart_crop",
+      "args": {
+        "strategy": "priority"
+      },
+      "reason": "full crop failed: keep faces and logo first, let text/subject edges go"
+    },
+    "result": {
+      "tool": "smart_crop",
+      "args": {
+        "strategy": "priority"
+      },
+      "transform": {
+        "kind": "crop",
+        "rect": [
+          0.0,
+          401.6,
+          1080,
+          607.5
+        ]
+      },
+      "keep_box_fits_safe_zone": true,
+      "new_issues": [
+        "text_cut",
+        "text_in_ui_zone",
+        "subject_cut"
+      ]
+    },
+    "step": 15,
+    "t_ms": 1853.4
+  },
+  {
+    "stage": "placement",
+    "placement": "youtube_16x9",
+    "observation": {
+      "faces": [],
+      "logo": null,
+      "text": [
+        {
+          "box": [
+            67.6,
+            1453.5,
+            1787.6,
+            72.5
+          ],
+          "kept": 0.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            67.6,
+            1343.5,
+            1787.6,
+            75.0
+          ],
+          "kept": 0.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            70.0,
+            1236.1,
+            1782.6,
+            67.6
+          ],
+          "kept": 0.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            70.0,
+            1126.0,
+            1779.9,
+            67.6
+          ],
+          "kept": 0.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            70.0,
+            1016.0,
+            1779.9,
+            67.6
+          ],
+          "kept": 0.947,
+          "under_ui": 1.0
+        },
+        {
+          "box": [
+            70.0,
+            906.0,
+            1779.9,
+            67.6
+          ],
+          "kept": 1.0,
+          "under_ui": 1.0
+        },
+        {
+          "box": [
+            70.0,
+            796.1,
+            1779.9,
+            67.6
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            67.6,
+            683.6,
+            1785.1,
+            70.0
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            67.6,
+            571.0,
+            1785.1,
+            72.5
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            70.0,
+            463.5,
+            1782.6,
+            67.6
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            67.6,
+            351.1,
+            1787.6,
+            72.5
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            70.0,
+            243.6,
+            1779.9,
+            67.6
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            72.5,
+            133.5,
+            1777.4,
+            67.6
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            70.0,
+            23.5,
+            1782.6,
+            70.0
+          ],
+          "kept": 1.0,
+          "under_ui": 0.898
+        },
+        {
+          "box": [
+            70.0,
+            -86.4,
+            1782.6,
+            67.6
+          ],
+          "kept": 0.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            70.0,
+            -196.4,
+            1782.6,
+            67.6
+          ],
+          "kept": 0.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            67.6,
+            -311.5,
+            1785.1,
+            75.0
+          ],
+          "kept": 0.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            67.6,
+            -421.5,
+            1785.1,
+            75.0
+          ],
+          "kept": 0.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            70.0,
+            -526.4,
+            1782.6,
+            67.6
+          ],
+          "kept": 0.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            70.0,
+            -638.9,
+            1779.9,
+            67.6
+          ],
+          "kept": 0.0,
+          "under_ui": 0.0
+        }
+      ],
+      "subject": {
+        "box": [
+          882.0,
+          1386.0,
+          947.9,
+          300.1
+        ],
+        "kept": 0.0
+      },
+      "redetected_faces": 0,
+      "redetected_text_boxes": 10
+    },
+    "issues": [
+      {
+        "code": "text_cut",
+        "detail": "text 100% outside the frame"
+      },
+      {
+        "code": "text_in_ui_zone",
+        "detail": "text 100% under platform UI"
+      },
+      {
+        "code": "subject_cut",
+        "detail": "main subject 100% outside the frame"
+      }
+    ],
+    "decision": {
+      "action": "fit_into_safe_zone",
+      "args": {},
+      "reason": "crops cannot keep it all in the safe zone: shrink into the safe zone on a blurred backdrop"
+    },
+    "result": {
+      "tool": "fit_into_safe_zone",
+      "args": {},
+      "transform": {
+        "kind": "fit",
+        "scale": 0.592,
+        "offset": [
+          640.3,
+          86.4
+        ]
+      },
+      "keep_box_fits_safe_zone": true,
+      "new_issues": []
+    },
+    "step": 16,
+    "t_ms": 1975.8
+  },
+  {
+    "stage": "placement",
+    "placement": "youtube_16x9",
+    "observation": {
+      "faces": [],
+      "logo": null,
+      "text": [
+        {
+          "box": [
+            662.8,
+            808.2,
+            595.3,
+            24.2
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            662.8,
+            771.5,
+            595.3,
+            25.0
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            663.6,
+            735.8,
+            593.6,
+            22.5
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            663.6,
+            699.1,
+            592.7,
+            22.5
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            663.6,
+            662.5,
+            592.7,
+            22.5
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            663.6,
+            625.8,
+            592.7,
+            22.5
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            663.6,
+            589.2,
+            592.7,
+            22.5
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            662.8,
+            551.8,
+            594.4,
+            23.3
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            662.8,
+            514.3,
+            594.4,
+            24.2
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            663.6,
+            478.5,
+            593.6,
+            22.5
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            662.8,
+            441.1,
+            595.3,
+            24.2
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            663.6,
+            405.3,
+            592.7,
+            22.5
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            664.5,
+            368.6,
+            591.9,
+            22.5
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            663.6,
+            332.0,
+            593.6,
+            23.3
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            663.6,
+            295.4,
+            593.6,
+            22.5
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            663.6,
+            258.7,
+            593.6,
+            22.5
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            662.8,
+            220.4,
+            594.4,
+            25.0
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            662.8,
+            183.8,
+            594.4,
+            25.0
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            663.6,
+            148.9,
+            593.6,
+            22.5
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            663.6,
+            111.4,
+            592.7,
+            22.5
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        }
+      ],
+      "subject": {
+        "box": [
+          934.0,
+          785.7,
+          315.7,
+          99.9
+        ],
+        "kept": 1.0
+      },
+      "redetected_faces": 0,
+      "redetected_text_boxes": 20
+    },
+    "issues": [],
+    "decision": {
+      "action": "accept",
+      "args": {},
+      "reason": "candidate passes every placement check"
+    },
+    "result": "accepted",
+    "step": 17,
+    "t_ms": 1975.8
+  },
+  {
+    "stage": "placement",
+    "placement": "display_300x250",
+    "observation": null,
+    "issues": [
+      {
+        "code": "aspect_mismatch",
+        "detail": "source 1080x1350"
+      }
+    ],
+    "decision": {
+      "action": "smart_crop",
+      "args": {
+        "strategy": "all"
+      },
+      "reason": "aspect differs: crop around faces, logo, text and subject"
+    },
+    "result": {
+      "tool": "smart_crop",
+      "args": {
+        "strategy": "all"
+      },
+      "transform": {
+        "kind": "crop",
+        "rect": [
+          0,
+          246.1,
+          1080,
+          900.0
+        ]
+      },
+      "keep_box_fits_safe_zone": false,
+      "new_issues": [
+        "text_cut",
+        "text_in_ui_zone",
+        "subject_cut"
+      ]
+    },
+    "step": 18,
+    "t_ms": 1997.8
+  },
+  {
+    "stage": "placement",
+    "placement": "display_300x250",
+    "observation": {
+      "faces": [],
+      "logo": null,
+      "text": [
+        {
+          "box": [
+            10.6,
+            270.3,
+            279.3,
+            11.3
+          ],
+          "kept": 0.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            10.6,
+            253.1,
+            279.3,
+            11.7
+          ],
+          "kept": 0.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            10.9,
+            236.3,
+            278.5,
+            10.6
+          ],
+          "kept": 1.0,
+          "under_ui": 0.656
+        },
+        {
+          "box": [
+            10.9,
+            219.1,
+            278.1,
+            10.6
+          ],
+          "kept": 1.0,
+          "under_ui": 0.008
+        },
+        {
+          "box": [
+            10.9,
+            201.9,
+            278.1,
+            10.6
+          ],
+          "kept": 1.0,
+          "under_ui": 0.008
+        },
+        {
+          "box": [
+            10.9,
+            184.8,
+            278.1,
+            10.6
+          ],
+          "kept": 1.0,
+          "under_ui": 0.008
+        },
+        {
+          "box": [
+            10.9,
+            167.6,
+            278.1,
+            10.6
+          ],
+          "kept": 1.0,
+          "under_ui": 0.008
+        },
+        {
+          "box": [
+            10.6,
+            150.0,
+            278.9,
+            10.9
+          ],
+          "kept": 1.0,
+          "under_ui": 0.01
+        },
+        {
+          "box": [
+            10.6,
+            132.4,
+            278.9,
+            11.3
+          ],
+          "kept": 1.0,
+          "under_ui": 0.01
+        },
+        {
+          "box": [
+            10.9,
+            115.6,
+            278.5,
+            10.6
+          ],
+          "kept": 1.0,
+          "under_ui": 0.009
+        },
+        {
+          "box": [
+            10.6,
+            98.1,
+            279.3,
+            11.3
+          ],
+          "kept": 1.0,
+          "under_ui": 0.012
+        },
+        {
+          "box": [
+            10.9,
+            81.2,
+            278.1,
+            10.6
+          ],
+          "kept": 1.0,
+          "under_ui": 0.008
+        },
+        {
+          "box": [
+            11.3,
+            64.1,
+            277.7,
+            10.6
+          ],
+          "kept": 1.0,
+          "under_ui": 0.006
+        },
+        {
+          "box": [
+            10.9,
+            46.9,
+            278.5,
+            10.9
+          ],
+          "kept": 1.0,
+          "under_ui": 0.009
+        },
+        {
+          "box": [
+            10.9,
+            29.7,
+            278.5,
+            10.6
+          ],
+          "kept": 1.0,
+          "under_ui": 0.009
+        },
+        {
+          "box": [
+            10.9,
+            12.5,
+            278.5,
+            10.6
+          ],
+          "kept": 1.0,
+          "under_ui": 0.009
+        },
+        {
+          "box": [
+            10.6,
+            -5.5,
+            278.9,
+            11.7
+          ],
+          "kept": 0.533,
+          "under_ui": 1.0
+        },
+        {
+          "box": [
+            10.6,
+            -22.7,
+            278.9,
+            11.7
+          ],
+          "kept": 0.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            10.9,
+            -39.1,
+            278.5,
+            10.6
+          ],
+          "kept": 0.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            10.9,
+            -56.6,
+            278.1,
+            10.6
+          ],
+          "kept": 0.0,
+          "under_ui": 0.0
+        }
+      ],
+      "subject": {
+        "box": [
+          137.8,
+          259.8,
+          148.1,
+          46.9
+        ],
+        "kept": 0.0
+      },
+      "redetected_faces": 0,
+      "redetected_text_boxes": 19
+    },
+    "issues": [
+      {
+        "code": "text_cut",
+        "detail": "text 100% outside the frame"
+      },
+      {
+        "code": "text_in_ui_zone",
+        "detail": "text 66% under platform UI"
+      },
+      {
+        "code": "subject_cut",
+        "detail": "main subject 100% outside the frame"
+      }
+    ],
+    "decision": {
+      "action": "smart_crop",
+      "args": {
+        "strategy": "priority"
+      },
+      "reason": "full crop failed: keep faces and logo first, let text/subject edges go"
+    },
+    "result": {
+      "tool": "smart_crop",
+      "args": {
+        "strategy": "priority"
+      },
+      "transform": {
+        "kind": "crop",
+        "rect": [
+          0,
+          225.0,
+          1080,
+          900.0
+        ]
+      },
+      "keep_box_fits_safe_zone": true,
+      "new_issues": [
+        "text_cut",
+        "text_in_ui_zone",
+        "subject_cut"
+      ]
+    },
+    "step": 19,
+    "t_ms": 2019.0
+  },
+  {
+    "stage": "placement",
+    "placement": "display_300x250",
+    "observation": {
+      "faces": [],
+      "logo": null,
+      "text": [
+        {
+          "box": [
+            10.6,
+            276.2,
+            279.3,
+            11.3
+          ],
+          "kept": 0.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            10.6,
+            259.0,
+            279.3,
+            11.7
+          ],
+          "kept": 0.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            10.9,
+            242.2,
+            278.5,
+            10.6
+          ],
+          "kept": 0.739,
+          "under_ui": 1.0
+        },
+        {
+          "box": [
+            10.9,
+            225.0,
+            278.1,
+            10.6
+          ],
+          "kept": 1.0,
+          "under_ui": 0.008
+        },
+        {
+          "box": [
+            10.9,
+            207.8,
+            278.1,
+            10.6
+          ],
+          "kept": 1.0,
+          "under_ui": 0.008
+        },
+        {
+          "box": [
+            10.9,
+            190.6,
+            278.1,
+            10.6
+          ],
+          "kept": 1.0,
+          "under_ui": 0.008
+        },
+        {
+          "box": [
+            10.9,
+            173.4,
+            278.1,
+            10.6
+          ],
+          "kept": 1.0,
+          "under_ui": 0.008
+        },
+        {
+          "box": [
+            10.6,
+            155.9,
+            278.9,
+            10.9
+          ],
+          "kept": 1.0,
+          "under_ui": 0.01
+        },
+        {
+          "box": [
+            10.6,
+            138.3,
+            278.9,
+            11.3
+          ],
+          "kept": 1.0,
+          "under_ui": 0.01
+        },
+        {
+          "box": [
+            10.9,
+            121.5,
+            278.5,
+            10.6
+          ],
+          "kept": 1.0,
+          "under_ui": 0.009
+        },
+        {
+          "box": [
+            10.6,
+            103.9,
+            279.3,
+            11.3
+          ],
+          "kept": 1.0,
+          "under_ui": 0.012
+        },
+        {
+          "box": [
+            10.9,
+            87.1,
+            278.1,
+            10.6
+          ],
+          "kept": 1.0,
+          "under_ui": 0.008
+        },
+        {
+          "box": [
+            11.3,
+            69.9,
+            277.7,
+            10.6
+          ],
+          "kept": 1.0,
+          "under_ui": 0.006
+        },
+        {
+          "box": [
+            10.9,
+            52.7,
+            278.5,
+            10.9
+          ],
+          "kept": 1.0,
+          "under_ui": 0.009
+        },
+        {
+          "box": [
+            10.9,
+            35.6,
+            278.5,
+            10.6
+          ],
+          "kept": 1.0,
+          "under_ui": 0.009
+        },
+        {
+          "box": [
+            10.9,
+            18.4,
+            278.5,
+            10.6
+          ],
+          "kept": 1.0,
+          "under_ui": 0.009
+        },
+        {
+          "box": [
+            10.6,
+            0.4,
+            278.9,
+            11.7
+          ],
+          "kept": 1.0,
+          "under_ui": 0.822
+        },
+        {
+          "box": [
+            10.6,
+            -16.8,
+            278.9,
+            11.7
+          ],
+          "kept": 0.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            10.9,
+            -33.2,
+            278.5,
+            10.6
+          ],
+          "kept": 0.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            10.9,
+            -50.8,
+            278.1,
+            10.6
+          ],
+          "kept": 0.0,
+          "under_ui": 0.0
+        }
+      ],
+      "subject": {
+        "box": [
+          137.8,
+          265.6,
+          148.1,
+          46.9
+        ],
+        "kept": 0.0
+      },
+      "redetected_faces": 0,
+      "redetected_text_boxes": 15
+    },
+    "issues": [
+      {
+        "code": "text_cut",
+        "detail": "text 100% outside the frame"
+      },
+      {
+        "code": "text_in_ui_zone",
+        "detail": "text 100% under platform UI"
+      },
+      {
+        "code": "subject_cut",
+        "detail": "main subject 100% outside the frame"
+      }
+    ],
+    "decision": {
+      "action": "fit_into_safe_zone",
+      "args": {},
+      "reason": "crops cannot keep it all in the safe zone: shrink into the safe zone on a blurred backdrop"
+    },
+    "result": {
+      "tool": "fit_into_safe_zone",
+      "args": {},
+      "transform": {
+        "kind": "fit",
+        "scale": 0.17037,
+        "offset": [
+          58.0,
+          10.0
+        ]
+      },
+      "keep_box_fits_safe_zone": true,
+      "new_issues": [
+        "text_too_small"
+      ]
+    },
+    "step": 20,
+    "t_ms": 2045.3
+  },
+  {
+    "stage": "placement",
+    "placement": "display_300x250",
+    "observation": {
+      "faces": [],
+      "logo": null,
+      "text": [
+        {
+          "box": [
+            64.5,
+            217.7,
+            171.3,
+            7.0
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            64.5,
+            207.2,
+            171.3,
+            7.2
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            64.7,
+            196.9,
+            170.8,
+            6.5
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            64.7,
+            186.3,
+            170.6,
+            6.5
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            64.7,
+            175.8,
+            170.6,
+            6.5
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            64.7,
+            165.2,
+            170.6,
+            6.5
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            64.7,
+            154.7,
+            170.6,
+            6.5
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            64.5,
+            143.9,
+            171.1,
+            6.7
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            64.5,
+            133.1,
+            171.1,
+            7.0
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            64.7,
+            122.8,
+            170.8,
+            6.5
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            64.5,
+            112.1,
+            171.3,
+            7.0
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            64.7,
+            101.8,
+            170.6,
+            6.5
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            65.0,
+            91.2,
+            170.3,
+            6.5
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            64.7,
+            80.7,
+            170.8,
+            6.7
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            64.7,
+            70.1,
+            170.8,
+            6.5
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            64.7,
+            59.6,
+            170.8,
+            6.5
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            64.5,
+            48.6,
+            171.1,
+            7.2
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            64.5,
+            38.0,
+            171.1,
+            7.2
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            64.7,
+            28.0,
+            170.8,
+            6.5
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            64.7,
+            17.2,
+            170.6,
+            6.5
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        }
+      ],
+      "subject": {
+        "box": [
+          142.5,
+          211.2,
+          90.8,
+          28.8
+        ],
+        "kept": 1.0
+      },
+      "redetected_faces": 0,
+      "redetected_text_boxes": 0
+    },
+    "issues": [
+      {
+        "code": "text_too_small",
+        "detail": "tallest text line 7px, needs 9px"
+      }
+    ],
+    "decision": {
+      "action": "escalate",
+      "args": {},
+      "reason": "no tool left that fixes: text_too_small"
+    },
+    "result": "escalated to human",
+    "step": 21,
+    "t_ms": 2045.3
+  }
+]

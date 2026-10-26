@@ -1,0 +1,1250 @@
+{
+  "creative": "4_blurry_text_wall.jpg",
+  "planner": "rules",
+  "runtime_ms": 2045.4,
+  "source": {
+    "size": [
+      1080,
+      1350
+    ],
+    "quality_before": {
+      "sharpness": null,
+      "brightness": 110.8,
+      "contrast": 59.9,
+      "dark_share": 0.145,
+      "clipped_share": 0.0
+    },
+    "quality_after": {
+      "sharpness": null,
+      "brightness": 110.8,
+      "contrast": 59.9,
+      "dark_share": 0.145,
+      "clipped_share": 0.0
+    },
+    "fixes_applied": [],
+    "escalation": {
+      "reason": "cannot fix automatically: logo_missing, text_heavy",
+      "issues": [
+        {
+          "code": "text_heavy",
+          "detail": "text covers 54% of the frame"
+        },
+        {
+          "code": "logo_missing",
+          "detail": "supplied logo not found in the creative"
+        }
+      ]
+    },
+    "text_share": 0.538,
+    "faces": 0,
+    "logo": {
+      "found": false,
+      "box": null,
+      "method": null,
+      "score": 0.0
+    },
+    "detectors": {
+      "text": "db_ppocrv3",
+      "faces": "yunet"
+    }
+  },
+  "placements": [
+    {
+      "placement": "stories_9x16",
+      "label": "Stories 9:16 (1080x1920)",
+      "status": "needs_human",
+      "reasons": [
+        "source: cannot fix automatically: logo_missing, text_heavy"
+      ],
+      "final_tool": "fit_into_safe_zone",
+      "transform": {
+        "kind": "fit",
+        "scale": 0.88,
+        "offset": [
+          64.8,
+          308.4
+        ]
+      },
+      "issues": [],
+      "checks": {
+        "faces": [],
+        "logo": null,
+        "text": [
+          {
+            "box": [
+              98.2,
+              1381.3,
+              884.8,
+              35.9
+            ],
+            "kept": 1.0,
+            "under_ui": 0.0
+          },
+          {
+            "box": [
+              98.2,
+              1326.8,
+              884.8,
+              37.1
+            ],
+            "kept": 1.0,
+            "under_ui": 0.0
+          },
+          {
+            "box": [
+              99.5,
+              1273.7,
+              882.4,
+              33.4
+            ],
+            "kept": 1.0,
+            "under_ui": 0.0
+          },
+          {
+            "box": [
+              99.5,
+              1219.2,
+              881.1,
+              33.4
+            ],
+            "kept": 1.0,
+            "under_ui": 0.0
+          },
+          {
+            "box": [
+              99.5,
+              1164.7,
+              881.1,
+              33.4
+            ],
+            "kept": 1.0,
+            "under_ui": 0.0
+          },
+          {
+            "box": [
+              99.5,
+              1110.3,
+              881.1,
+              33.4
+            ],
+            "kept": 1.0,
+            "under_ui": 0.0
+          },
+          {
+            "box": [
+              99.5,
+              1055.9,
+              881.1,
+              33.4
+            ],
+            "kept": 1.0,
+            "under_ui": 0.0
+          },
+          {
+            "box": [
+              98.2,
+              1000.2,
+              883.6,
+              34.7
+            ],
+            "kept": 1.0,
+            "under_ui": 0.0
+          },
+          {
+            "box": [
+              98.2,
+              944.5,
+              883.6,
+              35.9
+            ],
+            "kept": 1.0,
+            "under_ui": 0.0
+          },
+          {
+            "box": [
+              99.5,
+              891.2,
+              882.4,
+              33.4
+            ],
+            "kept": 1.0,
+            "under_ui": 0.0
+          },
+          {
+            "box": [
+              98.2,
+              835.6,
+              884.8,
+              35.9
+            ],
+            "kept": 1.0,
+            "under_ui": 0.0
+          },
+          {
+            "box": [
+              99.5,
+              782.4,
+              881.1,
+              33.4
+            ],
+            "kept": 1.0,
+            "under_ui": 0.0
+          },
+          {
+            "box": [
+              100.7,
+              727.9,
+              879.8,
+              33.4
+            ],
+            "kept": 1.0,
+            "under_ui": 0.0
+          },
+          {
+            "box": [
+              99.5,
+              673.4,
+              882.4,
+              34.7
+            ],
+            "kept": 1.0,
+            "under_ui": 0.0
+          },
+          {
+            "box": [
+              99.5,
+              619.0,
+              882.4,
+              33.4
+            ],
+            "kept": 1.0,
+            "under_ui": 0.0
+          },
+          {
+            "box": [
+              99.5,
+              564.6,
+              882.4,
+              33.4
+            ],
+            "kept": 1.0,
+            "under_ui": 0.0
+          },
+          {
+            "box": [
+              98.2,
+              507.6,
+              883.6,
+              37.1
+            ],
+            "kept": 1.0,
+            "under_ui": 0.0
+          },
+          {
+            "box": [
+              98.2,
+              453.2,
+              883.6,
+              37.1
+            ],
+            "kept": 1.0,
+            "under_ui": 0.0
+          },
+          {
+            "box": [
+              99.5,
+              401.2,
+              882.4,
+              33.4
+            ],
+            "kept": 1.0,
+            "under_ui": 0.0
+          },
+          {
+            "box": [
+              99.5,
+              345.5,
+              881.1,
+              33.4
+            ],
+            "kept": 1.0,
+            "under_ui": 0.0
+          }
+        ],
+        "subject": {
+          "box": [
+            501.4,
+            1347.9,
+            469.2,
+            148.5
+          ],
+          "kept": 1.0
+        },
+        "redetected_faces": 0,
+        "redetected_text_boxes": 20
+      },
+      "agent_steps": 3,
+      "asset": "stories_9x16_PROPOSED.jpg",
+      "preview": "stories_9x16_preview.jpg"
+    },
+    {
+      "placement": "reels_9x16",
+      "label": "Reels / TikTok 9:16 (1080x1920)",
+      "status": "needs_human",
+      "reasons": [
+        "source: cannot fix automatically: logo_missing, text_heavy"
+      ],
+      "final_tool": "fit_into_safe_zone",
+      "transform": {
+        "kind": "fit",
+        "scale": 0.72533,
+        "offset": [
+          94.3,
+          268.8
+        ]
+      },
+      "issues": [],
+      "checks": {
+        "faces": [],
+        "logo": null,
+        "text": [
+          {
+            "box": [
+              121.9,
+              1153.1,
+              729.3,
+              29.6
+            ],
+            "kept": 1.0,
+            "under_ui": 0.0
+          },
+          {
+            "box": [
+              121.9,
+              1108.2,
+              729.3,
+              30.6
+            ],
+            "kept": 1.0,
+            "under_ui": 0.0
+          },
+          {
+            "box": [
+              122.9,
+              1064.4,
+              727.3,
+              27.6
+            ],
+            "kept": 1.0,
+            "under_ui": 0.0
+          },
+          {
+            "box": [
+              122.9,
+              1019.5,
+              726.2,
+              27.6
+            ],
+            "kept": 1.0,
+            "under_ui": 0.0
+          },
+          {
+            "box": [
+              122.9,
+              974.6,
+              726.2,
+              27.6
+            ],
+            "kept": 1.0,
+            "under_ui": 0.0
+          },
+          {
+            "box": [
+              122.9,
+              929.7,
+              726.2,
+              27.6
+            ],
+            "kept": 1.0,
+            "under_ui": 0.0
+          },
+          {
+            "box": [
+              122.9,
+              884.9,
+              726.2,
+              27.6
+            ],
+            "kept": 1.0,
+            "under_ui": 0.0
+          },
+          {
+            "box": [
+              121.9,
+              839.0,
+              728.3,
+              28.6
+            ],
+            "kept": 1.0,
+            "under_ui": 0.0
+          },
+          {
+            "box": [
+              121.9,
+              793.1,
+              728.3,
+              29.6
+            ],
+            "kept": 1.0,
+            "under_ui": 0.0
+          },
+          {
+            "box": [
+              122.9,
+              749.2,
+              727.3,
+              27.6
+            ],
+            "kept": 1.0,
+            "under_ui": 0.0
+          },
+          {
+            "box": [
+              121.9,
+              703.3,
+              729.3,
+              29.6
+            ],
+            "kept": 1.0,
+            "under_ui": 0.0
+          },
+          {
+            "box": [
+              122.9,
+              659.5,
+              726.2,
+              27.6
+            ],
+            "kept": 1.0,
+            "under_ui": 0.0
+          },
+          {
+            "box": [
+              123.9,
+              614.6,
+              725.2,
+              27.6
+            ],
+            "kept": 1.0,
+            "under_ui": 0.0
+          },
+          {
+            "box": [
+              122.9,
+              569.7,
+              727.3,
+              28.6
+            ],
+            "kept": 1.0,
+            "under_ui": 0.0
+          },
+          {
+            "box": [
+              122.9,
+              524.8,
+              727.3,
+              27.6
+            ],
+            "kept": 1.0,
+            "under_ui": 0.0
+          },
+          {
+            "box": [
+              122.9,
+              479.9,
+              727.3,
+              27.6
+            ],
+            "kept": 1.0,
+            "under_ui": 0.0
+          },
+          {
+            "box": [
+              121.9,
+              433.0,
+              728.3,
+              30.6
+            ],
+            "kept": 1.0,
+            "under_ui": 0.0
+          },
+          {
+            "box": [
+              121.9,
+              388.1,
+              728.3,
+              30.6
+            ],
+            "kept": 1.0,
+            "under_ui": 0.0
+          },
+          {
+            "box": [
+              122.9,
+              345.3,
+              727.3,
+              27.6
+            ],
+            "kept": 1.0,
+            "under_ui": 0.0
+          },
+          {
+            "box": [
+              122.9,
+              299.4,
+              726.2,
+              27.6
+            ],
+            "kept": 1.0,
+            "under_ui": 0.0
+          }
+        ],
+        "subject": {
+          "box": [
+            454.1,
+            1125.6,
+            386.7,
+            122.4
+          ],
+          "kept": 1.0
+        },
+        "redetected_faces": 0,
+        "redetected_text_boxes": 20
+      },
+      "agent_steps": 3,
+      "asset": "reels_9x16_PROPOSED.jpg",
+      "preview": "reels_9x16_preview.jpg"
+    },
+    {
+      "placement": "feed_1x1",
+      "label": "Feed 1:1 (1080x1080)",
+      "status": "needs_human",
+      "reasons": [
+        "source: cannot fix automatically: logo_missing, text_heavy"
+      ],
+      "final_tool": "fit_into_safe_zone",
+      "transform": {
+        "kind": "fit",
+        "scale": 0.752,
+        "offset": [
+          133.9,
+          32.4
+        ]
+      },
+      "issues": [],
+      "checks": {
+        "faces": [],
+        "logo": null,
+        "text": [
+          {
+            "box": [
+              162.5,
+              949.2,
+              756.1,
+              30.7
+            ],
+            "kept": 1.0,
+            "under_ui": 0.0
+          },
+          {
+            "box": [
+              162.5,
+              902.7,
+              756.1,
+              31.7
+            ],
+            "kept": 1.0,
+            "under_ui": 0.0
+          },
+          {
+            "box": [
+              163.5,
+              857.3,
+              754.0,
+              28.6
+            ],
+            "kept": 1.0,
+            "under_ui": 0.0
+          },
+          {
+            "box": [
+              163.5,
+              810.7,
+              752.9,
+              28.6
+            ],
+            "kept": 1.0,
+            "under_ui": 0.0
+          },
+          {
+            "box": [
+              163.5,
+              764.2,
+              752.9,
+              28.6
+            ],
+            "kept": 1.0,
+            "under_ui": 0.0
+          },
+          {
+            "box": [
+              163.5,
+              717.6,
+              752.9,
+              28.6
+            ],
+            "kept": 1.0,
+            "under_ui": 0.0
+          },
+          {
+            "box": [
+              163.5,
+              671.1,
+              752.9,
+              28.6
+            ],
+            "kept": 1.0,
+            "under_ui": 0.0
+          },
+          {
+            "box": [
+              162.5,
+              623.5,
+              755.1,
+              29.6
+            ],
+            "kept": 1.0,
+            "under_ui": 0.0
+          },
+          {
+            "box": [
+              162.5,
+              575.9,
+              755.1,
+              30.7
+            ],
+            "kept": 1.0,
+            "under_ui": 0.0
+          },
+          {
+            "box": [
+              163.5,
+              530.4,
+              754.0,
+              28.6
+            ],
+            "kept": 1.0,
+            "under_ui": 0.0
+          },
+          {
+            "box": [
+              162.5,
+              482.9,
+              756.1,
+              30.7
+            ],
+            "kept": 1.0,
+            "under_ui": 0.0
+          },
+          {
+            "box": [
+              163.5,
+              437.4,
+              752.9,
+              28.6
+            ],
+            "kept": 1.0,
+            "under_ui": 0.0
+          },
+          {
+            "box": [
+              164.6,
+              390.9,
+              751.8,
+              28.6
+            ],
+            "kept": 1.0,
+            "under_ui": 0.0
+          },
+          {
+            "box": [
+              163.5,
+              344.3,
+              754.0,
+              29.6
+            ],
+            "kept": 1.0,
+            "under_ui": 0.0
+          },
+          {
+            "box": [
+              163.5,
+              297.9,
+              754.0,
+              28.6
+            ],
+            "kept": 1.0,
+            "under_ui": 0.0
+          },
+          {
+            "box": [
+              163.5,
+              251.3,
+              754.0,
+              28.6
+            ],
+            "kept": 1.0,
+            "under_ui": 0.0
+          },
+          {
+            "box": [
+              162.5,
+              202.7,
+              755.1,
+              31.7
+            ],
+            "kept": 1.0,
+            "under_ui": 0.0
+          },
+          {
+            "box": [
+              162.5,
+              156.1,
+              755.1,
+              31.7
+            ],
+            "kept": 1.0,
+            "under_ui": 0.0
+          },
+          {
+            "box": [
+              163.5,
+              111.7,
+              754.0,
+              28.6
+            ],
+            "kept": 1.0,
+            "under_ui": 0.0
+          },
+          {
+            "box": [
+              163.5,
+              64.1,
+              752.9,
+              28.6
+            ],
+            "kept": 1.0,
+            "under_ui": 0.0
+          }
+        ],
+        "subject": {
+          "box": [
+            507.0,
+            920.7,
+            401.0,
+            126.9
+          ],
+          "kept": 1.0
+        },
+        "redetected_faces": 0,
+        "redetected_text_boxes": 20
+      },
+      "agent_steps": 3,
+      "asset": "feed_1x1_PROPOSED.jpg",
+      "preview": "feed_1x1_preview.jpg"
+    },
+    {
+      "placement": "youtube_16x9",
+      "label": "YouTube in-stream 16:9 (1920x1080)",
+      "status": "needs_human",
+      "reasons": [
+        "source: cannot fix automatically: logo_missing, text_heavy"
+      ],
+      "final_tool": "fit_into_safe_zone",
+      "transform": {
+        "kind": "fit",
+        "scale": 0.592,
+        "offset": [
+          640.3,
+          86.4
+        ]
+      },
+      "issues": [],
+      "checks": {
+        "faces": [],
+        "logo": null,
+        "text": [
+          {
+            "box": [
+              662.8,
+              808.2,
+              595.3,
+              24.2
+            ],
+            "kept": 1.0,
+            "under_ui": 0.0
+          },
+          {
+            "box": [
+              662.8,
+              771.5,
+              595.3,
+              25.0
+            ],
+            "kept": 1.0,
+            "under_ui": 0.0
+          },
+          {
+            "box": [
+              663.6,
+              735.8,
+              593.6,
+              22.5
+            ],
+            "kept": 1.0,
+            "under_ui": 0.0
+          },
+          {
+            "box": [
+              663.6,
+              699.1,
+              592.7,
+              22.5
+            ],
+            "kept": 1.0,
+            "under_ui": 0.0
+          },
+          {
+            "box": [
+              663.6,
+              662.5,
+              592.7,
+              22.5
+            ],
+            "kept": 1.0,
+            "under_ui": 0.0
+          },
+          {
+            "box": [
+              663.6,
+              625.8,
+              592.7,
+              22.5
+            ],
+            "kept": 1.0,
+            "under_ui": 0.0
+          },
+          {
+            "box": [
+              663.6,
+              589.2,
+              592.7,
+              22.5
+            ],
+            "kept": 1.0,
+            "under_ui": 0.0
+          },
+          {
+            "box": [
+              662.8,
+              551.8,
+              594.4,
+              23.3
+            ],
+            "kept": 1.0,
+            "under_ui": 0.0
+          },
+          {
+            "box": [
+              662.8,
+              514.3,
+              594.4,
+              24.2
+            ],
+            "kept": 1.0,
+            "under_ui": 0.0
+          },
+          {
+            "box": [
+              663.6,
+              478.5,
+              593.6,
+              22.5
+            ],
+            "kept": 1.0,
+            "under_ui": 0.0
+          },
+          {
+            "box": [
+              662.8,
+              441.1,
+              595.3,
+              24.2
+            ],
+            "kept": 1.0,
+            "under_ui": 0.0
+          },
+          {
+            "box": [
+              663.6,
+              405.3,
+              592.7,
+              22.5
+            ],
+            "kept": 1.0,
+            "under_ui": 0.0
+          },
+          {
+            "box": [
+              664.5,
+              368.6,
+              591.9,
+              22.5
+            ],
+            "kept": 1.0,
+            "under_ui": 0.0
+          },
+          {
+            "box": [
+              663.6,
+              332.0,
+              593.6,
+              23.3
+            ],
+            "kept": 1.0,
+            "under_ui": 0.0
+          },
+          {
+            "box": [
+              663.6,
+              295.4,
+              593.6,
+              22.5
+            ],
+            "kept": 1.0,
+            "under_ui": 0.0
+          },
+          {
+            "box": [
+              663.6,
+              258.7,
+              593.6,
+              22.5
+            ],
+            "kept": 1.0,
+            "under_ui": 0.0
+          },
+          {
+            "box": [
+              662.8,
+              220.4,
+              594.4,
+              25.0
+            ],
+            "kept": 1.0,
+            "under_ui": 0.0
+          },
+          {
+            "box": [
+              662.8,
+              183.8,
+              594.4,
+              25.0
+            ],
+            "kept": 1.0,
+            "under_ui": 0.0
+          },
+          {
+            "box": [
+              663.6,
+              148.9,
+              593.6,
+              22.5
+            ],
+            "kept": 1.0,
+            "under_ui": 0.0
+          },
+          {
+            "box": [
+              663.6,
+              111.4,
+              592.7,
+              22.5
+            ],
+            "kept": 1.0,
+            "under_ui": 0.0
+          }
+        ],
+        "subject": {
+          "box": [
+            934.0,
+            785.7,
+            315.7,
+            99.9
+          ],
+          "kept": 1.0
+        },
+        "redetected_faces": 0,
+        "redetected_text_boxes": 20
+      },
+      "agent_steps": 3,
+      "asset": "youtube_16x9_PROPOSED.jpg",
+      "preview": "youtube_16x9_preview.jpg"
+    },
+    {
+      "placement": "display_300x250",
+      "label": "Display MPU 300x250",
+      "status": "needs_human",
+      "reasons": [
+        "source: cannot fix automatically: logo_missing, text_heavy",
+        "placement: text_too_small"
+      ],
+      "final_tool": "fit_into_safe_zone",
+      "transform": {
+        "kind": "fit",
+        "scale": 0.17037,
+        "offset": [
+          58.0,
+          10.0
+        ]
+      },
+      "issues": [
+        {
+          "code": "text_too_small",
+          "detail": "tallest text line 7px, needs 9px"
+        }
+      ],
+      "checks": {
+        "faces": [],
+        "logo": null,
+        "text": [
+          {
+            "box": [
+              64.5,
+              217.7,
+              171.3,
+              7.0
+            ],
+            "kept": 1.0,
+            "under_ui": 0.0
+          },
+          {
+            "box": [
+              64.5,
+              207.2,
+              171.3,
+              7.2
+            ],
+            "kept": 1.0,
+            "under_ui": 0.0
+          },
+          {
+            "box": [
+              64.7,
+              196.9,
+              170.8,
+              6.5
+            ],
+            "kept": 1.0,
+            "under_ui": 0.0
+          },
+          {
+            "box": [
+              64.7,
+              186.3,
+              170.6,
+              6.5
+            ],
+            "kept": 1.0,
+            "under_ui": 0.0
+          },
+          {
+            "box": [
+              64.7,
+              175.8,
+              170.6,
+              6.5
+            ],
+            "kept": 1.0,
+            "under_ui": 0.0
+          },
+          {
+            "box": [
+              64.7,
+              165.2,
+              170.6,
+              6.5
+            ],
+            "kept": 1.0,
+            "under_ui": 0.0
+          },
+          {
+            "box": [
+              64.7,
+              154.7,
+              170.6,
+              6.5
+            ],
+            "kept": 1.0,
+            "under_ui": 0.0
+          },
+          {
+            "box": [
+              64.5,
+              143.9,
+              171.1,
+              6.7
+            ],
+            "kept": 1.0,
+            "under_ui": 0.0
+          },
+          {
+            "box": [
+              64.5,
+              133.1,
+              171.1,
+              7.0
+            ],
+            "kept": 1.0,
+            "under_ui": 0.0
+          },
+          {
+            "box": [
+              64.7,
+              122.8,
+              170.8,
+              6.5
+            ],
+            "kept": 1.0,
+            "under_ui": 0.0
+          },
+          {
+            "box": [
+              64.5,
+              112.1,
+              171.3,
+              7.0
+            ],
+            "kept": 1.0,
+            "under_ui": 0.0
+          },
+          {
+            "box": [
+              64.7,
+              101.8,
+              170.6,
+              6.5
+            ],
+            "kept": 1.0,
+            "under_ui": 0.0
+          },
+          {
+            "box": [
+              65.0,
+              91.2,
+              170.3,
+              6.5
+            ],
+            "kept": 1.0,
+            "under_ui": 0.0
+          },
+          {
+            "box": [
+              64.7,
+              80.7,
+              170.8,
+              6.7
+            ],
+            "kept": 1.0,
+            "under_ui": 0.0
+          },
+          {
+            "box": [
+              64.7,
+              70.1,
+              170.8,
+              6.5
+            ],
+            "kept": 1.0,
+            "under_ui": 0.0
+          },
+          {
+            "box": [
+              64.7,
+              59.6,
+              170.8,
+              6.5
+            ],
+            "kept": 1.0,
+            "under_ui": 0.0
+          },
+          {
+            "box": [
+              64.5,
+              48.6,
+              171.1,
+              7.2
+            ],
+            "kept": 1.0,
+            "under_ui": 0.0
+          },
+          {
+            "box": [
+              64.5,
+              38.0,
+              171.1,
+              7.2
+            ],
+            "kept": 1.0,
+            "under_ui": 0.0
+          },
+          {
+            "box": [
+              64.7,
+              28.0,
+              170.8,
+              6.5
+            ],
+            "kept": 1.0,
+            "under_ui": 0.0
+          },
+          {
+            "box": [
+              64.7,
+              17.2,
+              170.6,
+              6.5
+            ],
+            "kept": 1.0,
+            "under_ui": 0.0
+          }
+        ],
+        "subject": {
+          "box": [
+            142.5,
+            211.2,
+            90.8,
+            28.8
+          ],
+          "kept": 1.0
+        },
+        "redetected_faces": 0,
+        "redetected_text_boxes": 0
+      },
+      "agent_steps": 3,
+      "asset": "display_300x250_PROPOSED.jpg",
+      "preview": "display_300x250_preview.jpg"
+    }
+  ],
+  "needs_human": true
+}

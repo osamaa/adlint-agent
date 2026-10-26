@@ -1,0 +1,36 @@
+digraph architecture {
+  rankdir=LR; fontname="Helvetica"; bgcolor="white"; pad=0.3; nodesep=0.35; ranksep=0.55;
+  node [shape=box, style="rounded,filled", fontname="Helvetica", fontsize=11, fillcolor="#f2f4f7", color="#98a2b3"];
+  edge [fontname="Helvetica", fontsize=9, color="#475467"];
+
+  user [label="Marketer / ad ops\n(browser or CLI)", shape=box, fillcolor="#fff7e6", color="#f79009"];
+
+  subgraph cluster_aws {
+    label="AWS  eu-north-1"; fontsize=12; style="rounded,dashed"; color="#f79009"; fontcolor="#b54708";
+    url [label="Lambda Function URL\n(public HTTPS)", fillcolor="#ffffff"];
+    subgraph cluster_lambda {
+      label="Lambda 'adlint'  python3.12 / arm64 Graviton / 3 GB"; style="rounded"; color="#98a2b3"; fontcolor="#344054";
+      api [label="FastAPI app (Mangum)\nupload, validate, serve", fillcolor="#eef4ff", color="#2e90fa"];
+      agent [label="AdLint agent loop\nsource stage + per-placement stage", fillcolor="#ecfdf3", color="#12b76a"];
+      perception [label="OpenCV 5 perception\nDB text (dnn) · YuNet faces\nspectral-residual saliency\nORB+RANSAC logo · Laplacian/exposure\nHSV-histogram scene cuts", fillcolor="#ecfdf3", color="#12b76a"];
+      toolsn [label="OpenCV 5 action tools\nsmart_crop · fit_into_safe_zone\nenhance_exposure (gamma+CLAHE)\nsharpen (unsharp mask)", fillcolor="#ecfdf3", color="#12b76a"];
+      planner [label="Planner\nrule policy (default)\nor LLM via OpenRouter (optional)", fillcolor="#f4f3ff", color="#7a5af8"];
+    }
+    s3 [label="S3 bucket (private)\nruns/<id>/: assets, previews,\nreport.json/html, trace.json\n7-day expiry", shape=cylinder, fillcolor="#ffffff"];
+    logs [label="CloudWatch Logs\n14-day retention", fillcolor="#ffffff"];
+  }
+  llm [label="OpenRouter LLM\n(optional, off in cloud)", style="rounded,dashed", fillcolor="#ffffff"];
+
+  user -> url [label="creative + logo\n+ placements"];
+  url -> api;
+  api -> agent;
+  agent -> perception [label="perceive"];
+  agent -> planner [label="observations"];
+  planner -> agent [label="next tool call"];
+  agent -> toolsn [label="act"];
+  toolsn -> perception [label="re-check output", style=dashed];
+  planner -> llm [style=dashed];
+  api -> s3 [label="publish run"];
+  api -> logs [style=dotted];
+  s3 -> user [label="presigned URLs\n(previews, assets)", style=dashed];
+}

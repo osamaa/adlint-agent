@@ -1,0 +1,176 @@
+{
+  "hard_cut_clips": 6,
+  "cut_recall": 1.0,
+  "cut_precision": 1.0,
+  "fade_clip": {
+    "clip": "clip6_fade.mp4",
+    "fade_transitions": true,
+    "true_cuts": [
+      31,
+      85
+    ],
+    "found_cuts": [
+      19,
+      29,
+      74,
+      84
+    ],
+    "cuts_matched": 2,
+    "cuts_missed": 0,
+    "false_cuts": 2,
+    "dark_share_true": 0.286,
+    "dark_share_found": 0.317,
+    "blurry_share_true": 0.261,
+    "blurry_share_found": 0.05
+  },
+  "tolerance_frames": 2,
+  "rows": [
+    {
+      "clip": "clip0.mp4",
+      "fade_transitions": false,
+      "true_cuts": [
+        32,
+        68
+      ],
+      "found_cuts": [
+        32,
+        68
+      ],
+      "cuts_matched": 2,
+      "cuts_missed": 0,
+      "false_cuts": 0,
+      "dark_share_true": 0.286,
+      "dark_share_found": 0.286,
+      "blurry_share_true": 0.393,
+      "blurry_share_found": 0.625
+    },
+    {
+      "clip": "clip1.mp4",
+      "fade_transitions": false,
+      "true_cuts": [
+        54,
+        100,
+        153
+      ],
+      "found_cuts": [
+        54,
+        100,
+        153
+      ],
+      "cuts_matched": 3,
+      "cuts_missed": 0,
+      "false_cuts": 0,
+      "dark_share_true": 0.177,
+      "dark_share_found": 0.172,
+      "blurry_share_true": 0.29,
+      "blurry_share_found": 0.462
+    },
+    {
+      "clip": "clip2.mp4",
+      "fade_transitions": false,
+      "true_cuts": [
+        58,
+        106,
+        153
+      ],
+      "found_cuts": [
+        58,
+        106,
+        153
+      ],
+      "cuts_matched": 3,
+      "cuts_missed": 0,
+      "false_cuts": 0,
+      "dark_share_true": 0.307,
+      "dark_share_found": 0.305,
+      "blurry_share_true": 0.254,
+      "blurry_share_found": 0.158
+    },
+    {
+      "clip": "clip3.mp4",
+      "fade_transitions": false,
+      "true_cuts": [
+        35,
+        87,
+        147,
+        196
+      ],
+      "found_cuts": [
+        35,
+        87,
+        147,
+        196
+      ],
+      "cuts_matched": 4,
+      "cuts_missed": 0,
+      "false_cuts": 0,
+      "dark_share_true": 0.207,
+      "dark_share_found": 0.202,
+      "blurry_share_true": 0.219,
+      "blurry_share_found": 0.387
+    },
+    {
+      "clip": "clip4.mp4",
+      "fade_transitions": false,
+      "true_cuts": [
+        40,
+        83,
+        139,
+        190
+      ],
+      "found_cuts": [
+        40,
+        83,
+        139,
+        190
+      ],
+      "cuts_matched": 4,
+      "cuts_missed": 0,
+      "false_cuts": 0,
+      "dark_share_true": 0.161,
+      "dark_share_found": 0.16,
+      "blurry_share_true": 0.225,
+      "blurry_share_found": 0.48
+    },
+    {
+      "clip": "clip5.mp4",
+      "fade_transitions": false,
+      "true_cuts": [
+        56,
+        114
+      ],
+      "found_cuts": [
+        56,
+        114
+      ],
+      "cuts_matched": 2,
+      "cuts_missed": 0,
+      "false_cuts": 0,
+      "dark_share_true": 0.358,
+      "dark_share_found": 0.358,
+      "blurry_share_true": 0.296,
+      "blurry_share_found": 0.049
+    },
+    {
+      "clip": "clip6_fade.mp4",
+      "fade_transitions": true,
+      "true_cuts": [
+        31,
+        85
+      ],
+      "found_cuts": [
+        19,
+        29,
+        74,
+        84
+      ],
+      "cuts_matched": 2,
+      "cuts_missed": 0,
+      "false_cuts": 2,
+      "dark_share_true": 0.286,
+      "dark_share_found": 0.317,
+      "blurry_share_true": 0.261,
+      "blurry_share_found": 0.05
+    }
+  ]
+}

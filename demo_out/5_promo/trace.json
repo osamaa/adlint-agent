@@ -1,0 +1,3738 @@
+[
+  {
+    "stage": "source",
+    "placement": null,
+    "issues": [
+      {
+        "code": "dark_frames",
+        "detail": "25% of frames are dark"
+      },
+      {
+        "code": "first_3s",
+        "detail": "brand logo not seen in the first 3 seconds"
+      }
+    ],
+    "decision": {
+      "action": "escalate",
+      "args": {},
+      "reason": "25% of frames are dark; brand logo not seen in the first 3 seconds",
+      "planner": "rules (video checks)"
+    },
+    "observation": {
+      "duration_s": 8.0,
+      "scene_cuts": 3,
+      "dark_frames_share": 0.25,
+      "blurry_frames_share": 0.188
+    },
+    "result": "escalated to human",
+    "step": 1,
+    "t_ms": 3389.6
+  },
+  {
+    "stage": "placement",
+    "placement": "stories_9x16",
+    "observation": null,
+    "issues": [
+      {
+        "code": "aspect_mismatch",
+        "detail": "source 1920x1080"
+      }
+    ],
+    "decision": {
+      "action": "smart_crop",
+      "args": {
+        "strategy": "all"
+      },
+      "reason": "aspect differs: crop around faces, logo, text and subject"
+    },
+    "result": {
+      "tool": "smart_crop",
+      "args": {
+        "strategy": "all"
+      },
+      "transform": {
+        "kind": "crop",
+        "rect": [
+          677.9,
+          0.0,
+          607.5,
+          1080.0
+        ]
+      },
+      "keep_box_fits_safe_zone": false,
+      "new_issues": [
+        "face_cut",
+        "text_cut"
+      ]
+    },
+    "step": 2,
+    "t_ms": 3411.1
+  },
+  {
+    "stage": "placement",
+    "placement": "stories_9x16",
+    "observation": {
+      "faces": [
+        {
+          "box": [
+            1217.8,
+            423.3,
+            241.2,
+            284.8
+          ],
+          "kept": 0.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            1180.6,
+            434.5,
+            263.1,
+            326.8
+          ],
+          "kept": 0.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            1143.5,
+            449.4,
+            281.2,
+            341.3
+          ],
+          "kept": 0.0,
+          "under_ui": 0.0
+        }
+      ],
+      "logo": null,
+      "text": [
+        {
+          "box": [
+            -1077.2,
+            700.4,
+            1621.3,
+            120.9
+          ],
+          "kept": 0.336,
+          "under_ui": 0.119
+        },
+        {
+          "box": [
+            -1077.2,
+            700.4,
+            1617.8,
+            120.9
+          ],
+          "kept": 0.334,
+          "under_ui": 0.12
+        },
+        {
+          "box": [
+            -1077.2,
+            700.4,
+            1617.8,
+            120.9
+          ],
+          "kept": 0.334,
+          "under_ui": 0.12
+        }
+      ],
+      "redetected_faces": 0,
+      "redetected_text_boxes": 0
+    },
+    "issues": [
+      {
+        "code": "face_cut",
+        "detail": "face 100% outside the frame"
+      },
+      {
+        "code": "text_cut",
+        "detail": "text 66% outside the frame"
+      }
+    ],
+    "decision": {
+      "action": "smart_crop",
+      "args": {
+        "strategy": "priority"
+      },
+      "reason": "full crop failed: keep faces and logo first, let text/subject edges go"
+    },
+    "result": {
+      "tool": "smart_crop",
+      "args": {
+        "strategy": "priority"
+      },
+      "transform": {
+        "kind": "crop",
+        "rect": [
+          1103.3,
+          0.0,
+          607.5,
+          1080.0
+        ]
+      },
+      "keep_box_fits_safe_zone": true,
+      "new_issues": [
+        "text_cut"
+      ]
+    },
+    "step": 3,
+    "t_ms": 3432.6
+  },
+  {
+    "stage": "placement",
+    "placement": "stories_9x16",
+    "observation": {
+      "faces": [
+        {
+          "box": [
+            461.5,
+            423.3,
+            241.2,
+            284.8
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            424.4,
+            434.5,
+            263.1,
+            326.8
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            387.2,
+            449.4,
+            281.2,
+            341.3
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        }
+      ],
+      "logo": null,
+      "text": [
+        {
+          "box": [
+            -1833.4,
+            700.4,
+            1621.3,
+            120.9
+          ],
+          "kept": 0.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            -1833.4,
+            700.4,
+            1617.8,
+            120.9
+          ],
+          "kept": 0.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            -1833.4,
+            700.4,
+            1617.8,
+            120.9
+          ],
+          "kept": 0.0,
+          "under_ui": 0.0
+        }
+      ],
+      "redetected_faces": 1,
+      "redetected_text_boxes": 0
+    },
+    "issues": [
+      {
+        "code": "text_cut",
+        "detail": "text 100% outside the frame"
+      }
+    ],
+    "decision": {
+      "action": "fit_into_safe_zone",
+      "args": {},
+      "reason": "crops cannot keep it all in the safe zone: shrink into the safe zone on a blurred backdrop"
+    },
+    "result": {
+      "tool": "fit_into_safe_zone",
+      "args": {},
+      "transform": {
+        "kind": "fit",
+        "scale": 0.495,
+        "offset": [
+          64.8,
+          635.1
+        ]
+      },
+      "keep_box_fits_safe_zone": true,
+      "new_issues": []
+    },
+    "step": 4,
+    "t_ms": 3471.9
+  },
+  {
+    "stage": "placement",
+    "placement": "stories_9x16",
+    "observation": {
+      "faces": [
+        {
+          "box": [
+            739.4,
+            753.0,
+            67.2,
+            79.3
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            729.1,
+            756.1,
+            73.3,
+            91.0
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            718.7,
+            760.2,
+            78.3,
+            95.0
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        }
+      ],
+      "logo": null,
+      "text": [
+        {
+          "box": [
+            100.4,
+            830.1,
+            451.4,
+            33.7
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            100.4,
+            830.1,
+            450.4,
+            33.7
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            100.4,
+            830.1,
+            450.4,
+            33.7
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        }
+      ],
+      "redetected_faces": 1,
+      "redetected_text_boxes": 0
+    },
+    "issues": [],
+    "decision": {
+      "action": "accept",
+      "args": {},
+      "reason": "candidate passes every placement check"
+    },
+    "result": "accepted",
+    "step": 5,
+    "t_ms": 3471.9
+  },
+  {
+    "stage": "placement",
+    "placement": "stories_9x16",
+    "observation": null,
+    "issues": [
+      {
+        "code": "aspect_mismatch",
+        "detail": "source 1920x1080"
+      }
+    ],
+    "decision": {
+      "action": "smart_crop",
+      "args": {
+        "strategy": "all"
+      },
+      "reason": "aspect differs: crop around faces, logo, text and subject"
+    },
+    "result": {
+      "tool": "smart_crop",
+      "args": {
+        "strategy": "all"
+      },
+      "transform": {
+        "kind": "crop",
+        "rect": [
+          603.5,
+          0.0,
+          607.5,
+          1080.0
+        ]
+      },
+      "keep_box_fits_safe_zone": false,
+      "new_issues": []
+    },
+    "step": 6,
+    "t_ms": 3496.6
+  },
+  {
+    "stage": "placement",
+    "placement": "stories_9x16",
+    "observation": {
+      "faces": [],
+      "logo": null,
+      "text": [],
+      "subject": {
+        "box": [
+          -125.7,
+          221.9,
+          1331.2,
+          1058.1
+        ],
+        "kept": 0.811
+      },
+      "redetected_faces": 0,
+      "redetected_text_boxes": 0
+    },
+    "issues": [],
+    "decision": {
+      "action": "accept",
+      "args": {},
+      "reason": "candidate passes every placement check"
+    },
+    "result": "accepted",
+    "step": 7,
+    "t_ms": 3496.6
+  },
+  {
+    "stage": "placement",
+    "placement": "stories_9x16",
+    "observation": null,
+    "issues": [
+      {
+        "code": "aspect_mismatch",
+        "detail": "source 1920x1080"
+      }
+    ],
+    "decision": {
+      "action": "smart_crop",
+      "args": {
+        "strategy": "all"
+      },
+      "reason": "aspect differs: crop around faces, logo, text and subject"
+    },
+    "result": {
+      "tool": "smart_crop",
+      "args": {
+        "strategy": "all"
+      },
+      "transform": {
+        "kind": "crop",
+        "rect": [
+          215.3,
+          0.0,
+          607.5,
+          1080.0
+        ]
+      },
+      "keep_box_fits_safe_zone": false,
+      "new_issues": [
+        "logo_cut",
+        "logo_in_ui_zone",
+        "text_cut",
+        "subject_cut"
+      ]
+    },
+    "step": 8,
+    "t_ms": 3596.0
+  },
+  {
+    "stage": "placement",
+    "placement": "stories_9x16",
+    "observation": {
+      "faces": [],
+      "logo": {
+        "box": [
+          -331.2,
+          1598.2,
+          748.4,
+          288.0
+        ],
+        "kept": 0.557,
+        "under_ui": 1.0,
+        "redetected": false
+      },
+      "text": [
+        {
+          "box": [
+            1281.2,
+            707.6,
+            181.3,
+            85.3
+          ],
+          "kept": 0.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            1281.2,
+            707.6,
+            181.3,
+            85.3
+          ],
+          "kept": 0.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            1281.2,
+            707.6,
+            181.3,
+            85.3
+          ],
+          "kept": 0.0,
+          "under_ui": 0.0
+        }
+      ],
+      "subject": {
+        "box": [
+          -382.8,
+          1595.7,
+          776.5,
+          324.3
+        ],
+        "kept": 0.507
+      },
+      "redetected_faces": 0,
+      "redetected_text_boxes": 0
+    },
+    "issues": [
+      {
+        "code": "logo_cut",
+        "detail": "logo 44% outside the frame"
+      },
+      {
+        "code": "logo_in_ui_zone",
+        "detail": "logo 100% under platform UI"
+      },
+      {
+        "code": "text_cut",
+        "detail": "text 100% outside the frame"
+      },
+      {
+        "code": "subject_cut",
+        "detail": "main subject 49% outside the frame"
+      }
+    ],
+    "decision": {
+      "action": "smart_crop",
+      "args": {
+        "strategy": "priority"
+      },
+      "reason": "full crop failed: keep faces and logo first, let text/subject edges go"
+    },
+    "result": {
+      "tool": "smart_crop",
+      "args": {
+        "strategy": "priority"
+      },
+      "transform": {
+        "kind": "crop",
+        "rect": [
+          0.0,
+          0.0,
+          607.5,
+          1080.0
+        ]
+      },
+      "keep_box_fits_safe_zone": true,
+      "new_issues": [
+        "logo_in_ui_zone",
+        "text_cut"
+      ]
+    },
+    "step": 9,
+    "t_ms": 3631.6
+  },
+  {
+    "stage": "placement",
+    "placement": "stories_9x16",
+    "observation": {
+      "faces": [],
+      "logo": {
+        "box": [
+          51.6,
+          1598.2,
+          748.4,
+          288.0
+        ],
+        "kept": 1.0,
+        "under_ui": 1.0,
+        "redetected": true
+      },
+      "text": [
+        {
+          "box": [
+            1664.0,
+            707.6,
+            181.3,
+            85.3
+          ],
+          "kept": 0.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            1664.0,
+            707.6,
+            181.3,
+            85.3
+          ],
+          "kept": 0.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            1664.0,
+            707.6,
+            181.3,
+            85.3
+          ],
+          "kept": 0.0,
+          "under_ui": 0.0
+        }
+      ],
+      "subject": {
+        "box": [
+          0.0,
+          1595.7,
+          776.5,
+          324.3
+        ],
+        "kept": 1.0
+      },
+      "redetected_faces": 0,
+      "redetected_text_boxes": 0
+    },
+    "issues": [
+      {
+        "code": "logo_in_ui_zone",
+        "detail": "logo 100% under platform UI"
+      },
+      {
+        "code": "text_cut",
+        "detail": "text 100% outside the frame"
+      }
+    ],
+    "decision": {
+      "action": "fit_into_safe_zone",
+      "args": {},
+      "reason": "crops cannot keep it all in the safe zone: shrink into the safe zone on a blurred backdrop"
+    },
+    "result": {
+      "tool": "fit_into_safe_zone",
+      "args": {},
+      "transform": {
+        "kind": "fit",
+        "scale": 0.495,
+        "offset": [
+          64.8,
+          635.1
+        ]
+      },
+      "keep_box_fits_safe_zone": true,
+      "new_issues": [
+        "text_too_small"
+      ]
+    },
+    "step": 10,
+    "t_ms": 3675.3
+  },
+  {
+    "stage": "placement",
+    "placement": "stories_9x16",
+    "observation": {
+      "faces": [],
+      "logo": {
+        "box": [
+          79.2,
+          1080.1,
+          208.4,
+          80.2
+        ],
+        "kept": 1.0,
+        "under_ui": 0.0,
+        "redetected": true
+      },
+      "text": [
+        {
+          "box": [
+            528.1,
+            832.1,
+            50.5,
+            23.8
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            528.1,
+            832.1,
+            50.5,
+            23.8
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            528.1,
+            832.1,
+            50.5,
+            23.8
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        }
+      ],
+      "subject": {
+        "box": [
+          64.8,
+          1079.4,
+          216.2,
+          90.3
+        ],
+        "kept": 1.0
+      },
+      "redetected_faces": 0,
+      "redetected_text_boxes": 0
+    },
+    "issues": [
+      {
+        "code": "text_too_small",
+        "detail": "tallest text line 24px, needs 24px"
+      }
+    ],
+    "decision": {
+      "action": "escalate",
+      "args": {},
+      "reason": "no tool left that fixes: text_too_small"
+    },
+    "result": "escalated to human",
+    "step": 11,
+    "t_ms": 3675.3
+  },
+  {
+    "stage": "placement",
+    "placement": "stories_9x16",
+    "observation": null,
+    "issues": [
+      {
+        "code": "aspect_mismatch",
+        "detail": "source 1920x1080"
+      }
+    ],
+    "decision": {
+      "action": "smart_crop",
+      "args": {
+        "strategy": "all"
+      },
+      "reason": "aspect differs: crop around faces, logo, text and subject"
+    },
+    "result": {
+      "tool": "smart_crop",
+      "args": {
+        "strategy": "all"
+      },
+      "transform": {
+        "kind": "crop",
+        "rect": [
+          634.7,
+          0.0,
+          607.5,
+          1080.0
+        ]
+      },
+      "keep_box_fits_safe_zone": false,
+      "new_issues": [
+        "subject_cut"
+      ]
+    },
+    "step": 12,
+    "t_ms": 3696.7
+  },
+  {
+    "stage": "placement",
+    "placement": "stories_9x16",
+    "observation": {
+      "faces": [],
+      "logo": null,
+      "text": [],
+      "subject": {
+        "box": [
+          -684.6,
+          0.0,
+          2449.1,
+          1595.7
+        ],
+        "kept": 0.441
+      },
+      "redetected_faces": 0,
+      "redetected_text_boxes": 0
+    },
+    "issues": [
+      {
+        "code": "subject_cut",
+        "detail": "main subject 56% outside the frame"
+      }
+    ],
+    "decision": {
+      "action": "smart_crop",
+      "args": {
+        "strategy": "priority"
+      },
+      "reason": "full crop failed: keep faces and logo first, let text/subject edges go"
+    },
+    "result": {
+      "tool": "smart_crop",
+      "args": {
+        "strategy": "priority"
+      },
+      "transform": {
+        "kind": "crop",
+        "rect": [
+          656.2,
+          0.0,
+          607.5,
+          1080.0
+        ]
+      },
+      "keep_box_fits_safe_zone": true,
+      "new_issues": [
+        "subject_cut"
+      ]
+    },
+    "step": 13,
+    "t_ms": 3717.6
+  },
+  {
+    "stage": "placement",
+    "placement": "stories_9x16",
+    "observation": {
+      "faces": [],
+      "logo": null,
+      "text": [],
+      "subject": {
+        "box": [
+          -722.8,
+          0.0,
+          2449.1,
+          1595.7
+        ],
+        "kept": 0.441
+      },
+      "redetected_faces": 0,
+      "redetected_text_boxes": 0
+    },
+    "issues": [
+      {
+        "code": "subject_cut",
+        "detail": "main subject 56% outside the frame"
+      }
+    ],
+    "decision": {
+      "action": "fit_into_safe_zone",
+      "args": {},
+      "reason": "crops cannot keep it all in the safe zone: shrink into the safe zone on a blurred backdrop"
+    },
+    "result": {
+      "tool": "fit_into_safe_zone",
+      "args": {},
+      "transform": {
+        "kind": "fit",
+        "scale": 0.495,
+        "offset": [
+          64.8,
+          635.1
+        ]
+      },
+      "keep_box_fits_safe_zone": true,
+      "new_issues": []
+    },
+    "step": 14,
+    "t_ms": 3758.7
+  },
+  {
+    "stage": "placement",
+    "placement": "stories_9x16",
+    "observation": {
+      "faces": [],
+      "logo": null,
+      "text": [],
+      "subject": {
+        "box": [
+          188.4,
+          635.1,
+          681.9,
+          444.3
+        ],
+        "kept": 1.0
+      },
+      "redetected_faces": 0,
+      "redetected_text_boxes": 0
+    },
+    "issues": [],
+    "decision": {
+      "action": "accept",
+      "args": {},
+      "reason": "candidate passes every placement check"
+    },
+    "result": "accepted",
+    "step": 15,
+    "t_ms": 3758.7
+  },
+  {
+    "stage": "placement",
+    "placement": "reels_9x16",
+    "observation": null,
+    "issues": [
+      {
+        "code": "aspect_mismatch",
+        "detail": "source 1920x1080"
+      }
+    ],
+    "decision": {
+      "action": "smart_crop",
+      "args": {
+        "strategy": "all"
+      },
+      "reason": "aspect differs: crop around faces, logo, text and subject"
+    },
+    "result": {
+      "tool": "smart_crop",
+      "args": {
+        "strategy": "all"
+      },
+      "transform": {
+        "kind": "crop",
+        "rect": [
+          708.2,
+          0.0,
+          607.5,
+          1080.0
+        ]
+      },
+      "keep_box_fits_safe_zone": false,
+      "new_issues": [
+        "face_cut",
+        "text_cut"
+      ]
+    },
+    "step": 16,
+    "t_ms": 9406.8
+  },
+  {
+    "stage": "placement",
+    "placement": "reels_9x16",
+    "observation": {
+      "faces": [
+        {
+          "box": [
+            1163.9,
+            423.3,
+            241.2,
+            284.8
+          ],
+          "kept": 0.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            1126.8,
+            434.5,
+            263.1,
+            326.8
+          ],
+          "kept": 0.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            1089.6,
+            449.4,
+            281.2,
+            341.3
+          ],
+          "kept": 0.0,
+          "under_ui": 0.0
+        }
+      ],
+      "logo": null,
+      "text": [
+        {
+          "box": [
+            -1131.0,
+            700.4,
+            1621.3,
+            120.9
+          ],
+          "kept": 0.302,
+          "under_ui": 0.132
+        },
+        {
+          "box": [
+            -1131.0,
+            700.4,
+            1617.8,
+            120.9
+          ],
+          "kept": 0.301,
+          "under_ui": 0.133
+        },
+        {
+          "box": [
+            -1131.0,
+            700.4,
+            1617.8,
+            120.9
+          ],
+          "kept": 0.301,
+          "under_ui": 0.133
+        }
+      ],
+      "redetected_faces": 0,
+      "redetected_text_boxes": 0
+    },
+    "issues": [
+      {
+        "code": "face_cut",
+        "detail": "face 100% outside the frame"
+      },
+      {
+        "code": "text_cut",
+        "detail": "text 70% outside the frame"
+      }
+    ],
+    "decision": {
+      "action": "smart_crop",
+      "args": {
+        "strategy": "priority"
+      },
+      "reason": "full crop failed: keep faces and logo first, let text/subject edges go"
+    },
+    "result": {
+      "tool": "smart_crop",
+      "args": {
+        "strategy": "priority"
+      },
+      "transform": {
+        "kind": "crop",
+        "rect": [
+          1133.7,
+          0.0,
+          607.5,
+          1080.0
+        ]
+      },
+      "keep_box_fits_safe_zone": true,
+      "new_issues": [
+        "text_cut"
+      ]
+    },
+    "step": 17,
+    "t_ms": 9428.3
+  },
+  {
+    "stage": "placement",
+    "placement": "reels_9x16",
+    "observation": {
+      "faces": [
+        {
+          "box": [
+            407.5,
+            423.3,
+            241.2,
+            284.8
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            370.3,
+            434.5,
+            263.1,
+            326.8
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            333.2,
+            449.4,
+            281.2,
+            341.3
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        }
+      ],
+      "logo": null,
+      "text": [
+        {
+          "box": [
+            -1887.5,
+            700.4,
+            1621.3,
+            120.9
+          ],
+          "kept": 0.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            -1887.5,
+            700.4,
+            1617.8,
+            120.9
+          ],
+          "kept": 0.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            -1887.5,
+            700.4,
+            1617.8,
+            120.9
+          ],
+          "kept": 0.0,
+          "under_ui": 0.0
+        }
+      ],
+      "redetected_faces": 1,
+      "redetected_text_boxes": 0
+    },
+    "issues": [
+      {
+        "code": "text_cut",
+        "detail": "text 100% outside the frame"
+      }
+    ],
+    "decision": {
+      "action": "fit_into_safe_zone",
+      "args": {},
+      "reason": "crops cannot keep it all in the safe zone: shrink into the safe zone on a blurred backdrop"
+    },
+    "result": {
+      "tool": "fit_into_safe_zone",
+      "args": {},
+      "transform": {
+        "kind": "fit",
+        "scale": 0.43875,
+        "offset": [
+          64.8,
+          521.5
+        ]
+      },
+      "keep_box_fits_safe_zone": true,
+      "new_issues": []
+    },
+    "step": 18,
+    "t_ms": 9463.9
+  },
+  {
+    "stage": "placement",
+    "placement": "reels_9x16",
+    "observation": {
+      "faces": [
+        {
+          "box": [
+            662.8,
+            626.0,
+            59.5,
+            70.3
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            653.6,
+            628.7,
+            64.9,
+            80.6
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            644.4,
+            632.4,
+            69.4,
+            84.2
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        }
+      ],
+      "logo": null,
+      "text": [
+        {
+          "box": [
+            96.4,
+            694.4,
+            400.1,
+            29.8
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            96.4,
+            694.4,
+            399.3,
+            29.8
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            96.4,
+            694.4,
+            399.3,
+            29.8
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        }
+      ],
+      "redetected_faces": 1,
+      "redetected_text_boxes": 0
+    },
+    "issues": [],
+    "decision": {
+      "action": "accept",
+      "args": {},
+      "reason": "candidate passes every placement check"
+    },
+    "result": "accepted",
+    "step": 19,
+    "t_ms": 9463.9
+  },
+  {
+    "stage": "placement",
+    "placement": "reels_9x16",
+    "observation": null,
+    "issues": [
+      {
+        "code": "aspect_mismatch",
+        "detail": "source 1920x1080"
+      }
+    ],
+    "decision": {
+      "action": "smart_crop",
+      "args": {
+        "strategy": "all"
+      },
+      "reason": "aspect differs: crop around faces, logo, text and subject"
+    },
+    "result": {
+      "tool": "smart_crop",
+      "args": {
+        "strategy": "all"
+      },
+      "transform": {
+        "kind": "crop",
+        "rect": [
+          633.8,
+          0.0,
+          607.5,
+          1080.0
+        ]
+      },
+      "keep_box_fits_safe_zone": false,
+      "new_issues": []
+    },
+    "step": 20,
+    "t_ms": 9485.7
+  },
+  {
+    "stage": "placement",
+    "placement": "reels_9x16",
+    "observation": {
+      "faces": [],
+      "logo": null,
+      "text": [],
+      "subject": {
+        "box": [
+          -179.6,
+          221.9,
+          1331.2,
+          1058.1
+        ],
+        "kept": 0.811
+      },
+      "redetected_faces": 0,
+      "redetected_text_boxes": 0
+    },
+    "issues": [],
+    "decision": {
+      "action": "accept",
+      "args": {},
+      "reason": "candidate passes every placement check"
+    },
+    "result": "accepted",
+    "step": 21,
+    "t_ms": 9485.7
+  },
+  {
+    "stage": "placement",
+    "placement": "reels_9x16",
+    "observation": null,
+    "issues": [
+      {
+        "code": "aspect_mismatch",
+        "detail": "source 1920x1080"
+      }
+    ],
+    "decision": {
+      "action": "smart_crop",
+      "args": {
+        "strategy": "all"
+      },
+      "reason": "aspect differs: crop around faces, logo, text and subject"
+    },
+    "result": {
+      "tool": "smart_crop",
+      "args": {
+        "strategy": "all"
+      },
+      "transform": {
+        "kind": "crop",
+        "rect": [
+          245.6,
+          0.0,
+          607.5,
+          1080.0
+        ]
+      },
+      "keep_box_fits_safe_zone": false,
+      "new_issues": [
+        "logo_cut",
+        "logo_in_ui_zone",
+        "text_cut",
+        "subject_cut"
+      ]
+    },
+    "step": 22,
+    "t_ms": 9587.7
+  },
+  {
+    "stage": "placement",
+    "placement": "reels_9x16",
+    "observation": {
+      "faces": [],
+      "logo": {
+        "box": [
+          -385.1,
+          1598.2,
+          748.4,
+          288.0
+        ],
+        "kept": 0.486,
+        "under_ui": 1.0,
+        "redetected": false
+      },
+      "text": [
+        {
+          "box": [
+            1227.4,
+            707.6,
+            181.3,
+            85.3
+          ],
+          "kept": 0.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            1227.4,
+            707.6,
+            181.3,
+            85.3
+          ],
+          "kept": 0.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            1227.4,
+            707.6,
+            181.3,
+            85.3
+          ],
+          "kept": 0.0,
+          "under_ui": 0.0
+        }
+      ],
+      "subject": {
+        "box": [
+          -436.6,
+          1595.7,
+          776.5,
+          324.3
+        ],
+        "kept": 0.438
+      },
+      "redetected_faces": 0,
+      "redetected_text_boxes": 0
+    },
+    "issues": [
+      {
+        "code": "logo_cut",
+        "detail": "logo 51% outside the frame"
+      },
+      {
+        "code": "logo_in_ui_zone",
+        "detail": "logo 100% under platform UI"
+      },
+      {
+        "code": "text_cut",
+        "detail": "text 100% outside the frame"
+      },
+      {
+        "code": "subject_cut",
+        "detail": "main subject 56% outside the frame"
+      }
+    ],
+    "decision": {
+      "action": "smart_crop",
+      "args": {
+        "strategy": "priority"
+      },
+      "reason": "full crop failed: keep faces and logo first, let text/subject edges go"
+    },
+    "result": {
+      "tool": "smart_crop",
+      "args": {
+        "strategy": "priority"
+      },
+      "transform": {
+        "kind": "crop",
+        "rect": [
+          0.0,
+          0.0,
+          607.5,
+          1080.0
+        ]
+      },
+      "keep_box_fits_safe_zone": true,
+      "new_issues": [
+        "logo_in_ui_zone",
+        "text_cut"
+      ]
+    },
+    "step": 23,
+    "t_ms": 9618.1
+  },
+  {
+    "stage": "placement",
+    "placement": "reels_9x16",
+    "observation": {
+      "faces": [],
+      "logo": {
+        "box": [
+          51.6,
+          1598.2,
+          748.4,
+          288.0
+        ],
+        "kept": 1.0,
+        "under_ui": 1.0,
+        "redetected": true
+      },
+      "text": [
+        {
+          "box": [
+            1664.0,
+            707.6,
+            181.3,
+            85.3
+          ],
+          "kept": 0.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            1664.0,
+            707.6,
+            181.3,
+            85.3
+          ],
+          "kept": 0.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            1664.0,
+            707.6,
+            181.3,
+            85.3
+          ],
+          "kept": 0.0,
+          "under_ui": 0.0
+        }
+      ],
+      "subject": {
+        "box": [
+          0.0,
+          1595.7,
+          776.5,
+          324.3
+        ],
+        "kept": 1.0
+      },
+      "redetected_faces": 0,
+      "redetected_text_boxes": 0
+    },
+    "issues": [
+      {
+        "code": "logo_in_ui_zone",
+        "detail": "logo 100% under platform UI"
+      },
+      {
+        "code": "text_cut",
+        "detail": "text 100% outside the frame"
+      }
+    ],
+    "decision": {
+      "action": "fit_into_safe_zone",
+      "args": {},
+      "reason": "crops cannot keep it all in the safe zone: shrink into the safe zone on a blurred backdrop"
+    },
+    "result": {
+      "tool": "fit_into_safe_zone",
+      "args": {},
+      "transform": {
+        "kind": "fit",
+        "scale": 0.43875,
+        "offset": [
+          64.8,
+          521.5
+        ]
+      },
+      "keep_box_fits_safe_zone": true,
+      "new_issues": [
+        "text_too_small"
+      ]
+    },
+    "step": 24,
+    "t_ms": 9663.6
+  },
+  {
+    "stage": "placement",
+    "placement": "reels_9x16",
+    "observation": {
+      "faces": [],
+      "logo": {
+        "box": [
+          77.5,
+          915.9,
+          184.7,
+          71.1
+        ],
+        "kept": 1.0,
+        "under_ui": 0.0,
+        "redetected": true
+      },
+      "text": [
+        {
+          "box": [
+            475.5,
+            696.1,
+            44.8,
+            21.1
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            475.5,
+            696.1,
+            44.8,
+            21.1
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            475.5,
+            696.1,
+            44.8,
+            21.1
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        }
+      ],
+      "subject": {
+        "box": [
+          64.8,
+          915.3,
+          191.6,
+          80.0
+        ],
+        "kept": 1.0
+      },
+      "redetected_faces": 0,
+      "redetected_text_boxes": 0
+    },
+    "issues": [
+      {
+        "code": "text_too_small",
+        "detail": "tallest text line 21px, needs 24px"
+      }
+    ],
+    "decision": {
+      "action": "escalate",
+      "args": {},
+      "reason": "no tool left that fixes: text_too_small"
+    },
+    "result": "escalated to human",
+    "step": 25,
+    "t_ms": 9663.6
+  },
+  {
+    "stage": "placement",
+    "placement": "reels_9x16",
+    "observation": null,
+    "issues": [
+      {
+        "code": "aspect_mismatch",
+        "detail": "source 1920x1080"
+      }
+    ],
+    "decision": {
+      "action": "smart_crop",
+      "args": {
+        "strategy": "all"
+      },
+      "reason": "aspect differs: crop around faces, logo, text and subject"
+    },
+    "result": {
+      "tool": "smart_crop",
+      "args": {
+        "strategy": "all"
+      },
+      "transform": {
+        "kind": "crop",
+        "rect": [
+          665.0,
+          0.0,
+          607.5,
+          1080.0
+        ]
+      },
+      "keep_box_fits_safe_zone": false,
+      "new_issues": [
+        "subject_cut"
+      ]
+    },
+    "step": 26,
+    "t_ms": 9684.8
+  },
+  {
+    "stage": "placement",
+    "placement": "reels_9x16",
+    "observation": {
+      "faces": [],
+      "logo": null,
+      "text": [],
+      "subject": {
+        "box": [
+          -738.5,
+          0.0,
+          2449.1,
+          1595.7
+        ],
+        "kept": 0.441
+      },
+      "redetected_faces": 0,
+      "redetected_text_boxes": 0
+    },
+    "issues": [
+      {
+        "code": "subject_cut",
+        "detail": "main subject 56% outside the frame"
+      }
+    ],
+    "decision": {
+      "action": "smart_crop",
+      "args": {
+        "strategy": "priority"
+      },
+      "reason": "full crop failed: keep faces and logo first, let text/subject edges go"
+    },
+    "result": {
+      "tool": "smart_crop",
+      "args": {
+        "strategy": "priority"
+      },
+      "transform": {
+        "kind": "crop",
+        "rect": [
+          686.6,
+          0.0,
+          607.5,
+          1080.0
+        ]
+      },
+      "keep_box_fits_safe_zone": true,
+      "new_issues": [
+        "subject_cut"
+      ]
+    },
+    "step": 27,
+    "t_ms": 9706.9
+  },
+  {
+    "stage": "placement",
+    "placement": "reels_9x16",
+    "observation": {
+      "faces": [],
+      "logo": null,
+      "text": [],
+      "subject": {
+        "box": [
+          -776.9,
+          0.0,
+          2449.1,
+          1595.7
+        ],
+        "kept": 0.441
+      },
+      "redetected_faces": 0,
+      "redetected_text_boxes": 0
+    },
+    "issues": [
+      {
+        "code": "subject_cut",
+        "detail": "main subject 56% outside the frame"
+      }
+    ],
+    "decision": {
+      "action": "fit_into_safe_zone",
+      "args": {},
+      "reason": "crops cannot keep it all in the safe zone: shrink into the safe zone on a blurred backdrop"
+    },
+    "result": {
+      "tool": "fit_into_safe_zone",
+      "args": {},
+      "transform": {
+        "kind": "fit",
+        "scale": 0.43875,
+        "offset": [
+          64.8,
+          521.5
+        ]
+      },
+      "keep_box_fits_safe_zone": true,
+      "new_issues": []
+    },
+    "step": 28,
+    "t_ms": 9743.0
+  },
+  {
+    "stage": "placement",
+    "placement": "reels_9x16",
+    "observation": {
+      "faces": [],
+      "logo": null,
+      "text": [],
+      "subject": {
+        "box": [
+          174.3,
+          521.5,
+          604.4,
+          393.8
+        ],
+        "kept": 1.0
+      },
+      "redetected_faces": 0,
+      "redetected_text_boxes": 0
+    },
+    "issues": [],
+    "decision": {
+      "action": "accept",
+      "args": {},
+      "reason": "candidate passes every placement check"
+    },
+    "result": "accepted",
+    "step": 29,
+    "t_ms": 9743.0
+  },
+  {
+    "stage": "placement",
+    "placement": "feed_1x1",
+    "observation": null,
+    "issues": [
+      {
+        "code": "aspect_mismatch",
+        "detail": "source 1920x1080"
+      }
+    ],
+    "decision": {
+      "action": "smart_crop",
+      "args": {
+        "strategy": "all"
+      },
+      "reason": "aspect differs: crop around faces, logo, text and subject"
+    },
+    "result": {
+      "tool": "smart_crop",
+      "args": {
+        "strategy": "all"
+      },
+      "transform": {
+        "kind": "crop",
+        "rect": [
+          441.6,
+          0.0,
+          1080.0,
+          1080.0
+        ]
+      },
+      "keep_box_fits_safe_zone": false,
+      "new_issues": [
+        "text_cut"
+      ]
+    },
+    "step": 30,
+    "t_ms": 15326.9
+  },
+  {
+    "stage": "placement",
+    "placement": "feed_1x1",
+    "observation": {
+      "faces": [
+        {
+          "box": [
+            921.3,
+            238.1,
+            135.7,
+            160.2
+          ],
+          "kept": 1.0,
+          "under_ui": 0.069
+        },
+        {
+          "box": [
+            900.4,
+            244.4,
+            148.0,
+            183.8
+          ],
+          "kept": 1.0,
+          "under_ui": 0.005
+        },
+        {
+          "box": [
+            879.5,
+            252.8,
+            158.2,
+            192.0
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        }
+      ],
+      "logo": null,
+      "text": [
+        {
+          "box": [
+            -369.6,
+            394.0,
+            912.0,
+            68.0
+          ],
+          "kept": 0.595,
+          "under_ui": 0.06
+        },
+        {
+          "box": [
+            -369.6,
+            394.0,
+            910.0,
+            68.0
+          ],
+          "kept": 0.594,
+          "under_ui": 0.06
+        },
+        {
+          "box": [
+            -369.6,
+            394.0,
+            910.0,
+            68.0
+          ],
+          "kept": 0.594,
+          "under_ui": 0.06
+        }
+      ],
+      "redetected_faces": 1,
+      "redetected_text_boxes": 0
+    },
+    "issues": [
+      {
+        "code": "text_cut",
+        "detail": "text 41% outside the frame"
+      }
+    ],
+    "decision": {
+      "action": "smart_crop",
+      "args": {
+        "strategy": "priority"
+      },
+      "reason": "full crop failed: keep faces and logo first, let text/subject edges go"
+    },
+    "result": {
+      "tool": "smart_crop",
+      "args": {
+        "strategy": "priority"
+      },
+      "transform": {
+        "kind": "crop",
+        "rect": [
+          840.0,
+          0.0,
+          1080.0,
+          1080.0
+        ]
+      },
+      "keep_box_fits_safe_zone": true,
+      "new_issues": [
+        "text_cut",
+        "text_in_ui_zone"
+      ]
+    },
+    "step": 31,
+    "t_ms": 15345.4
+  },
+  {
+    "stage": "placement",
+    "placement": "feed_1x1",
+    "observation": {
+      "faces": [
+        {
+          "box": [
+            522.9,
+            238.1,
+            135.7,
+            160.2
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            502.0,
+            244.4,
+            148.0,
+            183.8
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            481.1,
+            252.8,
+            158.2,
+            192.0
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        }
+      ],
+      "logo": null,
+      "text": [
+        {
+          "box": [
+            -768.0,
+            394.0,
+            912.0,
+            68.0
+          ],
+          "kept": 0.158,
+          "under_ui": 0.225
+        },
+        {
+          "box": [
+            -768.0,
+            394.0,
+            910.0,
+            68.0
+          ],
+          "kept": 0.156,
+          "under_ui": 0.228
+        },
+        {
+          "box": [
+            -768.0,
+            394.0,
+            910.0,
+            68.0
+          ],
+          "kept": 0.156,
+          "under_ui": 0.228
+        }
+      ],
+      "redetected_faces": 1,
+      "redetected_text_boxes": 0
+    },
+    "issues": [
+      {
+        "code": "text_cut",
+        "detail": "text 84% outside the frame"
+      },
+      {
+        "code": "text_in_ui_zone",
+        "detail": "text 23% under platform UI"
+      }
+    ],
+    "decision": {
+      "action": "fit_into_safe_zone",
+      "args": {},
+      "reason": "crops cannot keep it all in the safe zone: shrink into the safe zone on a blurred backdrop"
+    },
+    "result": {
+      "tool": "fit_into_safe_zone",
+      "args": {},
+      "transform": {
+        "kind": "fit",
+        "scale": 0.52875,
+        "offset": [
+          32.4,
+          254.5
+        ]
+      },
+      "keep_box_fits_safe_zone": true,
+      "new_issues": []
+    },
+    "step": 32,
+    "t_ms": 15372.5
+  },
+  {
+    "stage": "placement",
+    "placement": "feed_1x1",
+    "observation": {
+      "faces": [
+        {
+          "box": [
+            753.0,
+            380.4,
+            71.8,
+            84.7
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            742.0,
+            383.7,
+            78.3,
+            97.2
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            730.9,
+            388.2,
+            83.6,
+            101.5
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        }
+      ],
+      "logo": null,
+      "text": [
+        {
+          "box": [
+            70.5,
+            462.8,
+            482.2,
+            36.0
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            70.5,
+            462.8,
+            481.2,
+            36.0
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            70.5,
+            462.8,
+            481.2,
+            36.0
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        }
+      ],
+      "redetected_faces": 1,
+      "redetected_text_boxes": 0
+    },
+    "issues": [],
+    "decision": {
+      "action": "accept",
+      "args": {},
+      "reason": "candidate passes every placement check"
+    },
+    "result": "accepted",
+    "step": 33,
+    "t_ms": 15372.6
+  },
+  {
+    "stage": "placement",
+    "placement": "feed_1x1",
+    "observation": null,
+    "issues": [
+      {
+        "code": "aspect_mismatch",
+        "detail": "source 1920x1080"
+      }
+    ],
+    "decision": {
+      "action": "smart_crop",
+      "args": {
+        "strategy": "all"
+      },
+      "reason": "aspect differs: crop around faces, logo, text and subject"
+    },
+    "result": {
+      "tool": "smart_crop",
+      "args": {
+        "strategy": "all"
+      },
+      "transform": {
+        "kind": "crop",
+        "rect": [
+          367.2,
+          0.0,
+          1080.0,
+          1080.0
+        ]
+      },
+      "keep_box_fits_safe_zone": true,
+      "new_issues": []
+    },
+    "step": 34,
+    "t_ms": 15392.9
+  },
+  {
+    "stage": "placement",
+    "placement": "feed_1x1",
+    "observation": {
+      "faces": [],
+      "logo": null,
+      "text": [],
+      "subject": {
+        "box": [
+          165.6,
+          124.8,
+          748.8,
+          595.2
+        ],
+        "kept": 1.0
+      },
+      "redetected_faces": 0,
+      "redetected_text_boxes": 0
+    },
+    "issues": [],
+    "decision": {
+      "action": "accept",
+      "args": {},
+      "reason": "candidate passes every placement check"
+    },
+    "result": "accepted",
+    "step": 35,
+    "t_ms": 15393.0
+  },
+  {
+    "stage": "placement",
+    "placement": "feed_1x1",
+    "observation": null,
+    "issues": [
+      {
+        "code": "aspect_mismatch",
+        "detail": "source 1920x1080"
+      }
+    ],
+    "decision": {
+      "action": "smart_crop",
+      "args": {
+        "strategy": "all"
+      },
+      "reason": "aspect differs: crop around faces, logo, text and subject"
+    },
+    "result": {
+      "tool": "smart_crop",
+      "args": {
+        "strategy": "all"
+      },
+      "transform": {
+        "kind": "crop",
+        "rect": [
+          0.0,
+          0.0,
+          1080.0,
+          1080.0
+        ]
+      },
+      "keep_box_fits_safe_zone": false,
+      "new_issues": [
+        "logo_in_ui_zone"
+      ]
+    },
+    "step": 36,
+    "t_ms": 15418.5
+  },
+  {
+    "stage": "placement",
+    "placement": "feed_1x1",
+    "observation": {
+      "faces": [],
+      "logo": {
+        "box": [
+          29.0,
+          899.0,
+          421.0,
+          162.0
+        ],
+        "kept": 1.0,
+        "under_ui": 0.09,
+        "redetected": true
+      },
+      "text": [
+        {
+          "box": [
+            936.0,
+            398.0,
+            102.0,
+            48.0
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            936.0,
+            398.0,
+            102.0,
+            48.0
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            936.0,
+            398.0,
+            102.0,
+            48.0
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        }
+      ],
+      "subject": {
+        "box": [
+          0.0,
+          897.6,
+          436.8,
+          182.4
+        ],
+        "kept": 1.0
+      },
+      "redetected_faces": 0,
+      "redetected_text_boxes": 0
+    },
+    "issues": [
+      {
+        "code": "logo_in_ui_zone",
+        "detail": "logo 9% under platform UI"
+      }
+    ],
+    "decision": {
+      "action": "smart_crop",
+      "args": {
+        "strategy": "priority"
+      },
+      "reason": "full crop failed: keep faces and logo first, let text/subject edges go"
+    },
+    "result": {
+      "tool": "smart_crop",
+      "args": {
+        "strategy": "priority"
+      },
+      "transform": {
+        "kind": "crop",
+        "rect": [
+          0.0,
+          0.0,
+          1080.0,
+          1080.0
+        ]
+      },
+      "keep_box_fits_safe_zone": true,
+      "new_issues": [
+        "logo_in_ui_zone"
+      ]
+    },
+    "step": 37,
+    "t_ms": 15442.3
+  },
+  {
+    "stage": "placement",
+    "placement": "feed_1x1",
+    "observation": {
+      "faces": [],
+      "logo": {
+        "box": [
+          29.0,
+          899.0,
+          421.0,
+          162.0
+        ],
+        "kept": 1.0,
+        "under_ui": 0.09,
+        "redetected": true
+      },
+      "text": [
+        {
+          "box": [
+            936.0,
+            398.0,
+            102.0,
+            48.0
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            936.0,
+            398.0,
+            102.0,
+            48.0
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            936.0,
+            398.0,
+            102.0,
+            48.0
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        }
+      ],
+      "subject": {
+        "box": [
+          0.0,
+          897.6,
+          436.8,
+          182.4
+        ],
+        "kept": 1.0
+      },
+      "redetected_faces": 0,
+      "redetected_text_boxes": 0
+    },
+    "issues": [
+      {
+        "code": "logo_in_ui_zone",
+        "detail": "logo 9% under platform UI"
+      }
+    ],
+    "decision": {
+      "action": "fit_into_safe_zone",
+      "args": {},
+      "reason": "crops cannot keep it all in the safe zone: shrink into the safe zone on a blurred backdrop"
+    },
+    "result": {
+      "tool": "fit_into_safe_zone",
+      "args": {},
+      "transform": {
+        "kind": "fit",
+        "scale": 0.52875,
+        "offset": [
+          32.4,
+          254.5
+        ]
+      },
+      "keep_box_fits_safe_zone": true,
+      "new_issues": []
+    },
+    "step": 38,
+    "t_ms": 15470.9
+  },
+  {
+    "stage": "placement",
+    "placement": "feed_1x1",
+    "observation": {
+      "faces": [],
+      "logo": {
+        "box": [
+          47.7,
+          729.8,
+          222.6,
+          85.7
+        ],
+        "kept": 1.0,
+        "under_ui": 0.0,
+        "redetected": true
+      },
+      "text": [
+        {
+          "box": [
+            527.3,
+            464.9,
+            53.9,
+            25.4
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            527.3,
+            464.9,
+            53.9,
+            25.4
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            527.3,
+            464.9,
+            53.9,
+            25.4
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        }
+      ],
+      "subject": {
+        "box": [
+          32.4,
+          729.1,
+          231.0,
+          96.4
+        ],
+        "kept": 1.0
+      },
+      "redetected_faces": 0,
+      "redetected_text_boxes": 0
+    },
+    "issues": [],
+    "decision": {
+      "action": "accept",
+      "args": {},
+      "reason": "candidate passes every placement check"
+    },
+    "result": "accepted",
+    "step": 39,
+    "t_ms": 15470.9
+  },
+  {
+    "stage": "placement",
+    "placement": "feed_1x1",
+    "observation": null,
+    "issues": [
+      {
+        "code": "aspect_mismatch",
+        "detail": "source 1920x1080"
+      }
+    ],
+    "decision": {
+      "action": "smart_crop",
+      "args": {
+        "strategy": "all"
+      },
+      "reason": "aspect differs: crop around faces, logo, text and subject"
+    },
+    "result": {
+      "tool": "smart_crop",
+      "args": {
+        "strategy": "all"
+      },
+      "transform": {
+        "kind": "crop",
+        "rect": [
+          398.4,
+          0.0,
+          1080.0,
+          1080.0
+        ]
+      },
+      "keep_box_fits_safe_zone": false,
+      "new_issues": []
+    },
+    "step": 40,
+    "t_ms": 15489.3
+  },
+  {
+    "stage": "placement",
+    "placement": "feed_1x1",
+    "observation": {
+      "faces": [],
+      "logo": null,
+      "text": [],
+      "subject": {
+        "box": [
+          -148.8,
+          0.0,
+          1377.6,
+          897.6
+        ],
+        "kept": 0.784
+      },
+      "redetected_faces": 0,
+      "redetected_text_boxes": 0
+    },
+    "issues": [],
+    "decision": {
+      "action": "accept",
+      "args": {},
+      "reason": "candidate passes every placement check"
+    },
+    "result": "accepted",
+    "step": 41,
+    "t_ms": 15489.3
+  },
+  {
+    "stage": "placement",
+    "placement": "youtube_16x9",
+    "observation": null,
+    "issues": [],
+    "decision": {
+      "action": "resize",
+      "args": {},
+      "reason": "aspect already matches: plain resize"
+    },
+    "result": {
+      "tool": "resize",
+      "args": {},
+      "transform": {
+        "kind": "crop",
+        "rect": [
+          0,
+          0,
+          1920,
+          1080
+        ]
+      },
+      "keep_box_fits_safe_zone": true,
+      "new_issues": []
+    },
+    "step": 42,
+    "t_ms": 18031.2
+  },
+  {
+    "stage": "placement",
+    "placement": "youtube_16x9",
+    "observation": {
+      "faces": [
+        {
+          "box": [
+            1362.9,
+            238.1,
+            135.7,
+            160.2
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            1342.0,
+            244.4,
+            148.0,
+            183.8
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            1321.1,
+            252.8,
+            158.2,
+            192.0
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        }
+      ],
+      "logo": null,
+      "text": [
+        {
+          "box": [
+            72.0,
+            394.0,
+            912.0,
+            68.0
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            72.0,
+            394.0,
+            910.0,
+            68.0
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            72.0,
+            394.0,
+            910.0,
+            68.0
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        }
+      ],
+      "redetected_faces": 1,
+      "redetected_text_boxes": 0
+    },
+    "issues": [],
+    "decision": {
+      "action": "accept",
+      "args": {},
+      "reason": "candidate passes every placement check"
+    },
+    "result": "accepted",
+    "step": 43,
+    "t_ms": 18031.2
+  },
+  {
+    "stage": "placement",
+    "placement": "youtube_16x9",
+    "observation": null,
+    "issues": [],
+    "decision": {
+      "action": "resize",
+      "args": {},
+      "reason": "aspect already matches: plain resize"
+    },
+    "result": {
+      "tool": "resize",
+      "args": {},
+      "transform": {
+        "kind": "crop",
+        "rect": [
+          0,
+          0,
+          1920,
+          1080
+        ]
+      },
+      "keep_box_fits_safe_zone": true,
+      "new_issues": []
+    },
+    "step": 44,
+    "t_ms": 18046.8
+  },
+  {
+    "stage": "placement",
+    "placement": "youtube_16x9",
+    "observation": {
+      "faces": [],
+      "logo": null,
+      "text": [],
+      "subject": {
+        "box": [
+          532.8,
+          124.8,
+          748.8,
+          595.2
+        ],
+        "kept": 1.0
+      },
+      "redetected_faces": 0,
+      "redetected_text_boxes": 0
+    },
+    "issues": [],
+    "decision": {
+      "action": "accept",
+      "args": {},
+      "reason": "candidate passes every placement check"
+    },
+    "result": "accepted",
+    "step": 45,
+    "t_ms": 18046.9
+  },
+  {
+    "stage": "placement",
+    "placement": "youtube_16x9",
+    "observation": null,
+    "issues": [],
+    "decision": {
+      "action": "resize",
+      "args": {},
+      "reason": "aspect already matches: plain resize"
+    },
+    "result": {
+      "tool": "resize",
+      "args": {},
+      "transform": {
+        "kind": "crop",
+        "rect": [
+          0,
+          0,
+          1920,
+          1080
+        ]
+      },
+      "keep_box_fits_safe_zone": true,
+      "new_issues": [
+        "logo_in_ui_zone"
+      ]
+    },
+    "step": 46,
+    "t_ms": 18071.3
+  },
+  {
+    "stage": "placement",
+    "placement": "youtube_16x9",
+    "observation": {
+      "faces": [],
+      "logo": {
+        "box": [
+          29.0,
+          899.0,
+          421.0,
+          162.0
+        ],
+        "kept": 1.0,
+        "under_ui": 1.0,
+        "redetected": true
+      },
+      "text": [
+        {
+          "box": [
+            936.0,
+            398.0,
+            102.0,
+            48.0
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            936.0,
+            398.0,
+            102.0,
+            48.0
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            936.0,
+            398.0,
+            102.0,
+            48.0
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        }
+      ],
+      "subject": {
+        "box": [
+          0.0,
+          897.6,
+          436.8,
+          182.4
+        ],
+        "kept": 1.0
+      },
+      "redetected_faces": 0,
+      "redetected_text_boxes": 0
+    },
+    "issues": [
+      {
+        "code": "logo_in_ui_zone",
+        "detail": "logo 100% under platform UI"
+      }
+    ],
+    "decision": {
+      "action": "fit_into_safe_zone",
+      "args": {},
+      "reason": "crops cannot keep it all in the safe zone: shrink into the safe zone on a blurred backdrop"
+    },
+    "result": {
+      "tool": "fit_into_safe_zone",
+      "args": {},
+      "transform": {
+        "kind": "fit",
+        "scale": 0.74,
+        "offset": [
+          249.6,
+          86.4
+        ]
+      },
+      "keep_box_fits_safe_zone": true,
+      "new_issues": []
+    },
+    "step": 47,
+    "t_ms": 18109.8
+  },
+  {
+    "stage": "placement",
+    "placement": "youtube_16x9",
+    "observation": {
+      "faces": [],
+      "logo": {
+        "box": [
+          271.1,
+          751.7,
+          311.5,
+          119.9
+        ],
+        "kept": 1.0,
+        "under_ui": 0.0,
+        "redetected": true
+      },
+      "text": [
+        {
+          "box": [
+            942.2,
+            380.9,
+            75.5,
+            35.5
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            942.2,
+            380.9,
+            75.5,
+            35.5
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            942.2,
+            380.9,
+            75.5,
+            35.5
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        }
+      ],
+      "subject": {
+        "box": [
+          249.6,
+          750.6,
+          323.2,
+          135.0
+        ],
+        "kept": 1.0
+      },
+      "redetected_faces": 0,
+      "redetected_text_boxes": 0
+    },
+    "issues": [],
+    "decision": {
+      "action": "accept",
+      "args": {},
+      "reason": "candidate passes every placement check"
+    },
+    "result": "accepted",
+    "step": 48,
+    "t_ms": 18109.8
+  },
+  {
+    "stage": "placement",
+    "placement": "youtube_16x9",
+    "observation": null,
+    "issues": [],
+    "decision": {
+      "action": "resize",
+      "args": {},
+      "reason": "aspect already matches: plain resize"
+    },
+    "result": {
+      "tool": "resize",
+      "args": {},
+      "transform": {
+        "kind": "crop",
+        "rect": [
+          0,
+          0,
+          1920,
+          1080
+        ]
+      },
+      "keep_box_fits_safe_zone": true,
+      "new_issues": []
+    },
+    "step": 49,
+    "t_ms": 18129.1
+  },
+  {
+    "stage": "placement",
+    "placement": "youtube_16x9",
+    "observation": {
+      "faces": [],
+      "logo": null,
+      "text": [],
+      "subject": {
+        "box": [
+          249.6,
+          0.0,
+          1377.6,
+          897.6
+        ],
+        "kept": 1.0
+      },
+      "redetected_faces": 0,
+      "redetected_text_boxes": 0
+    },
+    "issues": [],
+    "decision": {
+      "action": "accept",
+      "args": {},
+      "reason": "candidate passes every placement check"
+    },
+    "result": "accepted",
+    "step": 50,
+    "t_ms": 18129.1
+  },
+  {
+    "stage": "placement",
+    "placement": "display_300x250",
+    "observation": null,
+    "issues": [
+      {
+        "code": "aspect_mismatch",
+        "detail": "source 1920x1080"
+      }
+    ],
+    "decision": {
+      "action": "smart_crop",
+      "args": {
+        "strategy": "all"
+      },
+      "reason": "aspect differs: crop around faces, logo, text and subject"
+    },
+    "result": {
+      "tool": "smart_crop",
+      "args": {
+        "strategy": "all"
+      },
+      "transform": {
+        "kind": "crop",
+        "rect": [
+          333.6,
+          0.0,
+          1296.0,
+          1080.0
+        ]
+      },
+      "keep_box_fits_safe_zone": false,
+      "new_issues": [
+        "text_cut"
+      ]
+    },
+    "step": 51,
+    "t_ms": 22074.3
+  },
+  {
+    "stage": "placement",
+    "placement": "display_300x250",
+    "observation": {
+      "faces": [
+        {
+          "box": [
+            238.3,
+            55.1,
+            31.4,
+            37.1
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            233.4,
+            56.6,
+            34.3,
+            42.5
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            228.6,
+            58.5,
+            36.6,
+            44.4
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        }
+      ],
+      "logo": null,
+      "text": [
+        {
+          "box": [
+            -60.6,
+            91.2,
+            211.1,
+            15.7
+          ],
+          "kept": 0.713,
+          "under_ui": 0.08
+        },
+        {
+          "box": [
+            -60.6,
+            91.2,
+            210.6,
+            15.7
+          ],
+          "kept": 0.713,
+          "under_ui": 0.08
+        },
+        {
+          "box": [
+            -60.6,
+            91.2,
+            210.6,
+            15.7
+          ],
+          "kept": 0.713,
+          "under_ui": 0.08
+        }
+      ],
+      "redetected_faces": 1,
+      "redetected_text_boxes": 0
+    },
+    "issues": [
+      {
+        "code": "text_cut",
+        "detail": "text 29% outside the frame"
+      }
+    ],
+    "decision": {
+      "action": "smart_crop",
+      "args": {
+        "strategy": "priority"
+      },
+      "reason": "full crop failed: keep faces and logo first, let text/subject edges go"
+    },
+    "result": {
+      "tool": "smart_crop",
+      "args": {
+        "strategy": "priority"
+      },
+      "transform": {
+        "kind": "crop",
+        "rect": [
+          624.0,
+          0.0,
+          1296.0,
+          1080.0
+        ]
+      },
+      "keep_box_fits_safe_zone": true,
+      "new_issues": [
+        "text_cut"
+      ]
+    },
+    "step": 52,
+    "t_ms": 22080.5
+  },
+  {
+    "stage": "placement",
+    "placement": "display_300x250",
+    "observation": {
+      "faces": [
+        {
+          "box": [
+            171.0,
+            55.1,
+            31.4,
+            37.1
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            166.2,
+            56.6,
+            34.3,
+            42.5
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            161.4,
+            58.5,
+            36.6,
+            44.4
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        }
+      ],
+      "logo": null,
+      "text": [
+        {
+          "box": [
+            -127.8,
+            91.2,
+            211.1,
+            15.7
+          ],
+          "kept": 0.395,
+          "under_ui": 0.144
+        },
+        {
+          "box": [
+            -127.8,
+            91.2,
+            210.6,
+            15.7
+          ],
+          "kept": 0.393,
+          "under_ui": 0.145
+        },
+        {
+          "box": [
+            -127.8,
+            91.2,
+            210.6,
+            15.7
+          ],
+          "kept": 0.393,
+          "under_ui": 0.145
+        }
+      ],
+      "redetected_faces": 1,
+      "redetected_text_boxes": 0
+    },
+    "issues": [
+      {
+        "code": "text_cut",
+        "detail": "text 61% outside the frame"
+      }
+    ],
+    "decision": {
+      "action": "fit_into_safe_zone",
+      "args": {},
+      "reason": "crops cannot keep it all in the safe zone: shrink into the safe zone on a blurred backdrop"
+    },
+    "result": {
+      "tool": "fit_into_safe_zone",
+      "args": {},
+      "transform": {
+        "kind": "fit",
+        "scale": 0.14375,
+        "offset": [
+          12.0,
+          47.4
+        ]
+      },
+      "keep_box_fits_safe_zone": true,
+      "new_issues": []
+    },
+    "step": 53,
+    "t_ms": 22091.2
+  },
+  {
+    "stage": "placement",
+    "placement": "display_300x250",
+    "observation": {
+      "faces": [
+        {
+          "box": [
+            207.9,
+            81.6,
+            19.5,
+            23.0
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            204.9,
+            82.5,
+            21.3,
+            26.4
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            201.9,
+            83.7,
+            22.7,
+            27.6
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        }
+      ],
+      "logo": null,
+      "text": [
+        {
+          "box": [
+            22.4,
+            104.0,
+            131.1,
+            9.8
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            22.4,
+            104.0,
+            130.8,
+            9.8
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            22.4,
+            104.0,
+            130.8,
+            9.8
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        }
+      ],
+      "redetected_faces": 1,
+      "redetected_text_boxes": 0
+    },
+    "issues": [],
+    "decision": {
+      "action": "accept",
+      "args": {},
+      "reason": "candidate passes every placement check"
+    },
+    "result": "accepted",
+    "step": 54,
+    "t_ms": 22091.2
+  },
+  {
+    "stage": "placement",
+    "placement": "display_300x250",
+    "observation": null,
+    "issues": [
+      {
+        "code": "aspect_mismatch",
+        "detail": "source 1920x1080"
+      }
+    ],
+    "decision": {
+      "action": "smart_crop",
+      "args": {
+        "strategy": "all"
+      },
+      "reason": "aspect differs: crop around faces, logo, text and subject"
+    },
+    "result": {
+      "tool": "smart_crop",
+      "args": {
+        "strategy": "all"
+      },
+      "transform": {
+        "kind": "crop",
+        "rect": [
+          259.2,
+          0.0,
+          1296.0,
+          1080.0
+        ]
+      },
+      "keep_box_fits_safe_zone": true,
+      "new_issues": []
+    },
+    "step": 55,
+    "t_ms": 22097.4
+  },
+  {
+    "stage": "placement",
+    "placement": "display_300x250",
+    "observation": {
+      "faces": [],
+      "logo": null,
+      "text": [],
+      "subject": {
+        "box": [
+          63.3,
+          28.9,
+          173.3,
+          137.8
+        ],
+        "kept": 1.0
+      },
+      "redetected_faces": 0,
+      "redetected_text_boxes": 0
+    },
+    "issues": [],
+    "decision": {
+      "action": "accept",
+      "args": {},
+      "reason": "candidate passes every placement check"
+    },
+    "result": "accepted",
+    "step": 56,
+    "t_ms": 22097.4
+  },
+  {
+    "stage": "placement",
+    "placement": "display_300x250",
+    "observation": null,
+    "issues": [
+      {
+        "code": "aspect_mismatch",
+        "detail": "source 1920x1080"
+      }
+    ],
+    "decision": {
+      "action": "smart_crop",
+      "args": {
+        "strategy": "all"
+      },
+      "reason": "aspect differs: crop around faces, logo, text and subject"
+    },
+    "result": {
+      "tool": "smart_crop",
+      "args": {
+        "strategy": "all"
+      },
+      "transform": {
+        "kind": "crop",
+        "rect": [
+          0.0,
+          0.0,
+          1296.0,
+          1080.0
+        ]
+      },
+      "keep_box_fits_safe_zone": true,
+      "new_issues": [
+        "logo_in_ui_zone"
+      ]
+    },
+    "step": 57,
+    "t_ms": 22108.2
+  },
+  {
+    "stage": "placement",
+    "placement": "display_300x250",
+    "observation": {
+      "faces": [],
+      "logo": {
+        "box": [
+          6.7,
+          208.1,
+          97.5,
+          37.5
+        ],
+        "kept": 1.0,
+        "under_ui": 0.196,
+        "redetected": true
+      },
+      "text": [
+        {
+          "box": [
+            216.7,
+            92.1,
+            23.6,
+            11.1
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            216.7,
+            92.1,
+            23.6,
+            11.1
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            216.7,
+            92.1,
+            23.6,
+            11.1
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        }
+      ],
+      "subject": {
+        "box": [
+          0.0,
+          207.8,
+          101.1,
+          42.2
+        ],
+        "kept": 1.0
+      },
+      "redetected_faces": 0,
+      "redetected_text_boxes": 0
+    },
+    "issues": [
+      {
+        "code": "logo_in_ui_zone",
+        "detail": "logo 20% under platform UI"
+      }
+    ],
+    "decision": {
+      "action": "smart_crop",
+      "args": {
+        "strategy": "priority"
+      },
+      "reason": "full crop failed: keep faces and logo first, let text/subject edges go"
+    },
+    "result": {
+      "tool": "smart_crop",
+      "args": {
+        "strategy": "priority"
+      },
+      "transform": {
+        "kind": "crop",
+        "rect": [
+          0.0,
+          0.0,
+          1296.0,
+          1080.0
+        ]
+      },
+      "keep_box_fits_safe_zone": true,
+      "new_issues": [
+        "logo_in_ui_zone"
+      ]
+    },
+    "step": 58,
+    "t_ms": 22120.7
+  },
+  {
+    "stage": "placement",
+    "placement": "display_300x250",
+    "observation": {
+      "faces": [],
+      "logo": {
+        "box": [
+          6.7,
+          208.1,
+          97.5,
+          37.5
+        ],
+        "kept": 1.0,
+        "under_ui": 0.196,
+        "redetected": true
+      },
+      "text": [
+        {
+          "box": [
+            216.7,
+            92.1,
+            23.6,
+            11.1
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            216.7,
+            92.1,
+            23.6,
+            11.1
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            216.7,
+            92.1,
+            23.6,
+            11.1
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        }
+      ],
+      "subject": {
+        "box": [
+          0.0,
+          207.8,
+          101.1,
+          42.2
+        ],
+        "kept": 1.0
+      },
+      "redetected_faces": 0,
+      "redetected_text_boxes": 0
+    },
+    "issues": [
+      {
+        "code": "logo_in_ui_zone",
+        "detail": "logo 20% under platform UI"
+      }
+    ],
+    "decision": {
+      "action": "fit_into_safe_zone",
+      "args": {},
+      "reason": "crops cannot keep it all in the safe zone: shrink into the safe zone on a blurred backdrop"
+    },
+    "result": {
+      "tool": "fit_into_safe_zone",
+      "args": {},
+      "transform": {
+        "kind": "fit",
+        "scale": 0.14375,
+        "offset": [
+          12.0,
+          47.4
+        ]
+      },
+      "keep_box_fits_safe_zone": true,
+      "new_issues": [
+        "logo_not_redetected",
+        "text_too_small"
+      ]
+    },
+    "step": 59,
+    "t_ms": 22151.6
+  },
+  {
+    "stage": "placement",
+    "placement": "display_300x250",
+    "observation": {
+      "faces": [],
+      "logo": {
+        "box": [
+          16.2,
+          176.6,
+          60.5,
+          23.3
+        ],
+        "kept": 1.0,
+        "under_ui": 0.0,
+        "redetected": false
+      },
+      "text": [
+        {
+          "box": [
+            146.5,
+            104.6,
+            14.7,
+            6.9
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            146.5,
+            104.6,
+            14.7,
+            6.9
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            146.5,
+            104.6,
+            14.7,
+            6.9
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        }
+      ],
+      "subject": {
+        "box": [
+          12.0,
+          176.4,
+          62.8,
+          26.2
+        ],
+        "kept": 1.0
+      },
+      "redetected_faces": 0,
+      "redetected_text_boxes": 0
+    },
+    "issues": [
+      {
+        "code": "logo_not_redetected",
+        "detail": "logo is in frame but too small or damaged to be recognised"
+      },
+      {
+        "code": "text_too_small",
+        "detail": "tallest text line 7px, needs 9px"
+      }
+    ],
+    "decision": {
+      "action": "escalate",
+      "args": {},
+      "reason": "no tool left that fixes: logo_not_redetected, text_too_small"
+    },
+    "result": "escalated to human",
+    "step": 60,
+    "t_ms": 22151.6
+  },
+  {
+    "stage": "placement",
+    "placement": "display_300x250",
+    "observation": null,
+    "issues": [
+      {
+        "code": "aspect_mismatch",
+        "detail": "source 1920x1080"
+      }
+    ],
+    "decision": {
+      "action": "smart_crop",
+      "args": {
+        "strategy": "all"
+      },
+      "reason": "aspect differs: crop around faces, logo, text and subject"
+    },
+    "result": {
+      "tool": "smart_crop",
+      "args": {
+        "strategy": "all"
+      },
+      "transform": {
+        "kind": "crop",
+        "rect": [
+          290.4,
+          0.0,
+          1296.0,
+          1080.0
+        ]
+      },
+      "keep_box_fits_safe_zone": false,
+      "new_issues": []
+    },
+    "step": 61,
+    "t_ms": 22158.0
+  },
+  {
+    "stage": "placement",
+    "placement": "display_300x250",
+    "observation": {
+      "faces": [],
+      "logo": null,
+      "text": [],
+      "subject": {
+        "box": [
+          -9.4,
+          0.0,
+          318.9,
+          207.8
+        ],
+        "kept": 0.941
+      },
+      "redetected_faces": 0,
+      "redetected_text_boxes": 0
+    },
+    "issues": [],
+    "decision": {
+      "action": "accept",
+      "args": {},
+      "reason": "candidate passes every placement check"
+    },
+    "result": "accepted",
+    "step": 62,
+    "t_ms": 22158.0
+  }
+]

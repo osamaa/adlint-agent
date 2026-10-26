@@ -1,0 +1,5 @@
+.venv/
+dist/
+runs/
+__pycache__/
+eval/results_video/clips/

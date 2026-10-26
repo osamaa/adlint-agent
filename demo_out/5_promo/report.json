@@ -1,0 +1,1146 @@
+{
+  "creative": "5_promo.mp4",
+  "planner": "rules",
+  "runtime_ms": 23643.6,
+  "video": {
+    "duration_s": 8.0,
+    "fps": 24.0,
+    "size": [
+      1920,
+      1080
+    ],
+    "scene_cuts": [
+      2.5,
+      4.5,
+      6.5
+    ],
+    "dark_frames_share": 0.25,
+    "blurry_frames_share": 0.188,
+    "first_3s": {
+      "notes": [
+        "brand logo not seen in the first 3 seconds"
+      ]
+    },
+    "issues": [
+      {
+        "code": "dark_frames",
+        "detail": "25% of frames are dark"
+      },
+      {
+        "code": "first_3s",
+        "detail": "brand logo not seen in the first 3 seconds"
+      }
+    ]
+  },
+  "source": {
+    "size": [
+      1920,
+      1080
+    ],
+    "quality_before": {
+      "sharpness": 3.386,
+      "brightness": 90.9,
+      "contrast": 48.4,
+      "dark_share": 0.066,
+      "clipped_share": 0.014
+    },
+    "quality_after": {
+      "sharpness": 3.386,
+      "brightness": 90.9,
+      "contrast": 48.4,
+      "dark_share": 0.066,
+      "clipped_share": 0.014
+    },
+    "fixes_applied": [],
+    "escalation": {
+      "reason": "25% of frames are dark; brand logo not seen in the first 3 seconds",
+      "issues": [
+        {
+          "code": "dark_frames",
+          "detail": "25% of frames are dark"
+        },
+        {
+          "code": "first_3s",
+          "detail": "brand logo not seen in the first 3 seconds"
+        }
+      ]
+    },
+    "text_share": 0.03,
+    "faces": 1,
+    "logo": {
+      "found": false,
+      "box": null,
+      "method": null,
+      "score": 0.0
+    },
+    "source_issues_first_frame": [
+      "logo_missing"
+    ]
+  },
+  "placements": [
+    {
+      "placement": "stories_9x16",
+      "label": "Stories 9:16 (1080x1920)",
+      "status": "needs_human",
+      "reasons": [
+        "source: 25% of frames are dark; brand logo not seen in the first 3 seconds",
+        "placement: text_too_small"
+      ],
+      "final_tool": "fit_into_safe_zone, smart_crop, fit_into_safe_zone, fit_into_safe_zone",
+      "transform": [
+        {
+          "kind": "fit",
+          "scale": 0.495,
+          "offset": [
+            64.8,
+            635.1
+          ]
+        },
+        {
+          "kind": "crop",
+          "rect": [
+            603.5,
+            0.0,
+            607.5,
+            1080.0
+          ]
+        },
+        {
+          "kind": "fit",
+          "scale": 0.495,
+          "offset": [
+            64.8,
+            635.1
+          ]
+        },
+        {
+          "kind": "fit",
+          "scale": 0.495,
+          "offset": [
+            64.8,
+            635.1
+          ]
+        }
+      ],
+      "issues": [
+        {
+          "code": "text_too_small",
+          "detail": "tallest text line 24px, needs 24px"
+        }
+      ],
+      "checks": [
+        {
+          "faces": [
+            {
+              "box": [
+                739.4,
+                753.0,
+                67.2,
+                79.3
+              ],
+              "kept": 1.0,
+              "under_ui": 0.0
+            },
+            {
+              "box": [
+                729.1,
+                756.1,
+                73.3,
+                91.0
+              ],
+              "kept": 1.0,
+              "under_ui": 0.0
+            },
+            {
+              "box": [
+                718.7,
+                760.2,
+                78.3,
+                95.0
+              ],
+              "kept": 1.0,
+              "under_ui": 0.0
+            }
+          ],
+          "logo": null,
+          "text": [
+            {
+              "box": [
+                100.4,
+                830.1,
+                451.4,
+                33.7
+              ],
+              "kept": 1.0,
+              "under_ui": 0.0
+            },
+            {
+              "box": [
+                100.4,
+                830.1,
+                450.4,
+                33.7
+              ],
+              "kept": 1.0,
+              "under_ui": 0.0
+            },
+            {
+              "box": [
+                100.4,
+                830.1,
+                450.4,
+                33.7
+              ],
+              "kept": 1.0,
+              "under_ui": 0.0
+            }
+          ],
+          "redetected_faces": 1,
+          "redetected_text_boxes": 0
+        },
+        {
+          "faces": [],
+          "logo": null,
+          "text": [],
+          "subject": {
+            "box": [
+              -125.7,
+              221.9,
+              1331.2,
+              1058.1
+            ],
+            "kept": 0.811
+          },
+          "redetected_faces": 0,
+          "redetected_text_boxes": 0
+        },
+        {
+          "faces": [],
+          "logo": {
+            "box": [
+              79.2,
+              1080.1,
+              208.4,
+              80.2
+            ],
+            "kept": 1.0,
+            "under_ui": 0.0,
+            "redetected": true
+          },
+          "text": [
+            {
+              "box": [
+                528.1,
+                832.1,
+                50.5,
+                23.8
+              ],
+              "kept": 1.0,
+              "under_ui": 0.0
+            },
+            {
+              "box": [
+                528.1,
+                832.1,
+                50.5,
+                23.8
+              ],
+              "kept": 1.0,
+              "under_ui": 0.0
+            },
+            {
+              "box": [
+                528.1,
+                832.1,
+                50.5,
+                23.8
+              ],
+              "kept": 1.0,
+              "under_ui": 0.0
+            }
+          ],
+          "subject": {
+            "box": [
+              64.8,
+              1079.4,
+              216.2,
+              90.3
+            ],
+            "kept": 1.0
+          },
+          "redetected_faces": 0,
+          "redetected_text_boxes": 0
+        },
+        {
+          "faces": [],
+          "logo": null,
+          "text": [],
+          "subject": {
+            "box": [
+              188.4,
+              635.1,
+              681.9,
+              444.3
+            ],
+            "kept": 1.0
+          },
+          "redetected_faces": 0,
+          "redetected_text_boxes": 0
+        }
+      ],
+      "agent_steps": 10,
+      "asset": "stories_9x16_PROPOSED.mp4",
+      "preview": "stories_9x16_preview.jpg"
+    },
+    {
+      "placement": "reels_9x16",
+      "label": "Reels / TikTok 9:16 (1080x1920)",
+      "status": "needs_human",
+      "reasons": [
+        "source: 25% of frames are dark; brand logo not seen in the first 3 seconds",
+        "placement: text_too_small"
+      ],
+      "final_tool": "fit_into_safe_zone, smart_crop, fit_into_safe_zone, fit_into_safe_zone",
+      "transform": [
+        {
+          "kind": "fit",
+          "scale": 0.43875,
+          "offset": [
+            64.8,
+            521.5
+          ]
+        },
+        {
+          "kind": "crop",
+          "rect": [
+            633.8,
+            0.0,
+            607.5,
+            1080.0
+          ]
+        },
+        {
+          "kind": "fit",
+          "scale": 0.43875,
+          "offset": [
+            64.8,
+            521.5
+          ]
+        },
+        {
+          "kind": "fit",
+          "scale": 0.43875,
+          "offset": [
+            64.8,
+            521.5
+          ]
+        }
+      ],
+      "issues": [
+        {
+          "code": "text_too_small",
+          "detail": "tallest text line 21px, needs 24px"
+        }
+      ],
+      "checks": [
+        {
+          "faces": [
+            {
+              "box": [
+                662.8,
+                626.0,
+                59.5,
+                70.3
+              ],
+              "kept": 1.0,
+              "under_ui": 0.0
+            },
+            {
+              "box": [
+                653.6,
+                628.7,
+                64.9,
+                80.6
+              ],
+              "kept": 1.0,
+              "under_ui": 0.0
+            },
+            {
+              "box": [
+                644.4,
+                632.4,
+                69.4,
+                84.2
+              ],
+              "kept": 1.0,
+              "under_ui": 0.0
+            }
+          ],
+          "logo": null,
+          "text": [
+            {
+              "box": [
+                96.4,
+                694.4,
+                400.1,
+                29.8
+              ],
+              "kept": 1.0,
+              "under_ui": 0.0
+            },
+            {
+              "box": [
+                96.4,
+                694.4,
+                399.3,
+                29.8
+              ],
+              "kept": 1.0,
+              "under_ui": 0.0
+            },
+            {
+              "box": [
+                96.4,
+                694.4,
+                399.3,
+                29.8
+              ],
+              "kept": 1.0,
+              "under_ui": 0.0
+            }
+          ],
+          "redetected_faces": 1,
+          "redetected_text_boxes": 0
+        },
+        {
+          "faces": [],
+          "logo": null,
+          "text": [],
+          "subject": {
+            "box": [
+              -179.6,
+              221.9,
+              1331.2,
+              1058.1
+            ],
+            "kept": 0.811
+          },
+          "redetected_faces": 0,
+          "redetected_text_boxes": 0
+        },
+        {
+          "faces": [],
+          "logo": {
+            "box": [
+              77.5,
+              915.9,
+              184.7,
+              71.1
+            ],
+            "kept": 1.0,
+            "under_ui": 0.0,
+            "redetected": true
+          },
+          "text": [
+            {
+              "box": [
+                475.5,
+                696.1,
+                44.8,
+                21.1
+              ],
+              "kept": 1.0,
+              "under_ui": 0.0
+            },
+            {
+              "box": [
+                475.5,
+                696.1,
+                44.8,
+                21.1
+              ],
+              "kept": 1.0,
+              "under_ui": 0.0
+            },
+            {
+              "box": [
+                475.5,
+                696.1,
+                44.8,
+                21.1
+              ],
+              "kept": 1.0,
+              "under_ui": 0.0
+            }
+          ],
+          "subject": {
+            "box": [
+              64.8,
+              915.3,
+              191.6,
+              80.0
+            ],
+            "kept": 1.0
+          },
+          "redetected_faces": 0,
+          "redetected_text_boxes": 0
+        },
+        {
+          "faces": [],
+          "logo": null,
+          "text": [],
+          "subject": {
+            "box": [
+              174.3,
+              521.5,
+              604.4,
+              393.8
+            ],
+            "kept": 1.0
+          },
+          "redetected_faces": 0,
+          "redetected_text_boxes": 0
+        }
+      ],
+      "agent_steps": 10,
+      "asset": "reels_9x16_PROPOSED.mp4",
+      "preview": "reels_9x16_preview.jpg"
+    },
+    {
+      "placement": "feed_1x1",
+      "label": "Feed 1:1 (1080x1080)",
+      "status": "needs_human",
+      "reasons": [
+        "source: 25% of frames are dark; brand logo not seen in the first 3 seconds"
+      ],
+      "final_tool": "fit_into_safe_zone, smart_crop, fit_into_safe_zone, smart_crop",
+      "transform": [
+        {
+          "kind": "fit",
+          "scale": 0.52875,
+          "offset": [
+            32.4,
+            254.5
+          ]
+        },
+        {
+          "kind": "crop",
+          "rect": [
+            367.2,
+            0.0,
+            1080.0,
+            1080.0
+          ]
+        },
+        {
+          "kind": "fit",
+          "scale": 0.52875,
+          "offset": [
+            32.4,
+            254.5
+          ]
+        },
+        {
+          "kind": "crop",
+          "rect": [
+            398.4,
+            0.0,
+            1080.0,
+            1080.0
+          ]
+        }
+      ],
+      "issues": [],
+      "checks": [
+        {
+          "faces": [
+            {
+              "box": [
+                753.0,
+                380.4,
+                71.8,
+                84.7
+              ],
+              "kept": 1.0,
+              "under_ui": 0.0
+            },
+            {
+              "box": [
+                742.0,
+                383.7,
+                78.3,
+                97.2
+              ],
+              "kept": 1.0,
+              "under_ui": 0.0
+            },
+            {
+              "box": [
+                730.9,
+                388.2,
+                83.6,
+                101.5
+              ],
+              "kept": 1.0,
+              "under_ui": 0.0
+            }
+          ],
+          "logo": null,
+          "text": [
+            {
+              "box": [
+                70.5,
+                462.8,
+                482.2,
+                36.0
+              ],
+              "kept": 1.0,
+              "under_ui": 0.0
+            },
+            {
+              "box": [
+                70.5,
+                462.8,
+                481.2,
+                36.0
+              ],
+              "kept": 1.0,
+              "under_ui": 0.0
+            },
+            {
+              "box": [
+                70.5,
+                462.8,
+                481.2,
+                36.0
+              ],
+              "kept": 1.0,
+              "under_ui": 0.0
+            }
+          ],
+          "redetected_faces": 1,
+          "redetected_text_boxes": 0
+        },
+        {
+          "faces": [],
+          "logo": null,
+          "text": [],
+          "subject": {
+            "box": [
+              165.6,
+              124.8,
+              748.8,
+              595.2
+            ],
+            "kept": 1.0
+          },
+          "redetected_faces": 0,
+          "redetected_text_boxes": 0
+        },
+        {
+          "faces": [],
+          "logo": {
+            "box": [
+              47.7,
+              729.8,
+              222.6,
+              85.7
+            ],
+            "kept": 1.0,
+            "under_ui": 0.0,
+            "redetected": true
+          },
+          "text": [
+            {
+              "box": [
+                527.3,
+                464.9,
+                53.9,
+                25.4
+              ],
+              "kept": 1.0,
+              "under_ui": 0.0
+            },
+            {
+              "box": [
+                527.3,
+                464.9,
+                53.9,
+                25.4
+              ],
+              "kept": 1.0,
+              "under_ui": 0.0
+            },
+            {
+              "box": [
+                527.3,
+                464.9,
+                53.9,
+                25.4
+              ],
+              "kept": 1.0,
+              "under_ui": 0.0
+            }
+          ],
+          "subject": {
+            "box": [
+              32.4,
+              729.1,
+              231.0,
+              96.4
+            ],
+            "kept": 1.0
+          },
+          "redetected_faces": 0,
+          "redetected_text_boxes": 0
+        },
+        {
+          "faces": [],
+          "logo": null,
+          "text": [],
+          "subject": {
+            "box": [
+              -148.8,
+              0.0,
+              1377.6,
+              897.6
+            ],
+            "kept": 0.784
+          },
+          "redetected_faces": 0,
+          "redetected_text_boxes": 0
+        }
+      ],
+      "agent_steps": 8,
+      "asset": "feed_1x1_PROPOSED.mp4",
+      "preview": "feed_1x1_preview.jpg"
+    },
+    {
+      "placement": "youtube_16x9",
+      "label": "YouTube in-stream 16:9 (1920x1080)",
+      "status": "needs_human",
+      "reasons": [
+        "source: 25% of frames are dark; brand logo not seen in the first 3 seconds"
+      ],
+      "final_tool": "resize, resize, fit_into_safe_zone, resize",
+      "transform": [
+        {
+          "kind": "crop",
+          "rect": [
+            0,
+            0,
+            1920,
+            1080
+          ]
+        },
+        {
+          "kind": "crop",
+          "rect": [
+            0,
+            0,
+            1920,
+            1080
+          ]
+        },
+        {
+          "kind": "fit",
+          "scale": 0.74,
+          "offset": [
+            249.6,
+            86.4
+          ]
+        },
+        {
+          "kind": "crop",
+          "rect": [
+            0,
+            0,
+            1920,
+            1080
+          ]
+        }
+      ],
+      "issues": [],
+      "checks": [
+        {
+          "faces": [
+            {
+              "box": [
+                1362.9,
+                238.1,
+                135.7,
+                160.2
+              ],
+              "kept": 1.0,
+              "under_ui": 0.0
+            },
+            {
+              "box": [
+                1342.0,
+                244.4,
+                148.0,
+                183.8
+              ],
+              "kept": 1.0,
+              "under_ui": 0.0
+            },
+            {
+              "box": [
+                1321.1,
+                252.8,
+                158.2,
+                192.0
+              ],
+              "kept": 1.0,
+              "under_ui": 0.0
+            }
+          ],
+          "logo": null,
+          "text": [
+            {
+              "box": [
+                72.0,
+                394.0,
+                912.0,
+                68.0
+              ],
+              "kept": 1.0,
+              "under_ui": 0.0
+            },
+            {
+              "box": [
+                72.0,
+                394.0,
+                910.0,
+                68.0
+              ],
+              "kept": 1.0,
+              "under_ui": 0.0
+            },
+            {
+              "box": [
+                72.0,
+                394.0,
+                910.0,
+                68.0
+              ],
+              "kept": 1.0,
+              "under_ui": 0.0
+            }
+          ],
+          "redetected_faces": 1,
+          "redetected_text_boxes": 0
+        },
+        {
+          "faces": [],
+          "logo": null,
+          "text": [],
+          "subject": {
+            "box": [
+              532.8,
+              124.8,
+              748.8,
+              595.2
+            ],
+            "kept": 1.0
+          },
+          "redetected_faces": 0,
+          "redetected_text_boxes": 0
+        },
+        {
+          "faces": [],
+          "logo": {
+            "box": [
+              271.1,
+              751.7,
+              311.5,
+              119.9
+            ],
+            "kept": 1.0,
+            "under_ui": 0.0,
+            "redetected": true
+          },
+          "text": [
+            {
+              "box": [
+                942.2,
+                380.9,
+                75.5,
+                35.5
+              ],
+              "kept": 1.0,
+              "under_ui": 0.0
+            },
+            {
+              "box": [
+                942.2,
+                380.9,
+                75.5,
+                35.5
+              ],
+              "kept": 1.0,
+              "under_ui": 0.0
+            },
+            {
+              "box": [
+                942.2,
+                380.9,
+                75.5,
+                35.5
+              ],
+              "kept": 1.0,
+              "under_ui": 0.0
+            }
+          ],
+          "subject": {
+            "box": [
+              249.6,
+              750.6,
+              323.2,
+              135.0
+            ],
+            "kept": 1.0
+          },
+          "redetected_faces": 0,
+          "redetected_text_boxes": 0
+        },
+        {
+          "faces": [],
+          "logo": null,
+          "text": [],
+          "subject": {
+            "box": [
+              249.6,
+              0.0,
+              1377.6,
+              897.6
+            ],
+            "kept": 1.0
+          },
+          "redetected_faces": 0,
+          "redetected_text_boxes": 0
+        }
+      ],
+      "agent_steps": 5,
+      "asset": "youtube_16x9_PROPOSED.mp4",
+      "preview": "youtube_16x9_preview.jpg"
+    },
+    {
+      "placement": "display_300x250",
+      "label": "Display MPU 300x250",
+      "status": "needs_human",
+      "reasons": [
+        "source: 25% of frames are dark; brand logo not seen in the first 3 seconds",
+        "placement: logo_in_ui_zone"
+      ],
+      "final_tool": "fit_into_safe_zone, smart_crop, smart_crop, smart_crop",
+      "transform": [
+        {
+          "kind": "fit",
+          "scale": 0.14375,
+          "offset": [
+            12.0,
+            47.4
+          ]
+        },
+        {
+          "kind": "crop",
+          "rect": [
+            259.2,
+            0.0,
+            1296.0,
+            1080.0
+          ]
+        },
+        {
+          "kind": "crop",
+          "rect": [
+            0.0,
+            0.0,
+            1296.0,
+            1080.0
+          ]
+        },
+        {
+          "kind": "crop",
+          "rect": [
+            290.4,
+            0.0,
+            1296.0,
+            1080.0
+          ]
+        }
+      ],
+      "issues": [
+        {
+          "code": "logo_in_ui_zone",
+          "detail": "logo 20% under platform UI"
+        }
+      ],
+      "checks": [
+        {
+          "faces": [
+            {
+              "box": [
+                207.9,
+                81.6,
+                19.5,
+                23.0
+              ],
+              "kept": 1.0,
+              "under_ui": 0.0
+            },
+            {
+              "box": [
+                204.9,
+                82.5,
+                21.3,
+                26.4
+              ],
+              "kept": 1.0,
+              "under_ui": 0.0
+            },
+            {
+              "box": [
+                201.9,
+                83.7,
+                22.7,
+                27.6
+              ],
+              "kept": 1.0,
+              "under_ui": 0.0
+            }
+          ],
+          "logo": null,
+          "text": [
+            {
+              "box": [
+                22.4,
+                104.0,
+                131.1,
+                9.8
+              ],
+              "kept": 1.0,
+              "under_ui": 0.0
+            },
+            {
+              "box": [
+                22.4,
+                104.0,
+                130.8,
+                9.8
+              ],
+              "kept": 1.0,
+              "under_ui": 0.0
+            },
+            {
+              "box": [
+                22.4,
+                104.0,
+                130.8,
+                9.8
+              ],
+              "kept": 1.0,
+              "under_ui": 0.0
+            }
+          ],
+          "redetected_faces": 1,
+          "redetected_text_boxes": 0
+        },
+        {
+          "faces": [],
+          "logo": null,
+          "text": [],
+          "subject": {
+            "box": [
+              63.3,
+              28.9,
+              173.3,
+              137.8
+            ],
+            "kept": 1.0
+          },
+          "redetected_faces": 0,
+          "redetected_text_boxes": 0
+        },
+        {
+          "faces": [],
+          "logo": {
+            "box": [
+              6.7,
+              208.1,
+              97.5,
+              37.5
+            ],
+            "kept": 1.0,
+            "under_ui": 0.196,
+            "redetected": true
+          },
+          "text": [
+            {
+              "box": [
+                216.7,
+                92.1,
+                23.6,
+                11.1
+              ],
+              "kept": 1.0,
+              "under_ui": 0.0
+            },
+            {
+              "box": [
+                216.7,
+                92.1,
+                23.6,
+                11.1
+              ],
+              "kept": 1.0,
+              "under_ui": 0.0
+            },
+            {
+              "box": [
+                216.7,
+                92.1,
+                23.6,
+                11.1
+              ],
+              "kept": 1.0,
+              "under_ui": 0.0
+            }
+          ],
+          "subject": {
+            "box": [
+              0.0,
+              207.8,
+              101.1,
+              42.2
+            ],
+            "kept": 1.0
+          },
+          "redetected_faces": 0,
+          "redetected_text_boxes": 0
+        },
+        {
+          "faces": [],
+          "logo": null,
+          "text": [],
+          "subject": {
+            "box": [
+              -9.4,
+              0.0,
+              318.9,
+              207.8
+            ],
+            "kept": 0.941
+          },
+          "redetected_faces": 0,
+          "redetected_text_boxes": 0
+        }
+      ],
+      "agent_steps": 8,
+      "asset": "display_300x250_PROPOSED.mp4",
+      "preview": "display_300x250_preview.jpg"
+    }
+  ],
+  "needs_human": true
+}

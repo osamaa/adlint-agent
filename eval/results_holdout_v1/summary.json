@@ -1,0 +1,501 @@
+{
+  "planner": "rules",
+  "creatives": 60,
+  "placements_per_creative": 5,
+  "thresholds": {
+    "sharpness_blurry": 2.3,
+    "sharpness_severe": 0.8,
+    "brightness_dark": 60.0,
+    "dark_pixel_share": 0.5,
+    "contrast_low": 28.0,
+    "clipped_share": 0.3,
+    "text_heavy_share": 0.25,
+    "logo_min_inliers": 12,
+    "logo_template_score": 0.8
+  },
+  "detection": [
+    {
+      "check": "blurry",
+      "positives": 13,
+      "tp": 12,
+      "fp": 4,
+      "fn": 1,
+      "tn": 43,
+      "precision": 0.75,
+      "recall": 0.9230769230769231
+    },
+    {
+      "check": "severely_blurry",
+      "positives": 5,
+      "tp": 4,
+      "fp": 2,
+      "fn": 1,
+      "tn": 53,
+      "precision": 0.6666666666666666,
+      "recall": 0.8
+    },
+    {
+      "check": "dark",
+      "positives": 7,
+      "tp": 7,
+      "fp": 0,
+      "fn": 0,
+      "tn": 53,
+      "precision": 1.0,
+      "recall": 1.0
+    },
+    {
+      "check": "text_heavy",
+      "positives": 7,
+      "tp": 7,
+      "fp": 0,
+      "fn": 0,
+      "tn": 53,
+      "precision": 1.0,
+      "recall": 1.0
+    },
+    {
+      "check": "logo_present",
+      "positives": 46,
+      "tp": 35,
+      "fp": 2,
+      "fn": 11,
+      "tn": 12,
+      "precision": 0.9459459459459459,
+      "recall": 0.7608695652173914
+    },
+    {
+      "check": "face_present",
+      "positives": 14,
+      "tp": 12,
+      "fp": 0,
+      "fn": 2,
+      "tn": 46,
+      "precision": 1.0,
+      "recall": 0.8571428571428571
+    }
+  ],
+  "source_escalation": {
+    "check": "source escalated to human",
+    "positives": 23,
+    "tp": 22,
+    "fp": 14,
+    "fn": 1,
+    "tn": 23,
+    "precision": 0.6111111111111112,
+    "recall": 0.9565217391304348
+  },
+  "reframing": [
+    {
+      "placement": "stories_9x16",
+      "n": 60,
+      "centre_crop_ok": 0.0,
+      "agent_ok": 1.0,
+      "agent_auto_accepted": 0.4,
+      "agent_ok_when_accepted": 1.0,
+      "false_accepts": 0,
+      "headline_legible": 0.9666666666666667,
+      "mean_steps": 2.75,
+      "max_steps": 3
+    },
+    {
+      "placement": "reels_9x16",
+      "n": 60,
+      "centre_crop_ok": 0.0,
+      "agent_ok": 0.9833333333333333,
+      "agent_auto_accepted": 0.36666666666666664,
+      "agent_ok_when_accepted": 1.0,
+      "false_accepts": 0,
+      "headline_legible": 0.95,
+      "mean_steps": 2.75,
+      "max_steps": 3
+    },
+    {
+      "placement": "feed_1x1",
+      "n": 60,
+      "centre_crop_ok": 0.2833333333333333,
+      "agent_ok": 0.9666666666666667,
+      "agent_auto_accepted": 0.4,
+      "agent_ok_when_accepted": 0.9583333333333334,
+      "false_accepts": 1,
+      "headline_legible": 0.9666666666666667,
+      "mean_steps": 2.033333333333333,
+      "max_steps": 3
+    },
+    {
+      "placement": "youtube_16x9",
+      "n": 60,
+      "centre_crop_ok": 0.1,
+      "agent_ok": 0.95,
+      "agent_auto_accepted": 0.31666666666666665,
+      "agent_ok_when_accepted": 1.0,
+      "false_accepts": 0,
+      "headline_legible": 0.8333333333333334,
+      "mean_steps": 2.7333333333333334,
+      "max_steps": 3
+    },
+    {
+      "placement": "display_300x250",
+      "n": 60,
+      "centre_crop_ok": 0.08333333333333333,
+      "agent_ok": 0.9333333333333333,
+      "agent_auto_accepted": 0.25,
+      "agent_ok_when_accepted": 0.9333333333333333,
+      "false_accepts": 1,
+      "headline_legible": 0.65,
+      "mean_steps": 2.466666666666667,
+      "max_steps": 3
+    }
+  ],
+  "overall": {
+    "centre_crop_ok": 0.09333333333333334,
+    "agent_ok": 0.9666666666666667,
+    "false_accepts": 2,
+    "outputs": 300,
+    "escalated": 196
+  },
+  "runtime_seconds": {
+    "mean": 3.187,
+    "median": 3.1950000000000003,
+    "max": 4.66
+  },
+  "face_box_iou_mean": 0.9204166666666667,
+  "logo_box_iou_mean": 0.9302,
+  "failures": [
+    {
+      "file": "c008_1x1_rocket_blur_mild_edge.png",
+      "kind": "detection",
+      "wrong": [
+        "logo_present"
+      ],
+      "quality": {
+        "sharpness": 1.283,
+        "brightness": 123.0,
+        "contrast": 34.4,
+        "dark_share": 0.018,
+        "clipped_share": 0.035
+      },
+      "text_share": 0.07
+    },
+    {
+      "file": "c009_1x1_chelsea_text_heavy_safe.png",
+      "kind": "detection",
+      "wrong": [
+        "logo_present"
+      ],
+      "quality": {
+        "sharpness": null,
+        "brightness": 157.5,
+        "contrast": 47.8,
+        "dark_share": 0.007,
+        "clipped_share": 0.122
+      },
+      "text_share": 0.541
+    },
+    {
+      "file": "c010_4x5_astronaut_blur_mild_absent.png",
+      "kind": "detection",
+      "wrong": [
+        "severely_blurry"
+      ],
+      "quality": {
+        "sharpness": 0.737,
+        "brightness": 103.7,
+        "contrast": 42.1,
+        "dark_share": 0.041,
+        "clipped_share": 0.006
+      },
+      "text_share": 0.018
+    },
+    {
+      "file": "c011_4x5_product_none_distractor.png",
+      "kind": "detection",
+      "wrong": [
+        "logo_present"
+      ],
+      "quality": {
+        "sharpness": 3.186,
+        "brightness": 138.0,
+        "contrast": 50.5,
+        "dark_share": 0.0,
+        "clipped_share": 0.018
+      },
+      "text_share": 0.027
+    },
+    {
+      "file": "c012_16x9_camera_blur_severe_distractor.png",
+      "kind": "detection",
+      "wrong": [
+        "severely_blurry",
+        "logo_present",
+        "face_present"
+      ],
+      "quality": {
+        "sharpness": 1.228,
+        "brightness": 141.3,
+        "contrast": 30.3,
+        "dark_share": 0.016,
+        "clipped_share": 0.041
+      },
+      "text_share": 0.057
+    },
+    {
+      "file": "c017_9x16_chelsea_none_safe.png",
+      "kind": "detection",
+      "wrong": [
+        "logo_present"
+      ],
+      "quality": {
+        "sharpness": 4.361,
+        "brightness": 131.0,
+        "contrast": 25.0,
+        "dark_share": 0.002,
+        "clipped_share": 0.009
+      },
+      "text_share": 0.019
+    },
+    {
+      "file": "c019_1x1_product_text_heavy_safe.png",
+      "kind": "detection",
+      "wrong": [
+        "blurry"
+      ],
+      "quality": {
+        "sharpness": 1.75,
+        "brightness": 183.8,
+        "contrast": 41.4,
+        "dark_share": 0.0,
+        "clipped_share": 0.123
+      },
+      "text_share": 0.506
+    },
+    {
+      "file": "c022_16x9_rocket_text_heavy_safe.png",
+      "kind": "detection",
+      "wrong": [
+        "logo_present"
+      ],
+      "quality": {
+        "sharpness": 10.046,
+        "brightness": 165.1,
+        "contrast": 66.1,
+        "dark_share": 0.051,
+        "clipped_share": 0.149
+      },
+      "text_share": 0.582
+    },
+    {
+      "file": "c029_4x5_rocket_none_safe.png",
+      "kind": "false_accept",
+      "placement": "feed_1x1",
+      "gt_failed": [
+        "subject"
+      ],
+      "agent_issues": []
+    },
+    {
+      "file": "c029_4x5_rocket_none_safe.png",
+      "kind": "false_accept",
+      "placement": "display_300x250",
+      "gt_failed": [
+        "subject"
+      ],
+      "agent_issues": []
+    },
+    {
+      "file": "c030_9x16_camera_blur_mild_edge.png",
+      "kind": "detection",
+      "wrong": [
+        "blurry"
+      ],
+      "quality": {
+        "sharpness": 2.528,
+        "brightness": 120.1,
+        "contrast": 46.8,
+        "dark_share": 0.035,
+        "clipped_share": 0.012
+      },
+      "text_share": 0.014
+    },
+    {
+      "file": "c035_9x16_coffee_none_edge.png",
+      "kind": "detection",
+      "wrong": [
+        "logo_present"
+      ],
+      "quality": {
+        "sharpness": 6.262,
+        "brightness": 134.3,
+        "contrast": 46.0,
+        "dark_share": 0.055,
+        "clipped_share": 0.023
+      },
+      "text_share": 0.048
+    },
+    {
+      "file": "c036_4x5_coffee_none_edge.png",
+      "kind": "detection",
+      "wrong": [
+        "logo_present"
+      ],
+      "quality": {
+        "sharpness": 6.314,
+        "brightness": 131.2,
+        "contrast": 27.3,
+        "dark_share": 0.024,
+        "clipped_share": 0.012
+      },
+      "text_share": 0.021
+    },
+    {
+      "file": "c037_1x1_coffee_dark_safe.png",
+      "kind": "detection",
+      "wrong": [
+        "logo_present"
+      ],
+      "quality": {
+        "sharpness": 3.393,
+        "brightness": 30.2,
+        "contrast": 12.7,
+        "dark_share": 0.73,
+        "clipped_share": 0.0
+      },
+      "text_share": 0.023
+    },
+    {
+      "file": "c040_1x1_product_dark_safe.png",
+      "kind": "detection",
+      "wrong": [
+        "blurry"
+      ],
+      "quality": {
+        "sharpness": 1.582,
+        "brightness": 31.4,
+        "contrast": 6.6,
+        "dark_share": 0.881,
+        "clipped_share": 0.0
+      },
+      "text_share": 0.067
+    },
+    {
+      "file": "c045_4x5_astronaut_blur_mild_absent.png",
+      "kind": "detection",
+      "wrong": [
+        "severely_blurry"
+      ],
+      "quality": {
+        "sharpness": 0.552,
+        "brightness": 146.4,
+        "contrast": 54.2,
+        "dark_share": 0.078,
+        "clipped_share": 0.032
+      },
+      "text_share": 0.069
+    },
+    {
+      "file": "c046_1x1_chelsea_none_safe.png",
+      "kind": "detection",
+      "wrong": [
+        "logo_present"
+      ],
+      "quality": {
+        "sharpness": 2.862,
+        "brightness": 101.3,
+        "contrast": 43.3,
+        "dark_share": 0.009,
+        "clipped_share": 0.034
+      },
+      "text_share": 0.067
+    },
+    {
+      "file": "c047_1x1_camera_dark_safe.png",
+      "kind": "detection",
+      "wrong": [
+        "face_present"
+      ],
+      "quality": {
+        "sharpness": 3.688,
+        "brightness": 20.5,
+        "contrast": 9.0,
+        "dark_share": 0.929,
+        "clipped_share": 0.0
+      },
+      "text_share": 0.064
+    },
+    {
+      "file": "c052_9x16_coffee_none_edge.png",
+      "kind": "detection",
+      "wrong": [
+        "logo_present"
+      ],
+      "quality": {
+        "sharpness": 4.417,
+        "brightness": 88.9,
+        "contrast": 25.4,
+        "dark_share": 0.017,
+        "clipped_share": 0.009
+      },
+      "text_share": 0.017
+    },
+    {
+      "file": "c054_1x1_chelsea_dark_absent.png",
+      "kind": "detection",
+      "wrong": [
+        "blurry"
+      ],
+      "quality": {
+        "sharpness": 1.981,
+        "brightness": 33.4,
+        "contrast": 8.7,
+        "dark_share": 0.897,
+        "clipped_share": 0.0
+      },
+      "text_share": 0.069
+    },
+    {
+      "file": "c055_4x5_coffee_dark_edge.png",
+      "kind": "detection",
+      "wrong": [
+        "logo_present"
+      ],
+      "quality": {
+        "sharpness": 4.352,
+        "brightness": 25.9,
+        "contrast": 10.1,
+        "dark_share": 0.947,
+        "clipped_share": 0.0
+      },
+      "text_share": 0.062
+    },
+    {
+      "file": "c056_9x16_chelsea_blur_severe_safe.png",
+      "kind": "detection",
+      "wrong": [
+        "logo_present"
+      ],
+      "quality": {
+        "sharpness": 0.18,
+        "brightness": 106.3,
+        "contrast": 30.0,
+        "dark_share": 0.003,
+        "clipped_share": 0.021
+      },
+      "text_share": 0.047
+    },
+    {
+      "file": "c059_1x1_product_none_edge.png",
+      "kind": "detection",
+      "wrong": [
+        "blurry"
+      ],
+      "quality": {
+        "sharpness": 2.215,
+        "brightness": 126.5,
+        "contrast": 62.2,
+        "dark_share": 0.0,
+        "clipped_share": 0.049
+      },
+      "text_share": 0.084
+    }
+  ]
+}

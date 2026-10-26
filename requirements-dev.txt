@@ -1,0 +1,5 @@
+# evaluation set generation, diagrams, tests
+-r requirements.txt
+scikit-image==0.26.0
+matplotlib==3.11.2
+pytest==9.1.1

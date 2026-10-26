@@ -1,0 +1,7 @@
+.venv
+runs
+demo_out
+eval
+dist
+docs
+**/__pycache__

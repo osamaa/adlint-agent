@@ -1,0 +1,3819 @@
+{
+ "seed": 2028,
+ "logo": "logo_nova.png",
+ "items": [
+  {
+   "file": "c000_9x16_product_none_safe.png",
+   "labels": {
+    "blurry": false,
+    "severely_blurry": false,
+    "dark": false,
+    "text_heavy": false,
+    "logo_present": true,
+    "face_present": false
+   },
+   "truth": {
+    "faces": [],
+    "logo": [
+     160,
+     1677,
+     218,
+     83
+    ],
+    "headline": [
+     54,
+     384,
+     420,
+     47
+    ],
+    "text": [
+     [
+      54,
+      384,
+      420,
+      47
+     ],
+     [
+      54,
+      449,
+      289,
+      39
+     ]
+    ],
+    "subject": [
+     516,
+     604,
+     534,
+     712
+    ]
+   },
+   "meta": {
+    "canvas": "9x16",
+    "layout": "photo_right",
+    "base": "product",
+    "defect": "none",
+    "logo_mode": "safe"
+   }
+  },
+  {
+   "file": "c001_1x1_astronaut_none_edge.png",
+   "labels": {
+    "blurry": false,
+    "severely_blurry": false,
+    "dark": false,
+    "text_heavy": false,
+    "logo_present": true,
+    "face_present": true
+   },
+   "truth": {
+    "faces": [
+     [
+      215.85703125,
+      338.780859375,
+      93.97265625,
+      117.987890625
+     ]
+    ],
+    "logo": [
+     812,
+     10,
+     258,
+     98
+    ],
+    "headline": [
+     615,
+     216,
+     436,
+     49
+    ],
+    "text": [
+     [
+      615,
+      216,
+      436,
+      49
+     ],
+     [
+      615,
+      284,
+      311,
+      59
+     ]
+    ],
+    "subject": [
+     30,
+     273,
+     534,
+     534
+    ]
+   },
+   "meta": {
+    "canvas": "1x1",
+    "layout": "photo_left",
+    "base": "astronaut",
+    "defect": "none",
+    "logo_mode": "edge"
+   }
+  },
+  {
+   "file": "c002_1x1_coffee_none_edge.png",
+   "labels": {
+    "blurry": false,
+    "severely_blurry": false,
+    "dark": false,
+    "text_heavy": false,
+    "logo_present": true,
+    "face_present": false
+   },
+   "truth": {
+    "faces": [],
+    "logo": [
+     822,
+     10,
+     248,
+     94
+    ],
+    "headline": [
+     108,
+     108,
+     875,
+     72
+    ],
+    "text": [
+     [
+      108,
+      108,
+      875,
+      72
+     ],
+     [
+      108,
+      208,
+      447,
+      59
+     ]
+    ],
+    "subject": [
+     103,
+     464,
+     874,
+     583
+    ]
+   },
+   "meta": {
+    "canvas": "1x1",
+    "layout": "photo_bottom",
+    "base": "coffee",
+    "defect": "none",
+    "logo_mode": "edge"
+   }
+  },
+  {
+   "file": "c003_4x5_camera_none_absent.png",
+   "labels": {
+    "blurry": false,
+    "severely_blurry": false,
+    "dark": false,
+    "text_heavy": false,
+    "logo_present": false,
+    "face_present": true
+   },
+   "truth": {
+    "faces": [
+     [
+      454.0703125,
+      200.892578125,
+      86.853515625,
+      115.330078125
+     ]
+    ],
+    "logo": null,
+    "headline": [
+     108,
+     864,
+     875,
+     72
+    ],
+    "text": [
+     [
+      108,
+      864,
+      875,
+      72
+     ],
+     [
+      108,
+      964,
+      621,
+      55
+     ]
+    ],
+    "subject": [
+     175,
+     40,
+     729,
+     729
+    ]
+   },
+   "meta": {
+    "canvas": "4x5",
+    "layout": "photo_top",
+    "base": "camera",
+    "defect": "none",
+    "logo_mode": "absent"
+   }
+  },
+  {
+   "file": "c004_16x9_product_text_heavy_safe.png",
+   "labels": {
+    "blurry": false,
+    "severely_blurry": false,
+    "dark": false,
+    "text_heavy": true,
+    "logo_present": true,
+    "face_present": false
+   },
+   "truth": {
+    "faces": [],
+    "logo": [
+     211,
+     211,
+     388,
+     147
+    ],
+    "headline": [
+     192,
+     108,
+     1093,
+     93
+    ],
+    "text": [
+     [
+      192,
+      108,
+      1093,
+      93
+     ],
+     [
+      192,
+      238,
+      465,
+      59
+     ],
+     [
+      96,
+      54,
+      1787,
+      55
+     ],
+     [
+      96,
+      136,
+      1787,
+      55
+     ],
+     [
+      96,
+      219,
+      1787,
+      55
+     ],
+     [
+      96,
+      301,
+      1787,
+      55
+     ],
+     [
+      96,
+      384,
+      1787,
+      55
+     ],
+     [
+      96,
+      466,
+      1787,
+      55
+     ],
+     [
+      96,
+      549,
+      1787,
+      55
+     ],
+     [
+      96,
+      631,
+      1787,
+      55
+     ],
+     [
+      96,
+      714,
+      1787,
+      55
+     ],
+     [
+      96,
+      796,
+      1787,
+      55
+     ],
+     [
+      96,
+      879,
+      1787,
+      55
+     ],
+     [
+      96,
+      961,
+      1787,
+      55
+     ]
+    ],
+    "subject": [
+     741,
+     464,
+     437,
+     583
+    ]
+   },
+   "meta": {
+    "canvas": "16x9",
+    "layout": "photo_bottom",
+    "base": "product",
+    "defect": "text_heavy",
+    "logo_mode": "safe"
+   }
+  },
+  {
+   "file": "c005_1x1_coffee_none_absent.png",
+   "labels": {
+    "blurry": false,
+    "severely_blurry": false,
+    "dark": false,
+    "text_heavy": false,
+    "logo_present": false,
+    "face_present": false
+   },
+   "truth": {
+    "faces": [],
+    "logo": null,
+    "headline": [
+     108,
+     108,
+     870,
+     69
+    ],
+    "text": [
+     [
+      108,
+      108,
+      870,
+      69
+     ],
+     [
+      108,
+      204,
+      621,
+      55
+     ]
+    ],
+    "subject": [
+     103,
+     464,
+     874,
+     583
+    ]
+   },
+   "meta": {
+    "canvas": "1x1",
+    "layout": "photo_bottom",
+    "base": "coffee",
+    "defect": "none",
+    "logo_mode": "absent"
+   }
+  },
+  {
+   "file": "c006_1x1_astronaut_none_absent.png",
+   "labels": {
+    "blurry": false,
+    "severely_blurry": false,
+    "dark": false,
+    "text_heavy": false,
+    "logo_present": false,
+    "face_present": true
+   },
+   "truth": {
+    "faces": [
+     [
+      450.753125,
+      103.76093750000001,
+      102.51562500000001,
+      128.7140625
+     ]
+    ],
+    "logo": null,
+    "headline": [
+     108,
+     691,
+     870,
+     69
+    ],
+    "text": [
+     [
+      108,
+      691,
+      870,
+      69
+     ],
+     [
+      108,
+      787,
+      311,
+      59
+     ]
+    ],
+    "subject": [
+     248,
+     32,
+     583,
+     583
+    ]
+   },
+   "meta": {
+    "canvas": "1x1",
+    "layout": "photo_top",
+    "base": "astronaut",
+    "defect": "none",
+    "logo_mode": "absent"
+   }
+  },
+  {
+   "file": "c007_4x5_astronaut_dark_safe.png",
+   "labels": {
+    "blurry": false,
+    "severely_blurry": false,
+    "dark": true,
+    "text_heavy": false,
+    "logo_present": true,
+    "face_present": true
+   },
+   "truth": {
+    "faces": [
+     [
+      215.85703125,
+      473.780859375,
+      93.97265625,
+      117.987890625
+     ]
+    ],
+    "logo": [
+     754,
+     1145,
+     194,
+     73
+    ],
+    "headline": [
+     615,
+     270,
+     436,
+     49
+    ],
+    "text": [
+     [
+      615,
+      270,
+      436,
+      49
+     ],
+     [
+      615,
+      338,
+      310,
+      41
+     ]
+    ],
+    "subject": [
+     30,
+     408,
+     534,
+     534
+    ]
+   },
+   "meta": {
+    "canvas": "4x5",
+    "layout": "photo_left",
+    "base": "astronaut",
+    "defect": "dark",
+    "logo_mode": "safe"
+   }
+  },
+  {
+   "file": "c008_1x1_coffee_none_edge.png",
+   "labels": {
+    "blurry": false,
+    "severely_blurry": false,
+    "dark": false,
+    "text_heavy": false,
+    "logo_present": true,
+    "face_present": false
+   },
+   "truth": {
+    "faces": [],
+    "logo": [
+     850,
+     10,
+     220,
+     83
+    ],
+    "headline": [
+     54,
+     216,
+     411,
+     36
+    ],
+    "text": [
+     [
+      54,
+      216,
+      411,
+      36
+     ],
+     [
+      54,
+      266,
+      291,
+      56
+     ]
+    ],
+    "subject": [
+     516,
+     362,
+     534,
+     356
+    ]
+   },
+   "meta": {
+    "canvas": "1x1",
+    "layout": "photo_right",
+    "base": "coffee",
+    "defect": "none",
+    "logo_mode": "edge"
+   }
+  },
+  {
+   "file": "c009_16x9_camera_dark_edge.png",
+   "labels": {
+    "blurry": false,
+    "severely_blurry": false,
+    "dark": true,
+    "text_heavy": false,
+    "logo_present": true,
+    "face_present": true
+   },
+   "truth": {
+    "faces": [
+     [
+      416.825,
+      274.75625,
+      113.23125,
+      150.35625
+     ]
+    ],
+    "logo": [
+     19,
+     19,
+     450,
+     171
+    ],
+    "headline": [
+     1094,
+     216,
+     775,
+     64
+    ],
+    "text": [
+     [
+      1094,
+      216,
+      775,
+      64
+     ],
+     [
+      1094,
+      305,
+      548,
+      73
+     ]
+    ],
+    "subject": [
+     53,
+     65,
+     950,
+     950
+    ]
+   },
+   "meta": {
+    "canvas": "16x9",
+    "layout": "photo_left",
+    "base": "camera",
+    "defect": "dark",
+    "logo_mode": "edge"
+   }
+  },
+  {
+   "file": "c010_16x9_chelsea_dark_safe.png",
+   "labels": {
+    "blurry": false,
+    "severely_blurry": false,
+    "dark": true,
+    "text_heavy": false,
+    "logo_present": true,
+    "face_present": false
+   },
+   "truth": {
+    "faces": [],
+    "logo": [
+     1359,
+     211,
+     350,
+     133
+    ],
+    "headline": [
+     1094,
+     216,
+     778,
+     62
+    ],
+    "text": [
+     [
+      1094,
+      216,
+      778,
+      62
+     ],
+     [
+      1094,
+      302,
+      556,
+      105
+     ]
+    ],
+    "subject": [
+     53,
+     224,
+     950,
+     632
+    ]
+   },
+   "meta": {
+    "canvas": "16x9",
+    "layout": "photo_left",
+    "base": "chelsea",
+    "defect": "dark",
+    "logo_mode": "safe"
+   }
+  },
+  {
+   "file": "c011_9x16_coffee_dark_absent.png",
+   "labels": {
+    "blurry": false,
+    "severely_blurry": false,
+    "dark": true,
+    "text_heavy": false,
+    "logo_present": false,
+    "face_present": false
+   },
+   "truth": {
+    "faces": [],
+    "logo": null,
+    "headline": [
+     86,
+     864,
+     875,
+     72
+    ],
+    "text": [
+     [
+      86,
+      864,
+      875,
+      72
+     ],
+     [
+      86,
+      964,
+      624,
+      82
+     ]
+    ],
+    "subject": [
+     670,
+     254,
+     388,
+     259
+    ]
+   },
+   "meta": {
+    "canvas": "9x16",
+    "layout": "photo_corner",
+    "base": "coffee",
+    "defect": "dark",
+    "logo_mode": "absent"
+   }
+  },
+  {
+   "file": "c012_16x9_rocket_blur_severe_safe.png",
+   "labels": {
+    "blurry": true,
+    "severely_blurry": true,
+    "dark": false,
+    "text_heavy": false,
+    "logo_present": true,
+    "face_present": false
+   },
+   "truth": {
+    "faces": [],
+    "logo": [
+     1263,
+     700,
+     446,
+     169
+    ],
+    "headline": [
+     192,
+     108,
+     1139,
+     93
+    ],
+    "text": [
+     [
+      192,
+      108,
+      1139,
+      93
+     ],
+     [
+      192,
+      238,
+      681,
+      59
+     ]
+    ],
+    "subject": [
+     523,
+     464,
+     874,
+     583
+    ]
+   },
+   "meta": {
+    "canvas": "16x9",
+    "layout": "photo_bottom",
+    "base": "rocket",
+    "defect": "blur_severe",
+    "logo_mode": "safe"
+   }
+  },
+  {
+   "file": "c013_4x5_rocket_text_heavy_distractor.png",
+   "labels": {
+    "blurry": false,
+    "severely_blurry": false,
+    "dark": false,
+    "text_heavy": true,
+    "logo_present": false,
+    "face_present": false
+   },
+   "truth": {
+    "faces": [],
+    "logo": null,
+    "headline": [
+     108,
+     135,
+     870,
+     69
+    ],
+    "text": [
+     [
+      108,
+      135,
+      870,
+      69
+     ],
+     [
+      108,
+      231,
+      621,
+      55
+     ],
+     [
+      54,
+      67,
+      990,
+      31
+     ],
+     [
+      54,
+      114,
+      990,
+      31
+     ],
+     [
+      54,
+      160,
+      990,
+      31
+     ],
+     [
+      54,
+      207,
+      990,
+      31
+     ],
+     [
+      54,
+      253,
+      990,
+      31
+     ],
+     [
+      54,
+      300,
+      990,
+      31
+     ],
+     [
+      54,
+      346,
+      990,
+      31
+     ],
+     [
+      54,
+      393,
+      990,
+      31
+     ],
+     [
+      54,
+      439,
+      990,
+      31
+     ],
+     [
+      54,
+      486,
+      990,
+      31
+     ],
+     [
+      54,
+      532,
+      990,
+      31
+     ],
+     [
+      54,
+      579,
+      990,
+      31
+     ],
+     [
+      54,
+      625,
+      990,
+      31
+     ],
+     [
+      54,
+      672,
+      990,
+      31
+     ],
+     [
+      54,
+      718,
+      990,
+      31
+     ],
+     [
+      54,
+      765,
+      990,
+      31
+     ],
+     [
+      54,
+      811,
+      990,
+      31
+     ],
+     [
+      54,
+      858,
+      990,
+      31
+     ],
+     [
+      54,
+      904,
+      990,
+      31
+     ],
+     [
+      54,
+      951,
+      990,
+      31
+     ],
+     [
+      54,
+      997,
+      990,
+      31
+     ],
+     [
+      54,
+      1044,
+      990,
+      31
+     ],
+     [
+      54,
+      1090,
+      990,
+      31
+     ],
+     [
+      54,
+      1137,
+      990,
+      31
+     ],
+     [
+      54,
+      1183,
+      990,
+      31
+     ]
+    ],
+    "subject": [
+     54,
+     621,
+     972,
+     648
+    ]
+   },
+   "meta": {
+    "canvas": "4x5",
+    "layout": "photo_bottom",
+    "base": "rocket",
+    "defect": "text_heavy",
+    "logo_mode": "distractor"
+   }
+  },
+  {
+   "file": "c014_9x16_camera_dark_safe.png",
+   "labels": {
+    "blurry": false,
+    "severely_blurry": false,
+    "dark": true,
+    "text_heavy": false,
+    "logo_present": true,
+    "face_present": true
+   },
+   "truth": {
+    "faces": [
+     [
+      426.09375,
+      1072.5234375,
+      115.8046875,
+      153.7734375
+     ]
+    ],
+    "logo": [
+     160,
+     1680,
+     211,
+     80
+    ],
+    "headline": [
+     108,
+     192,
+     885,
+     99
+    ],
+    "text": [
+     [
+      108,
+      192,
+      885,
+      99
+     ],
+     [
+      108,
+      330,
+      550,
+      104
+     ]
+    ],
+    "subject": [
+     54,
+     858,
+     972,
+     972
+    ]
+   },
+   "meta": {
+    "canvas": "9x16",
+    "layout": "photo_bottom",
+    "base": "camera",
+    "defect": "dark",
+    "logo_mode": "safe"
+   }
+  },
+  {
+   "file": "c015_9x16_chelsea_blur_mild_safe.png",
+   "labels": {
+    "blurry": true,
+    "severely_blurry": false,
+    "dark": false,
+    "text_heavy": false,
+    "logo_present": true,
+    "face_present": false
+   },
+   "truth": {
+    "faces": [],
+    "logo": [
+     160,
+     1663,
+     255,
+     97
+    ],
+    "headline": [
+     108,
+     192,
+     877,
+     75
+    ],
+    "text": [
+     [
+      108,
+      192,
+      877,
+      75
+     ],
+     [
+      108,
+      297,
+      620,
+      79
+     ]
+    ],
+    "subject": [
+     54,
+     1021,
+     972,
+     646
+    ]
+   },
+   "meta": {
+    "canvas": "9x16",
+    "layout": "photo_bottom",
+    "base": "chelsea",
+    "defect": "blur_mild",
+    "logo_mode": "safe"
+   }
+  },
+  {
+   "file": "c016_16x9_product_dark_distractor.png",
+   "labels": {
+    "blurry": false,
+    "severely_blurry": false,
+    "dark": true,
+    "text_heavy": false,
+    "logo_present": false,
+    "face_present": false
+   },
+   "truth": {
+    "faces": [],
+    "logo": null,
+    "headline": [
+     192,
+     108,
+     844,
+     93
+    ],
+    "text": [
+     [
+      192,
+      108,
+      844,
+      93
+     ],
+     [
+      192,
+      238,
+      681,
+      59
+     ]
+    ],
+    "subject": [
+     741,
+     464,
+     437,
+     583
+    ]
+   },
+   "meta": {
+    "canvas": "16x9",
+    "layout": "photo_bottom",
+    "base": "product",
+    "defect": "dark",
+    "logo_mode": "distractor"
+   }
+  },
+  {
+   "file": "c017_16x9_coffee_blur_mild_edge.png",
+   "labels": {
+    "blurry": true,
+    "severely_blurry": false,
+    "dark": false,
+    "text_heavy": false,
+    "logo_present": true,
+    "face_present": false
+   },
+   "truth": {
+    "faces": [],
+    "logo": [
+     1477,
+     19,
+     424,
+     161
+    ],
+    "headline": [
+     192,
+     691,
+     1139,
+     93
+    ],
+    "text": [
+     [
+      192,
+      691,
+      1139,
+      93
+     ],
+     [
+      192,
+      821,
+      447,
+      59
+     ]
+    ],
+    "subject": [
+     523,
+     32,
+     874,
+     583
+    ]
+   },
+   "meta": {
+    "canvas": "16x9",
+    "layout": "photo_top",
+    "base": "coffee",
+    "defect": "blur_mild",
+    "logo_mode": "edge"
+   }
+  },
+  {
+   "file": "c018_4x5_product_dark_safe.png",
+   "labels": {
+    "blurry": false,
+    "severely_blurry": false,
+    "dark": true,
+    "text_heavy": false,
+    "logo_present": true,
+    "face_present": false
+   },
+   "truth": {
+    "faces": [],
+    "logo": [
+     132,
+     1127,
+     239,
+     91
+    ],
+    "headline": [
+     615,
+     270,
+     436,
+     49
+    ],
+    "text": [
+     [
+      615,
+      270,
+      436,
+      49
+     ],
+     [
+      615,
+      338,
+      300,
+      27
+     ]
+    ],
+    "subject": [
+     30,
+     319,
+     534,
+     712
+    ]
+   },
+   "meta": {
+    "canvas": "4x5",
+    "layout": "photo_left",
+    "base": "product",
+    "defect": "dark",
+    "logo_mode": "safe"
+   }
+  },
+  {
+   "file": "c019_4x5_product_blur_severe_safe.png",
+   "labels": {
+    "blurry": true,
+    "severely_blurry": true,
+    "dark": false,
+    "text_heavy": false,
+    "logo_present": true,
+    "face_present": false
+   },
+   "truth": {
+    "faces": [],
+    "logo": [
+     730,
+     1135,
+     218,
+     83
+    ],
+    "headline": [
+     54,
+     270,
+     420,
+     47
+    ],
+    "text": [
+     [
+      54,
+      270,
+      420,
+      47
+     ],
+     [
+      54,
+      335,
+      291,
+      38
+     ]
+    ],
+    "subject": [
+     516,
+     319,
+     534,
+     712
+    ]
+   },
+   "meta": {
+    "canvas": "4x5",
+    "layout": "photo_right",
+    "base": "product",
+    "defect": "blur_severe",
+    "logo_mode": "safe"
+   }
+  },
+  {
+   "file": "c020_1x1_rocket_blur_mild_safe.png",
+   "labels": {
+    "blurry": true,
+    "severely_blurry": false,
+    "dark": false,
+    "text_heavy": false,
+    "logo_present": true,
+    "face_present": false
+   },
+   "truth": {
+    "faces": [],
+    "logo": [
+     118,
+     873,
+     234,
+     89
+    ],
+    "headline": [
+     54,
+     216,
+     420,
+     47
+    ],
+    "text": [
+     [
+      54,
+      216,
+      420,
+      47
+     ],
+     [
+      54,
+      281,
+      287,
+      26
+     ]
+    ],
+    "subject": [
+     516,
+     362,
+     534,
+     356
+    ]
+   },
+   "meta": {
+    "canvas": "1x1",
+    "layout": "photo_right",
+    "base": "rocket",
+    "defect": "blur_mild",
+    "logo_mode": "safe"
+   }
+  },
+  {
+   "file": "c021_16x9_coffee_none_distractor.png",
+   "labels": {
+    "blurry": false,
+    "severely_blurry": false,
+    "dark": false,
+    "text_heavy": false,
+    "logo_present": false,
+    "face_present": false
+   },
+   "truth": {
+    "faces": [],
+    "logo": null,
+    "headline": [
+     1094,
+     216,
+     778,
+     62
+    ],
+    "text": [
+     [
+      1094,
+      216,
+      778,
+      62
+     ],
+     [
+      1094,
+      302,
+      556,
+      105
+     ]
+    ],
+    "subject": [
+     53,
+     223,
+     950,
+     633
+    ]
+   },
+   "meta": {
+    "canvas": "16x9",
+    "layout": "photo_left",
+    "base": "coffee",
+    "defect": "none",
+    "logo_mode": "distractor"
+   }
+  },
+  {
+   "file": "c022_4x5_astronaut_none_safe.png",
+   "labels": {
+    "blurry": false,
+    "severely_blurry": false,
+    "dark": false,
+    "text_heavy": false,
+    "logo_present": true,
+    "face_present": true
+   },
+   "truth": {
+    "faces": [
+     [
+      428.44140625,
+      669.701171875,
+      128.14453125,
+      160.892578125
+     ]
+    ],
+    "logo": [
+     132,
+     132,
+     201,
+     76
+    ],
+    "headline": [
+     108,
+     135,
+     870,
+     69
+    ],
+    "text": [
+     [
+      108,
+      135,
+      870,
+      69
+     ],
+     [
+      108,
+      231,
+      559,
+      74
+     ]
+    ],
+    "subject": [
+     175,
+     580,
+     729,
+     729
+    ]
+   },
+   "meta": {
+    "canvas": "4x5",
+    "layout": "photo_bottom",
+    "base": "astronaut",
+    "defect": "none",
+    "logo_mode": "safe"
+   }
+  },
+  {
+   "file": "c023_4x5_astronaut_blur_mild_absent.png",
+   "labels": {
+    "blurry": true,
+    "severely_blurry": false,
+    "dark": false,
+    "text_heavy": false,
+    "logo_present": false,
+    "face_present": true
+   },
+   "truth": {
+    "faces": [
+     [
+      805.16875,
+      123.840625,
+      68.34375,
+      85.809375
+     ]
+    ],
+    "logo": null,
+    "headline": [
+     86,
+     607,
+     875,
+     72
+    ],
+    "text": [
+     [
+      86,
+      607,
+      875,
+      72
+     ],
+     [
+      86,
+      707,
+      621,
+      55
+     ]
+    ],
+    "subject": [
+     670,
+     76,
+     388,
+     388
+    ]
+   },
+   "meta": {
+    "canvas": "4x5",
+    "layout": "photo_corner",
+    "base": "astronaut",
+    "defect": "blur_mild",
+    "logo_mode": "absent"
+   }
+  },
+  {
+   "file": "c024_9x16_chelsea_blur_mild_safe.png",
+   "labels": {
+    "blurry": true,
+    "severely_blurry": false,
+    "dark": false,
+    "text_heavy": false,
+    "logo_present": true,
+    "face_present": false
+   },
+   "truth": {
+    "faces": [],
+    "logo": [
+     160,
+     1665,
+     250,
+     95
+    ],
+    "headline": [
+     108,
+     192,
+     885,
+     99
+    ],
+    "text": [
+     [
+      108,
+      192,
+      885,
+      99
+     ],
+     [
+      108,
+      330,
+      621,
+      55
+     ]
+    ],
+    "subject": [
+     54,
+     1021,
+     972,
+     646
+    ]
+   },
+   "meta": {
+    "canvas": "9x16",
+    "layout": "photo_bottom",
+    "base": "chelsea",
+    "defect": "blur_mild",
+    "logo_mode": "safe"
+   }
+  },
+  {
+   "file": "c025_16x9_camera_none_edge.png",
+   "labels": {
+    "blurry": false,
+    "severely_blurry": false,
+    "dark": false,
+    "text_heavy": false,
+    "logo_present": true,
+    "face_present": true
+   },
+   "truth": {
+    "faces": [
+     [
+      891.25625,
+      160.7140625,
+      69.48281250000001,
+      92.26406250000001
+     ]
+    ],
+    "logo": [
+     1491,
+     19,
+     410,
+     156
+    ],
+    "headline": [
+     192,
+     691,
+     1183,
+     94
+    ],
+    "text": [
+     [
+      192,
+      691,
+      1183,
+      94
+     ],
+     [
+      192,
+      822,
+      311,
+      59
+     ]
+    ],
+    "subject": [
+     668,
+     32,
+     583,
+     583
+    ]
+   },
+   "meta": {
+    "canvas": "16x9",
+    "layout": "photo_top",
+    "base": "camera",
+    "defect": "none",
+    "logo_mode": "edge"
+   }
+  },
+  {
+   "file": "c026_9x16_product_dark_safe.png",
+   "labels": {
+    "blurry": false,
+    "severely_blurry": false,
+    "dark": true,
+    "text_heavy": false,
+    "logo_present": true,
+    "face_present": false
+   },
+   "truth": {
+    "faces": [],
+    "logo": [
+     712,
+     160,
+     208,
+     79
+    ],
+    "headline": [
+     86,
+     864,
+     874,
+     71
+    ],
+    "text": [
+     [
+      86,
+      864,
+      874,
+      71
+     ],
+     [
+      86,
+      963,
+      621,
+      55
+     ]
+    ],
+    "subject": [
+     670,
+     125,
+     388,
+     518
+    ]
+   },
+   "meta": {
+    "canvas": "9x16",
+    "layout": "photo_corner",
+    "base": "product",
+    "defect": "dark",
+    "logo_mode": "safe"
+   }
+  },
+  {
+   "file": "c027_4x5_coffee_text_heavy_distractor.png",
+   "labels": {
+    "blurry": false,
+    "severely_blurry": false,
+    "dark": false,
+    "text_heavy": true,
+    "logo_present": false,
+    "face_present": false
+   },
+   "truth": {
+    "faces": [],
+    "logo": null,
+    "headline": [
+     86,
+     607,
+     875,
+     72
+    ],
+    "text": [
+     [
+      86,
+      607,
+      875,
+      72
+     ],
+     [
+      86,
+      707,
+      506,
+      67
+     ],
+     [
+      54,
+      67,
+      990,
+      31
+     ],
+     [
+      54,
+      114,
+      990,
+      31
+     ],
+     [
+      54,
+      160,
+      990,
+      31
+     ],
+     [
+      54,
+      207,
+      990,
+      31
+     ],
+     [
+      54,
+      253,
+      990,
+      31
+     ],
+     [
+      54,
+      300,
+      990,
+      31
+     ],
+     [
+      54,
+      346,
+      990,
+      31
+     ],
+     [
+      54,
+      393,
+      990,
+      31
+     ],
+     [
+      54,
+      439,
+      990,
+      31
+     ],
+     [
+      54,
+      486,
+      990,
+      31
+     ],
+     [
+      54,
+      532,
+      990,
+      31
+     ],
+     [
+      54,
+      579,
+      990,
+      31
+     ],
+     [
+      54,
+      625,
+      990,
+      31
+     ],
+     [
+      54,
+      672,
+      990,
+      31
+     ],
+     [
+      54,
+      718,
+      990,
+      31
+     ],
+     [
+      54,
+      765,
+      990,
+      31
+     ],
+     [
+      54,
+      811,
+      990,
+      31
+     ],
+     [
+      54,
+      858,
+      990,
+      31
+     ],
+     [
+      54,
+      904,
+      990,
+      31
+     ],
+     [
+      54,
+      951,
+      990,
+      31
+     ],
+     [
+      54,
+      997,
+      990,
+      31
+     ],
+     [
+      54,
+      1044,
+      990,
+      31
+     ],
+     [
+      54,
+      1090,
+      990,
+      31
+     ],
+     [
+      54,
+      1137,
+      990,
+      31
+     ],
+     [
+      54,
+      1183,
+      990,
+      31
+     ]
+    ],
+    "subject": [
+     670,
+     140,
+     388,
+     259
+    ]
+   },
+   "meta": {
+    "canvas": "4x5",
+    "layout": "photo_corner",
+    "base": "coffee",
+    "defect": "text_heavy",
+    "logo_mode": "distractor"
+   }
+  },
+  {
+   "file": "c028_1x1_astronaut_dark_edge.png",
+   "labels": {
+    "blurry": false,
+    "severely_blurry": false,
+    "dark": true,
+    "text_heavy": false,
+    "logo_present": true,
+    "face_present": true
+   },
+   "truth": {
+    "faces": [
+     [
+      701.85703125,
+      338.780859375,
+      93.97265625,
+      117.987890625
+     ]
+    ],
+    "logo": [
+     10,
+     10,
+     232,
+     88
+    ],
+    "headline": [
+     54,
+     216,
+     420,
+     47
+    ],
+    "text": [
+     [
+      54,
+      216,
+      420,
+      47
+     ],
+     [
+      54,
+      281,
+      291,
+      56
+     ]
+    ],
+    "subject": [
+     516,
+     273,
+     534,
+     534
+    ]
+   },
+   "meta": {
+    "canvas": "1x1",
+    "layout": "photo_right",
+    "base": "astronaut",
+    "defect": "dark",
+    "logo_mode": "edge"
+   }
+  },
+  {
+   "file": "c029_1x1_product_none_safe.png",
+   "labels": {
+    "blurry": false,
+    "severely_blurry": false,
+    "dark": false,
+    "text_heavy": false,
+    "logo_present": true,
+    "face_present": false
+   },
+   "truth": {
+    "faces": [],
+    "logo": [
+     118,
+     896,
+     175,
+     66
+    ],
+    "headline": [
+     108,
+     691,
+     874,
+     71
+    ],
+    "text": [
+     [
+      108,
+      691,
+      874,
+      71
+     ],
+     [
+      108,
+      790,
+      621,
+      55
+     ]
+    ],
+    "subject": [
+     321,
+     32,
+     437,
+     583
+    ]
+   },
+   "meta": {
+    "canvas": "1x1",
+    "layout": "photo_top",
+    "base": "product",
+    "defect": "none",
+    "logo_mode": "safe"
+   }
+  },
+  {
+   "file": "c030_1x1_camera_blur_mild_safe.png",
+   "labels": {
+    "blurry": true,
+    "severely_blurry": false,
+    "dark": false,
+    "text_heavy": false,
+    "logo_present": true,
+    "face_present": true
+   },
+   "truth": {
+    "faces": [
+     [
+      234.6515625,
+      390.987890625,
+      63.692578125000004,
+      84.575390625
+     ]
+    ],
+    "logo": [
+     743,
+     118,
+     219,
+     83
+    ],
+    "headline": [
+     615,
+     216,
+     434,
+     36
+    ],
+    "text": [
+     [
+      615,
+      216,
+      434,
+      36
+     ],
+     [
+      615,
+      266,
+      310,
+      41
+     ]
+    ],
+    "subject": [
+     30,
+     273,
+     534,
+     534
+    ]
+   },
+   "meta": {
+    "canvas": "1x1",
+    "layout": "photo_left",
+    "base": "camera",
+    "defect": "blur_mild",
+    "logo_mode": "safe"
+   }
+  },
+  {
+   "file": "c031_1x1_product_text_heavy_safe.png",
+   "labels": {
+    "blurry": false,
+    "severely_blurry": false,
+    "dark": false,
+    "text_heavy": true,
+    "logo_present": true,
+    "face_present": false
+   },
+   "truth": {
+    "faces": [],
+    "logo": [
+     118,
+     118,
+     241,
+     91
+    ],
+    "headline": [
+     54,
+     216,
+     419,
+     34
+    ],
+    "text": [
+     [
+      54,
+      216,
+      419,
+      34
+     ],
+     [
+      54,
+      263,
+      289,
+      39
+     ],
+     [
+      54,
+      54,
+      990,
+      31
+     ],
+     [
+      54,
+      100,
+      990,
+      31
+     ],
+     [
+      54,
+      147,
+      990,
+      31
+     ],
+     [
+      54,
+      193,
+      990,
+      31
+     ],
+     [
+      54,
+      240,
+      990,
+      31
+     ],
+     [
+      54,
+      286,
+      990,
+      31
+     ],
+     [
+      54,
+      333,
+      990,
+      31
+     ],
+     [
+      54,
+      379,
+      990,
+      31
+     ],
+     [
+      54,
+      426,
+      990,
+      31
+     ],
+     [
+      54,
+      472,
+      990,
+      31
+     ],
+     [
+      54,
+      519,
+      990,
+      31
+     ],
+     [
+      54,
+      565,
+      990,
+      31
+     ],
+     [
+      54,
+      612,
+      990,
+      31
+     ],
+     [
+      54,
+      658,
+      990,
+      31
+     ],
+     [
+      54,
+      705,
+      990,
+      31
+     ],
+     [
+      54,
+      751,
+      990,
+      31
+     ],
+     [
+      54,
+      798,
+      990,
+      31
+     ],
+     [
+      54,
+      844,
+      990,
+      31
+     ],
+     [
+      54,
+      891,
+      990,
+      31
+     ],
+     [
+      54,
+      937,
+      990,
+      31
+     ]
+    ],
+    "subject": [
+     516,
+     184,
+     534,
+     712
+    ]
+   },
+   "meta": {
+    "canvas": "1x1",
+    "layout": "photo_right",
+    "base": "product",
+    "defect": "text_heavy",
+    "logo_mode": "safe"
+   }
+  },
+  {
+   "file": "c032_9x16_camera_dark_safe.png",
+   "labels": {
+    "blurry": false,
+    "severely_blurry": false,
+    "dark": true,
+    "text_heavy": false,
+    "logo_present": true,
+    "face_present": true
+   },
+   "truth": {
+    "faces": [
+     [
+      818.8375,
+      275.809375,
+      46.321875,
+      61.509375
+     ]
+    ],
+    "logo": [
+     713,
+     160,
+     207,
+     78
+    ],
+    "headline": [
+     86,
+     864,
+     874,
+     71
+    ],
+    "text": [
+     [
+      86,
+      864,
+      874,
+      71
+     ],
+     [
+      86,
+      963,
+      621,
+      55
+     ]
+    ],
+    "subject": [
+     670,
+     190,
+     388,
+     388
+    ]
+   },
+   "meta": {
+    "canvas": "9x16",
+    "layout": "photo_corner",
+    "base": "camera",
+    "defect": "dark",
+    "logo_mode": "safe"
+   }
+  },
+  {
+   "file": "c033_9x16_coffee_dark_safe.png",
+   "labels": {
+    "blurry": false,
+    "severely_blurry": false,
+    "dark": true,
+    "text_heavy": false,
+    "logo_present": true,
+    "face_present": false
+   },
+   "truth": {
+    "faces": [],
+    "logo": [
+     160,
+     160,
+     214,
+     81
+    ],
+    "headline": [
+     54,
+     384,
+     420,
+     47
+    ],
+    "text": [
+     [
+      54,
+      384,
+      420,
+      47
+     ],
+     [
+      54,
+      449,
+      291,
+      56
+     ]
+    ],
+    "subject": [
+     516,
+     782,
+     534,
+     356
+    ]
+   },
+   "meta": {
+    "canvas": "9x16",
+    "layout": "photo_right",
+    "base": "coffee",
+    "defect": "dark",
+    "logo_mode": "safe"
+   }
+  },
+  {
+   "file": "c034_4x5_rocket_dark_distractor.png",
+   "labels": {
+    "blurry": false,
+    "severely_blurry": false,
+    "dark": true,
+    "text_heavy": false,
+    "logo_present": false,
+    "face_present": false
+   },
+   "truth": {
+    "faces": [],
+    "logo": null,
+    "headline": [
+     615,
+     270,
+     436,
+     49
+    ],
+    "text": [
+     [
+      615,
+      270,
+      436,
+      49
+     ],
+     [
+      615,
+      338,
+      310,
+      41
+     ]
+    ],
+    "subject": [
+     30,
+     497,
+     534,
+     356
+    ]
+   },
+   "meta": {
+    "canvas": "4x5",
+    "layout": "photo_left",
+    "base": "rocket",
+    "defect": "dark",
+    "logo_mode": "distractor"
+   }
+  },
+  {
+   "file": "c035_16x9_chelsea_blur_mild_safe.png",
+   "labels": {
+    "blurry": true,
+    "severely_blurry": false,
+    "dark": false,
+    "text_heavy": false,
+    "logo_present": true,
+    "face_present": false
+   },
+   "truth": {
+    "faces": [],
+    "logo": [
+     211,
+     211,
+     308,
+     117
+    ],
+    "headline": [
+     96,
+     216,
+     735,
+     63
+    ],
+    "text": [
+     [
+      96,
+      216,
+      735,
+      63
+     ],
+     [
+      96,
+      304,
+      530,
+      100
+     ]
+    ],
+    "subject": [
+     917,
+     224,
+     950,
+     632
+    ]
+   },
+   "meta": {
+    "canvas": "16x9",
+    "layout": "photo_right",
+    "base": "chelsea",
+    "defect": "blur_mild",
+    "logo_mode": "safe"
+   }
+  },
+  {
+   "file": "c036_9x16_camera_blur_mild_edge.png",
+   "labels": {
+    "blurry": true,
+    "severely_blurry": false,
+    "dark": false,
+    "text_heavy": false,
+    "logo_present": true,
+    "face_present": true
+   },
+   "truth": {
+    "faces": [
+     [
+      234.6515625,
+      810.987890625,
+      63.692578125000004,
+      84.575390625
+     ]
+    ],
+    "logo": [
+     876,
+     10,
+     194,
+     73
+    ],
+    "headline": [
+     615,
+     384,
+     434,
+     38
+    ],
+    "text": [
+     [
+      615,
+      384,
+      434,
+      38
+     ],
+     [
+      615,
+      437,
+      310,
+      41
+     ]
+    ],
+    "subject": [
+     30,
+     693,
+     534,
+     534
+    ]
+   },
+   "meta": {
+    "canvas": "9x16",
+    "layout": "photo_left",
+    "base": "camera",
+    "defect": "blur_mild",
+    "logo_mode": "edge"
+   }
+  },
+  {
+   "file": "c037_16x9_product_blur_mild_edge.png",
+   "labels": {
+    "blurry": true,
+    "severely_blurry": false,
+    "dark": false,
+    "text_heavy": false,
+    "logo_present": true,
+    "face_present": false
+   },
+   "truth": {
+    "faces": [],
+    "logo": [
+     1450,
+     890,
+     451,
+     171
+    ],
+    "headline": [
+     153,
+     486,
+     983,
+     84
+    ],
+    "text": [
+     [
+      153,
+      486,
+      983,
+      84
+     ],
+     [
+      153,
+      603,
+      611,
+      53
+     ]
+    ],
+    "subject": [
+     1390,
+     22,
+     291,
+     388
+    ]
+   },
+   "meta": {
+    "canvas": "16x9",
+    "layout": "photo_corner",
+    "base": "product",
+    "defect": "blur_mild",
+    "logo_mode": "edge"
+   }
+  },
+  {
+   "file": "c038_9x16_rocket_dark_safe.png",
+   "labels": {
+    "blurry": false,
+    "severely_blurry": false,
+    "dark": true,
+    "text_heavy": false,
+    "logo_present": true,
+    "face_present": false
+   },
+   "truth": {
+    "faces": [],
+    "logo": [
+     724,
+     1686,
+     196,
+     74
+    ],
+    "headline": [
+     108,
+     192,
+     874,
+     71
+    ],
+    "text": [
+     [
+      108,
+      192,
+      874,
+      71
+     ],
+     [
+      108,
+      291,
+      620,
+      79
+     ]
+    ],
+    "subject": [
+     54,
+     1020,
+     972,
+     648
+    ]
+   },
+   "meta": {
+    "canvas": "9x16",
+    "layout": "photo_bottom",
+    "base": "rocket",
+    "defect": "dark",
+    "logo_mode": "safe"
+   }
+  },
+  {
+   "file": "c039_1x1_coffee_dark_edge.png",
+   "labels": {
+    "blurry": false,
+    "severely_blurry": false,
+    "dark": true,
+    "text_heavy": false,
+    "logo_present": true,
+    "face_present": false
+   },
+   "truth": {
+    "faces": [],
+    "logo": [
+     825,
+     10,
+     245,
+     93
+    ],
+    "headline": [
+     108,
+     691,
+     870,
+     69
+    ],
+    "text": [
+     [
+      108,
+      691,
+      870,
+      69
+     ],
+     [
+      108,
+      787,
+      621,
+      55
+     ]
+    ],
+    "subject": [
+     103,
+     32,
+     874,
+     583
+    ]
+   },
+   "meta": {
+    "canvas": "1x1",
+    "layout": "photo_top",
+    "base": "coffee",
+    "defect": "dark",
+    "logo_mode": "edge"
+   }
+  },
+  {
+   "file": "c040_1x1_rocket_blur_severe_edge.png",
+   "labels": {
+    "blurry": true,
+    "severely_blurry": true,
+    "dark": false,
+    "text_heavy": false,
+    "logo_present": true,
+    "face_present": false
+   },
+   "truth": {
+    "faces": [],
+    "logo": [
+     10,
+     10,
+     210,
+     80
+    ],
+    "headline": [
+     108,
+     108,
+     874,
+     71
+    ],
+    "text": [
+     [
+      108,
+      108,
+      874,
+      71
+     ],
+     [
+      108,
+      207,
+      465,
+      59
+     ]
+    ],
+    "subject": [
+     103,
+     464,
+     874,
+     583
+    ]
+   },
+   "meta": {
+    "canvas": "1x1",
+    "layout": "photo_bottom",
+    "base": "rocket",
+    "defect": "blur_severe",
+    "logo_mode": "edge"
+   }
+  },
+  {
+   "file": "c041_1x1_rocket_blur_severe_distractor.png",
+   "labels": {
+    "blurry": true,
+    "severely_blurry": true,
+    "dark": false,
+    "text_heavy": false,
+    "logo_present": false,
+    "face_present": false
+   },
+   "truth": {
+    "faces": [],
+    "logo": null,
+    "headline": [
+     108,
+     108,
+     874,
+     71
+    ],
+    "text": [
+     [
+      108,
+      108,
+      874,
+      71
+     ],
+     [
+      108,
+      207,
+      465,
+      59
+     ]
+    ],
+    "subject": [
+     103,
+     464,
+     874,
+     583
+    ]
+   },
+   "meta": {
+    "canvas": "1x1",
+    "layout": "photo_bottom",
+    "base": "rocket",
+    "defect": "blur_severe",
+    "logo_mode": "distractor"
+   }
+  },
+  {
+   "file": "c042_16x9_rocket_none_absent.png",
+   "labels": {
+    "blurry": false,
+    "severely_blurry": false,
+    "dark": false,
+    "text_heavy": false,
+    "logo_present": false,
+    "face_present": false
+   },
+   "truth": {
+    "faces": [],
+    "logo": null,
+    "headline": [
+     153,
+     486,
+     1023,
+     84
+    ],
+    "text": [
+     [
+      153,
+      486,
+      1023,
+      84
+     ],
+     [
+      153,
+      603,
+      402,
+      53
+     ]
+    ],
+    "subject": [
+     1245,
+     22,
+     582,
+     388
+    ]
+   },
+   "meta": {
+    "canvas": "16x9",
+    "layout": "photo_corner",
+    "base": "rocket",
+    "defect": "none",
+    "logo_mode": "absent"
+   }
+  },
+  {
+   "file": "c043_1x1_coffee_blur_mild_edge.png",
+   "labels": {
+    "blurry": true,
+    "severely_blurry": false,
+    "dark": false,
+    "text_heavy": false,
+    "logo_present": true,
+    "face_present": false
+   },
+   "truth": {
+    "faces": [],
+    "logo": [
+     10,
+     1003,
+     177,
+     67
+    ],
+    "headline": [
+     54,
+     216,
+     411,
+     36
+    ],
+    "text": [
+     [
+      54,
+      216,
+      411,
+      36
+     ],
+     [
+      54,
+      266,
+      289,
+      39
+     ]
+    ],
+    "subject": [
+     516,
+     362,
+     534,
+     356
+    ]
+   },
+   "meta": {
+    "canvas": "1x1",
+    "layout": "photo_right",
+    "base": "coffee",
+    "defect": "blur_mild",
+    "logo_mode": "edge"
+   }
+  },
+  {
+   "file": "c044_1x1_coffee_dark_safe.png",
+   "labels": {
+    "blurry": false,
+    "severely_blurry": false,
+    "dark": true,
+    "text_heavy": false,
+    "logo_present": true,
+    "face_present": false
+   },
+   "truth": {
+    "faces": [],
+    "logo": [
+     774,
+     118,
+     188,
+     71
+    ],
+    "headline": [
+     108,
+     108,
+     875,
+     72
+    ],
+    "text": [
+     [
+      108,
+      108,
+      875,
+      72
+     ],
+     [
+      108,
+      208,
+      447,
+      59
+     ]
+    ],
+    "subject": [
+     103,
+     464,
+     874,
+     583
+    ]
+   },
+   "meta": {
+    "canvas": "1x1",
+    "layout": "photo_bottom",
+    "base": "coffee",
+    "defect": "dark",
+    "logo_mode": "safe"
+   }
+  },
+  {
+   "file": "c045_1x1_camera_none_safe.png",
+   "labels": {
+    "blurry": false,
+    "severely_blurry": false,
+    "dark": false,
+    "text_heavy": false,
+    "logo_present": true,
+    "face_present": true
+   },
+   "truth": {
+    "faces": [
+     [
+      234.6515625,
+      390.987890625,
+      63.692578125000004,
+      84.575390625
+     ]
+    ],
+    "logo": [
+     752,
+     118,
+     210,
+     80
+    ],
+    "headline": [
+     615,
+     216,
+     436,
+     49
+    ],
+    "text": [
+     [
+      615,
+      216,
+      436,
+      49
+     ],
+     [
+      615,
+      284,
+      310,
+      40
+     ]
+    ],
+    "subject": [
+     30,
+     273,
+     534,
+     534
+    ]
+   },
+   "meta": {
+    "canvas": "1x1",
+    "layout": "photo_left",
+    "base": "camera",
+    "defect": "none",
+    "logo_mode": "safe"
+   }
+  },
+  {
+   "file": "c046_4x5_camera_none_safe.png",
+   "labels": {
+    "blurry": false,
+    "severely_blurry": false,
+    "dark": false,
+    "text_heavy": false,
+    "logo_present": true,
+    "face_present": true
+   },
+   "truth": {
+    "faces": [
+     [
+      454.0703125,
+      740.892578125,
+      86.853515625,
+      115.330078125
+     ]
+    ],
+    "logo": [
+     132,
+     132,
+     246,
+     93
+    ],
+    "headline": [
+     108,
+     135,
+     885,
+     99
+    ],
+    "text": [
+     [
+      108,
+      135,
+      885,
+      99
+     ],
+     [
+      108,
+      273,
+      389,
+      74
+     ]
+    ],
+    "subject": [
+     175,
+     580,
+     729,
+     729
+    ]
+   },
+   "meta": {
+    "canvas": "4x5",
+    "layout": "photo_bottom",
+    "base": "camera",
+    "defect": "none",
+    "logo_mode": "safe"
+   }
+  },
+  {
+   "file": "c047_4x5_chelsea_none_safe.png",
+   "labels": {
+    "blurry": false,
+    "severely_blurry": false,
+    "dark": false,
+    "text_heavy": false,
+    "logo_present": true,
+    "face_present": false
+   },
+   "truth": {
+    "faces": [],
+    "logo": [
+     132,
+     1148,
+     185,
+     70
+    ],
+    "headline": [
+     108,
+     135,
+     875,
+     72
+    ],
+    "text": [
+     [
+      108,
+      135,
+      875,
+      72
+     ],
+     [
+      108,
+      235,
+      581,
+      74
+     ]
+    ],
+    "subject": [
+     54,
+     622,
+     972,
+     646
+    ]
+   },
+   "meta": {
+    "canvas": "4x5",
+    "layout": "photo_bottom",
+    "base": "chelsea",
+    "defect": "none",
+    "logo_mode": "safe"
+   }
+  },
+  {
+   "file": "c048_1x1_astronaut_blur_mild_absent.png",
+   "labels": {
+    "blurry": true,
+    "severely_blurry": false,
+    "dark": false,
+    "text_heavy": false,
+    "logo_present": false,
+    "face_present": true
+   },
+   "truth": {
+    "faces": [
+     [
+      805.16875,
+      69.840625,
+      68.34375,
+      85.809375
+     ]
+    ],
+    "logo": null,
+    "headline": [
+     86,
+     486,
+     874,
+     71
+    ],
+    "text": [
+     [
+      86,
+      486,
+      874,
+      71
+     ],
+     [
+      86,
+      585,
+      279,
+      53
+     ]
+    ],
+    "subject": [
+     670,
+     22,
+     388,
+     388
+    ]
+   },
+   "meta": {
+    "canvas": "1x1",
+    "layout": "photo_corner",
+    "base": "astronaut",
+    "defect": "blur_mild",
+    "logo_mode": "absent"
+   }
+  },
+  {
+   "file": "c049_4x5_camera_none_edge.png",
+   "labels": {
+    "blurry": false,
+    "severely_blurry": false,
+    "dark": false,
+    "text_heavy": false,
+    "logo_present": true,
+    "face_present": true
+   },
+   "truth": {
+    "faces": [
+     [
+      234.6515625,
+      525.987890625,
+      63.692578125000004,
+      84.575390625
+     ]
+    ],
+    "logo": [
+     10,
+     1242,
+     258,
+     98
+    ],
+    "headline": [
+     615,
+     270,
+     442,
+     37
+    ],
+    "text": [
+     [
+      615,
+      270,
+      442,
+      37
+     ],
+     [
+      615,
+      321,
+      311,
+      59
+     ]
+    ],
+    "subject": [
+     30,
+     408,
+     534,
+     534
+    ]
+   },
+   "meta": {
+    "canvas": "4x5",
+    "layout": "photo_left",
+    "base": "camera",
+    "defect": "none",
+    "logo_mode": "edge"
+   }
+  },
+  {
+   "file": "c050_1x1_chelsea_blur_severe_edge.png",
+   "labels": {
+    "blurry": true,
+    "severely_blurry": true,
+    "dark": false,
+    "text_heavy": false,
+    "logo_present": true,
+    "face_present": false
+   },
+   "truth": {
+    "faces": [],
+    "logo": [
+     883,
+     999,
+     187,
+     71
+    ],
+    "headline": [
+     54,
+     216,
+     410,
+     34
+    ],
+    "text": [
+     [
+      54,
+      216,
+      410,
+      34
+     ],
+     [
+      54,
+      263,
+      287,
+      26
+     ]
+    ],
+    "subject": [
+     516,
+     362,
+     534,
+     355
+    ]
+   },
+   "meta": {
+    "canvas": "1x1",
+    "layout": "photo_right",
+    "base": "chelsea",
+    "defect": "blur_severe",
+    "logo_mode": "edge"
+   }
+  },
+  {
+   "file": "c051_1x1_coffee_blur_mild_edge.png",
+   "labels": {
+    "blurry": true,
+    "severely_blurry": false,
+    "dark": false,
+    "text_heavy": false,
+    "logo_present": true,
+    "face_present": false
+   },
+   "truth": {
+    "faces": [],
+    "logo": [
+     867,
+     10,
+     203,
+     77
+    ],
+    "headline": [
+     54,
+     216,
+     419,
+     34
+    ],
+    "text": [
+     [
+      54,
+      216,
+      419,
+      34
+     ],
+     [
+      54,
+      263,
+      291,
+      56
+     ]
+    ],
+    "subject": [
+     516,
+     362,
+     534,
+     356
+    ]
+   },
+   "meta": {
+    "canvas": "1x1",
+    "layout": "photo_right",
+    "base": "coffee",
+    "defect": "blur_mild",
+    "logo_mode": "edge"
+   }
+  },
+  {
+   "file": "c052_16x9_rocket_none_absent.png",
+   "labels": {
+    "blurry": false,
+    "severely_blurry": false,
+    "dark": false,
+    "text_heavy": false,
+    "logo_present": false,
+    "face_present": false
+   },
+   "truth": {
+    "faces": [],
+    "logo": null,
+    "headline": [
+     192,
+     108,
+     1155,
+     93
+    ],
+    "text": [
+     [
+      192,
+      108,
+      1155,
+      93
+     ],
+     [
+      192,
+      238,
+      447,
+      59
+     ]
+    ],
+    "subject": [
+     523,
+     464,
+     874,
+     583
+    ]
+   },
+   "meta": {
+    "canvas": "16x9",
+    "layout": "photo_bottom",
+    "base": "rocket",
+    "defect": "none",
+    "logo_mode": "absent"
+   }
+  },
+  {
+   "file": "c053_9x16_camera_blur_mild_safe.png",
+   "labels": {
+    "blurry": true,
+    "severely_blurry": false,
+    "dark": false,
+    "text_heavy": false,
+    "logo_present": true,
+    "face_present": true
+   },
+   "truth": {
+    "faces": [
+     [
+      426.09375,
+      304.5234375,
+      115.8046875,
+      153.7734375
+     ]
+    ],
+    "logo": [
+     673,
+     1666,
+     247,
+     94
+    ],
+    "headline": [
+     108,
+     1228,
+     875,
+     72
+    ],
+    "text": [
+     [
+      108,
+      1228,
+      875,
+      72
+     ],
+     [
+      108,
+      1328,
+      621,
+      55
+     ]
+    ],
+    "subject": [
+     54,
+     90,
+     972,
+     972
+    ]
+   },
+   "meta": {
+    "canvas": "9x16",
+    "layout": "photo_top",
+    "base": "camera",
+    "defect": "blur_mild",
+    "logo_mode": "safe"
+   }
+  },
+  {
+   "file": "c054_1x1_chelsea_none_edge.png",
+   "labels": {
+    "blurry": false,
+    "severely_blurry": false,
+    "dark": false,
+    "text_heavy": false,
+    "logo_present": true,
+    "face_present": false
+   },
+   "truth": {
+    "faces": [],
+    "logo": [
+     10,
+     985,
+     225,
+     85
+    ],
+    "headline": [
+     615,
+     216,
+     434,
+     36
+    ],
+    "text": [
+     [
+      615,
+      216,
+      434,
+      36
+     ],
+     [
+      615,
+      266,
+      310,
+      40
+     ]
+    ],
+    "subject": [
+     30,
+     362,
+     534,
+     355
+    ]
+   },
+   "meta": {
+    "canvas": "1x1",
+    "layout": "photo_left",
+    "base": "chelsea",
+    "defect": "none",
+    "logo_mode": "edge"
+   }
+  },
+  {
+   "file": "c055_9x16_camera_none_edge.png",
+   "labels": {
+    "blurry": false,
+    "severely_blurry": false,
+    "dark": false,
+    "text_heavy": false,
+    "logo_present": true,
+    "face_present": true
+   },
+   "truth": {
+    "faces": [
+     [
+      818.8375,
+      275.809375,
+      46.321875,
+      61.509375
+     ]
+    ],
+    "logo": [
+     10,
+     1842,
+     180,
+     68
+    ],
+    "headline": [
+     86,
+     864,
+     877,
+     75
+    ],
+    "text": [
+     [
+      86,
+      864,
+      877,
+      75
+     ],
+     [
+      86,
+      969,
+      505,
+      96
+     ]
+    ],
+    "subject": [
+     670,
+     190,
+     388,
+     388
+    ]
+   },
+   "meta": {
+    "canvas": "9x16",
+    "layout": "photo_corner",
+    "base": "camera",
+    "defect": "none",
+    "logo_mode": "edge"
+   }
+  },
+  {
+   "file": "c056_16x9_astronaut_text_heavy_safe.png",
+   "labels": {
+    "blurry": false,
+    "severely_blurry": false,
+    "dark": false,
+    "text_heavy": true,
+    "logo_present": true,
+    "face_present": true
+   },
+   "truth": {
+    "faces": [
+     [
+      870.753125,
+      103.76093750000001,
+      102.51562500000001,
+      128.7140625
+     ]
+    ],
+    "logo": [
+     211,
+     719,
+     396,
+     150
+    ],
+    "headline": [
+     192,
+     691,
+     1139,
+     93
+    ],
+    "text": [
+     [
+      192,
+      691,
+      1139,
+      93
+     ],
+     [
+      192,
+      821,
+      681,
+      59
+     ],
+     [
+      96,
+      54,
+      1787,
+      55
+     ],
+     [
+      96,
+      136,
+      1787,
+      55
+     ],
+     [
+      96,
+      219,
+      1787,
+      55
+     ],
+     [
+      96,
+      301,
+      1787,
+      55
+     ],
+     [
+      96,
+      384,
+      1787,
+      55
+     ],
+     [
+      96,
+      466,
+      1787,
+      55
+     ],
+     [
+      96,
+      549,
+      1787,
+      55
+     ],
+     [
+      96,
+      631,
+      1787,
+      55
+     ],
+     [
+      96,
+      714,
+      1787,
+      55
+     ],
+     [
+      96,
+      796,
+      1787,
+      55
+     ],
+     [
+      96,
+      879,
+      1787,
+      55
+     ],
+     [
+      96,
+      961,
+      1787,
+      55
+     ]
+    ],
+    "subject": [
+     668,
+     32,
+     583,
+     583
+    ]
+   },
+   "meta": {
+    "canvas": "16x9",
+    "layout": "photo_top",
+    "base": "astronaut",
+    "defect": "text_heavy",
+    "logo_mode": "safe"
+   }
+  },
+  {
+   "file": "c057_4x5_product_none_distractor.png",
+   "labels": {
+    "blurry": false,
+    "severely_blurry": false,
+    "dark": false,
+    "text_heavy": false,
+    "logo_present": false,
+    "face_present": false
+   },
+   "truth": {
+    "faces": [],
+    "logo": null,
+    "headline": [
+     54,
+     270,
+     410,
+     34
+    ],
+    "text": [
+     [
+      54,
+      270,
+      410,
+      34
+     ],
+     [
+      54,
+      317,
+      287,
+      26
+     ]
+    ],
+    "subject": [
+     516,
+     319,
+     534,
+     712
+    ]
+   },
+   "meta": {
+    "canvas": "4x5",
+    "layout": "photo_right",
+    "base": "product",
+    "defect": "none",
+    "logo_mode": "distractor"
+   }
+  },
+  {
+   "file": "c058_9x16_astronaut_none_distractor.png",
+   "labels": {
+    "blurry": false,
+    "severely_blurry": false,
+    "dark": false,
+    "text_heavy": false,
+    "logo_present": false,
+    "face_present": true
+   },
+   "truth": {
+    "faces": [
+     [
+      805.16875,
+      237.840625,
+      68.34375,
+      85.809375
+     ]
+    ],
+    "logo": null,
+    "headline": [
+     86,
+     864,
+     875,
+     72
+    ],
+    "text": [
+     [
+      86,
+      864,
+      875,
+      72
+     ],
+     [
+      86,
+      964,
+      505,
+      96
+     ]
+    ],
+    "subject": [
+     670,
+     190,
+     388,
+     388
+    ]
+   },
+   "meta": {
+    "canvas": "9x16",
+    "layout": "photo_corner",
+    "base": "astronaut",
+    "defect": "none",
+    "logo_mode": "distractor"
+   }
+  },
+  {
+   "file": "c059_1x1_astronaut_blur_severe_absent.png",
+   "labels": {
+    "blurry": true,
+    "severely_blurry": true,
+    "dark": false,
+    "text_heavy": false,
+    "logo_present": false,
+    "face_present": true
+   },
+   "truth": {
+    "faces": [
+     [
+      701.85703125,
+      338.780859375,
+      93.97265625,
+      117.987890625
+     ]
+    ],
+    "logo": null,
+    "headline": [
+     54,
+     216,
+     413,
+     35
+    ],
+    "text": [
+     [
+      54,
+      216,
+      413,
+      35
+     ],
+     [
+      54,
+      265,
+      289,
+      39
+     ]
+    ],
+    "subject": [
+     516,
+     273,
+     534,
+     534
+    ]
+   },
+   "meta": {
+    "canvas": "1x1",
+    "layout": "photo_right",
+    "base": "astronaut",
+    "defect": "blur_severe",
+    "logo_mode": "absent"
+   }
+  }
+ ]
+}

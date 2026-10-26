@@ -1,0 +1,301 @@
+file,placement,status,final_tool,steps,baseline_ok,baseline_failed,agent_ok,agent_failed,agent_headline_legible,false_accept,agent_issues,reasons
+c000_9x16_product_none_safe.png,stories_9x16,auto_fixed,fit_into_safe_zone,2,False,logo,True,,True,False,,
+c000_9x16_product_none_safe.png,reels_9x16,auto_fixed,fit_into_safe_zone,2,False,logo,True,,False,False,,
+c000_9x16_product_none_safe.png,feed_1x1,auto_fixed,fit_into_safe_zone,3,False,headline|logo,True,,True,False,,
+c000_9x16_product_none_safe.png,youtube_16x9,needs_human,fit_into_safe_zone,3,False,headline|logo,True,,False,False,text_too_small,placement: text_too_small
+c000_9x16_product_none_safe.png,display_300x250,needs_human,fit_into_safe_zone,3,False,headline|logo,True,,False,False,text_too_small,placement: text_too_small
+c001_1x1_astronaut_none_edge.png,stories_9x16,auto_fixed,fit_into_safe_zone,3,False,face|headline|logo|subject,True,,True,False,,
+c001_1x1_astronaut_none_edge.png,reels_9x16,auto_fixed,fit_into_safe_zone,3,False,face|headline|logo|subject,True,,True,False,,
+c001_1x1_astronaut_none_edge.png,feed_1x1,auto_fixed,fit_into_safe_zone,2,False,logo,True,,True,False,,
+c001_1x1_astronaut_none_edge.png,youtube_16x9,auto_fixed,fit_into_safe_zone,3,False,headline|logo,True,,True,False,,
+c001_1x1_astronaut_none_edge.png,display_300x250,auto_fixed,fit_into_safe_zone,3,False,logo,True,,True,False,,
+c002_1x1_coffee_none_edge.png,stories_9x16,auto_fixed,fit_into_safe_zone,3,False,headline|logo|subject,True,,True,False,,
+c002_1x1_coffee_none_edge.png,reels_9x16,auto_fixed,fit_into_safe_zone,3,False,headline|logo|subject,True,,True,False,,
+c002_1x1_coffee_none_edge.png,feed_1x1,auto_fixed,fit_into_safe_zone,2,False,logo,True,,True,False,,
+c002_1x1_coffee_none_edge.png,youtube_16x9,auto_fixed,fit_into_safe_zone,3,False,headline|logo|subject,True,,True,False,,
+c002_1x1_coffee_none_edge.png,display_300x250,auto_fixed,fit_into_safe_zone,3,False,headline|logo,True,,True,False,,
+c003_4x5_camera_none_absent.png,stories_9x16,needs_human,fit_into_safe_zone,3,False,headline,True,,True,False,,source: cannot fix automatically: logo_missing
+c003_4x5_camera_none_absent.png,reels_9x16,needs_human,fit_into_safe_zone,3,False,headline,True,,True,False,,source: cannot fix automatically: logo_missing
+c003_4x5_camera_none_absent.png,feed_1x1,needs_human,smart_crop,1,True,,True,,True,False,,source: cannot fix automatically: logo_missing
+c003_4x5_camera_none_absent.png,youtube_16x9,needs_human,fit_into_safe_zone,3,False,face|headline|subject,True,,True,False,,source: cannot fix automatically: logo_missing
+c003_4x5_camera_none_absent.png,display_300x250,needs_human,fit_into_safe_zone,3,False,face,True,,True,False,,source: cannot fix automatically: logo_missing
+c004_16x9_product_text_heavy_safe.png,stories_9x16,needs_human,fit_into_safe_zone,3,False,headline|logo,True,,True,False,,source: cannot fix automatically: text_heavy
+c004_16x9_product_text_heavy_safe.png,reels_9x16,needs_human,fit_into_safe_zone,3,False,headline|logo,True,,True,False,,source: cannot fix automatically: text_heavy
+c004_16x9_product_text_heavy_safe.png,feed_1x1,needs_human,fit_into_safe_zone,3,False,headline|logo,True,,True,False,,source: cannot fix automatically: text_heavy
+c004_16x9_product_text_heavy_safe.png,youtube_16x9,needs_human,fit_into_safe_zone,2,True,,True,,True,False,,source: cannot fix automatically: text_heavy
+c004_16x9_product_text_heavy_safe.png,display_300x250,needs_human,fit_into_safe_zone,3,False,headline|logo,True,,True,False,,source: cannot fix automatically: text_heavy
+c005_1x1_coffee_none_absent.png,stories_9x16,needs_human,fit_into_safe_zone,3,False,headline|subject,True,,True,False,,source: cannot fix automatically: logo_missing
+c005_1x1_coffee_none_absent.png,reels_9x16,needs_human,fit_into_safe_zone,3,False,headline|subject,True,,True,False,,source: cannot fix automatically: logo_missing
+c005_1x1_coffee_none_absent.png,feed_1x1,needs_human,resize,1,True,,True,,True,False,,source: cannot fix automatically: logo_missing
+c005_1x1_coffee_none_absent.png,youtube_16x9,needs_human,fit_into_safe_zone,3,False,headline|subject,True,,True,False,,source: cannot fix automatically: logo_missing
+c005_1x1_coffee_none_absent.png,display_300x250,needs_human,smart_crop,1,False,headline,False,headline,True,False,,source: cannot fix automatically: logo_missing
+c006_1x1_astronaut_none_absent.png,stories_9x16,needs_human,fit_into_safe_zone,3,False,face|headline,True,,True,False,,source: cannot fix automatically: logo_missing
+c006_1x1_astronaut_none_absent.png,reels_9x16,needs_human,fit_into_safe_zone,3,False,face|headline,True,,True,False,,source: cannot fix automatically: logo_missing
+c006_1x1_astronaut_none_absent.png,feed_1x1,needs_human,resize,1,True,,True,,True,False,,source: cannot fix automatically: logo_missing
+c006_1x1_astronaut_none_absent.png,youtube_16x9,needs_human,fit_into_safe_zone,3,False,face|headline|subject,True,,True,False,,source: cannot fix automatically: logo_missing
+c006_1x1_astronaut_none_absent.png,display_300x250,needs_human,smart_crop,1,False,face,True,,True,False,,source: cannot fix automatically: logo_missing
+c007_4x5_astronaut_dark_safe.png,stories_9x16,needs_human,fit_into_safe_zone,3,False,headline|logo,True,,True,False,,source: cannot fix automatically: low_contrast
+c007_4x5_astronaut_dark_safe.png,reels_9x16,needs_human,fit_into_safe_zone,3,False,headline|logo,True,,True,False,,source: cannot fix automatically: low_contrast
+c007_4x5_astronaut_dark_safe.png,feed_1x1,needs_human,smart_crop,1,False,logo,True,,True,False,,source: cannot fix automatically: low_contrast
+c007_4x5_astronaut_dark_safe.png,youtube_16x9,needs_human,fit_into_safe_zone,3,False,headline|logo,True,,True,False,,source: cannot fix automatically: low_contrast
+c007_4x5_astronaut_dark_safe.png,display_300x250,needs_human,fit_into_safe_zone,3,False,logo,True,,False,False,text_too_small,source: cannot fix automatically: low_contrast / placement: text_too_small
+c008_1x1_coffee_none_edge.png,stories_9x16,auto_fixed,fit_into_safe_zone,3,False,headline|logo|subject,True,,True,False,,
+c008_1x1_coffee_none_edge.png,reels_9x16,auto_fixed,fit_into_safe_zone,3,False,headline|logo|subject,True,,True,False,,
+c008_1x1_coffee_none_edge.png,feed_1x1,auto_fixed,fit_into_safe_zone,2,False,logo,True,,True,False,,
+c008_1x1_coffee_none_edge.png,youtube_16x9,auto_fixed,fit_into_safe_zone,3,False,headline|logo,True,,True,False,,
+c008_1x1_coffee_none_edge.png,display_300x250,auto_fixed,fit_into_safe_zone,3,False,logo,True,,False,False,,
+c009_16x9_camera_dark_edge.png,stories_9x16,auto_fixed,fit_into_safe_zone,3,False,face|headline|logo|subject,True,,True,False,,
+c009_16x9_camera_dark_edge.png,reels_9x16,auto_fixed,fit_into_safe_zone,3,False,face|headline|logo|subject,True,,True,False,,
+c009_16x9_camera_dark_edge.png,feed_1x1,auto_fixed,fit_into_safe_zone,3,False,face|headline|logo|subject,True,,True,False,,
+c009_16x9_camera_dark_edge.png,youtube_16x9,auto_fixed,fit_into_safe_zone,2,False,logo,True,,True,False,,
+c009_16x9_camera_dark_edge.png,display_300x250,needs_human,fit_into_safe_zone,3,False,headline|logo,True,,True,False,logo_not_redetected|text_too_small,"placement: logo_not_redetected, text_too_small"
+c010_16x9_chelsea_dark_safe.png,stories_9x16,needs_human,fit_into_safe_zone,3,False,headline|logo|subject,True,,True,False,,source: cannot fix automatically: low_contrast
+c010_16x9_chelsea_dark_safe.png,reels_9x16,needs_human,fit_into_safe_zone,3,False,headline|logo|subject,True,,True,False,,source: cannot fix automatically: low_contrast
+c010_16x9_chelsea_dark_safe.png,feed_1x1,needs_human,fit_into_safe_zone,3,False,headline|logo|subject,True,,True,False,,source: cannot fix automatically: low_contrast
+c010_16x9_chelsea_dark_safe.png,youtube_16x9,needs_human,resize,1,True,,True,,True,False,,source: cannot fix automatically: low_contrast
+c010_16x9_chelsea_dark_safe.png,display_300x250,needs_human,fit_into_safe_zone,3,False,headline|logo,True,,False,False,,source: cannot fix automatically: low_contrast
+c011_9x16_coffee_dark_absent.png,stories_9x16,needs_human,resize,1,True,,True,,True,False,,"source: cannot fix automatically: logo_missing, low_contrast"
+c011_9x16_coffee_dark_absent.png,reels_9x16,needs_human,resize,1,True,,True,,True,False,,"source: cannot fix automatically: logo_missing, low_contrast"
+c011_9x16_coffee_dark_absent.png,feed_1x1,needs_human,smart_crop,1,False,subject,True,,True,False,,"source: cannot fix automatically: logo_missing, low_contrast"
+c011_9x16_coffee_dark_absent.png,youtube_16x9,needs_human,fit_into_safe_zone,3,False,subject,True,,True,False,,"source: cannot fix automatically: logo_missing, low_contrast"
+c011_9x16_coffee_dark_absent.png,display_300x250,needs_human,smart_crop,3,False,subject,True,,True,False,text_in_ui_zone,"source: cannot fix automatically: logo_missing, low_contrast / placement: text_in_ui_zone"
+c012_16x9_rocket_blur_severe_safe.png,stories_9x16,needs_human,fit_into_safe_zone,3,False,headline|logo|subject,True,,True,False,,source: cannot fix automatically: severely_blurry
+c012_16x9_rocket_blur_severe_safe.png,reels_9x16,needs_human,fit_into_safe_zone,3,False,headline|logo|subject,True,,True,False,,source: cannot fix automatically: severely_blurry
+c012_16x9_rocket_blur_severe_safe.png,feed_1x1,needs_human,fit_into_safe_zone,3,False,headline|logo,True,,True,False,,source: cannot fix automatically: severely_blurry
+c012_16x9_rocket_blur_severe_safe.png,youtube_16x9,needs_human,resize,1,True,,True,,True,False,,source: cannot fix automatically: severely_blurry
+c012_16x9_rocket_blur_severe_safe.png,display_300x250,needs_human,fit_into_safe_zone,3,False,headline|logo,True,,True,False,,source: cannot fix automatically: severely_blurry
+c013_4x5_rocket_text_heavy_distractor.png,stories_9x16,needs_human,fit_into_safe_zone,3,False,headline,True,,True,False,,"source: cannot fix automatically: logo_missing, text_heavy"
+c013_4x5_rocket_text_heavy_distractor.png,reels_9x16,needs_human,fit_into_safe_zone,3,False,headline,True,,True,False,,"source: cannot fix automatically: logo_missing, text_heavy"
+c013_4x5_rocket_text_heavy_distractor.png,feed_1x1,needs_human,fit_into_safe_zone,3,False,headline,True,,True,False,,"source: cannot fix automatically: logo_missing, text_heavy"
+c013_4x5_rocket_text_heavy_distractor.png,youtube_16x9,needs_human,fit_into_safe_zone,3,False,headline|subject,True,,True,False,,"source: cannot fix automatically: logo_missing, text_heavy"
+c013_4x5_rocket_text_heavy_distractor.png,display_300x250,needs_human,fit_into_safe_zone,3,False,headline,True,,True,False,,"source: cannot fix automatically: logo_missing, text_heavy"
+c014_9x16_camera_dark_safe.png,stories_9x16,needs_human,fit_into_safe_zone,2,False,headline|logo,True,,True,False,,source: cannot fix automatically: low_contrast
+c014_9x16_camera_dark_safe.png,reels_9x16,needs_human,fit_into_safe_zone,2,False,headline|logo,True,,True,False,,source: cannot fix automatically: low_contrast
+c014_9x16_camera_dark_safe.png,feed_1x1,needs_human,fit_into_safe_zone,3,False,headline|logo|subject,True,,True,False,,source: cannot fix automatically: low_contrast
+c014_9x16_camera_dark_safe.png,youtube_16x9,needs_human,fit_into_safe_zone,3,False,face|headline|logo|subject,True,,True,False,,source: cannot fix automatically: low_contrast
+c014_9x16_camera_dark_safe.png,display_300x250,needs_human,fit_into_safe_zone,3,False,headline|logo|subject,True,,True,False,,source: cannot fix automatically: low_contrast
+c015_9x16_chelsea_blur_mild_safe.png,stories_9x16,auto_fixed,fit_into_safe_zone,2,False,headline|logo,True,,True,False,,
+c015_9x16_chelsea_blur_mild_safe.png,reels_9x16,auto_fixed,fit_into_safe_zone,2,False,headline|logo,True,,True,False,,
+c015_9x16_chelsea_blur_mild_safe.png,feed_1x1,auto_fixed,fit_into_safe_zone,3,False,headline|logo,True,,True,False,,
+c015_9x16_chelsea_blur_mild_safe.png,youtube_16x9,auto_fixed,fit_into_safe_zone,3,False,headline|logo|subject,True,,True,False,,
+c015_9x16_chelsea_blur_mild_safe.png,display_300x250,needs_human,fit_into_safe_zone,3,False,headline|logo|subject,True,,False,False,text_too_small,placement: text_too_small
+c016_16x9_product_dark_distractor.png,stories_9x16,needs_human,fit_into_safe_zone,3,False,headline,True,,True,False,,"source: cannot fix automatically: logo_missing, low_contrast"
+c016_16x9_product_dark_distractor.png,reels_9x16,needs_human,fit_into_safe_zone,3,False,headline,True,,True,False,,"source: cannot fix automatically: logo_missing, low_contrast"
+c016_16x9_product_dark_distractor.png,feed_1x1,needs_human,fit_into_safe_zone,3,False,headline,True,,True,False,,"source: cannot fix automatically: logo_missing, low_contrast"
+c016_16x9_product_dark_distractor.png,youtube_16x9,needs_human,resize,1,True,,True,,True,False,,"source: cannot fix automatically: logo_missing, low_contrast"
+c016_16x9_product_dark_distractor.png,display_300x250,needs_human,fit_into_safe_zone,3,False,headline,True,,True,False,,"source: cannot fix automatically: logo_missing, low_contrast"
+c017_16x9_coffee_blur_mild_edge.png,stories_9x16,auto_fixed,fit_into_safe_zone,3,False,headline|logo|subject,True,,True,False,,
+c017_16x9_coffee_blur_mild_edge.png,reels_9x16,auto_fixed,fit_into_safe_zone,3,False,headline|logo|subject,True,,True,False,,
+c017_16x9_coffee_blur_mild_edge.png,feed_1x1,auto_fixed,fit_into_safe_zone,3,False,headline|logo,True,,True,False,,
+c017_16x9_coffee_blur_mild_edge.png,youtube_16x9,auto_fixed,fit_into_safe_zone,2,False,logo,True,,True,False,,
+c017_16x9_coffee_blur_mild_edge.png,display_300x250,needs_human,fit_into_safe_zone,3,False,headline|logo,True,,True,False,logo_not_redetected,placement: logo_not_redetected
+c018_4x5_product_dark_safe.png,stories_9x16,needs_human,fit_into_safe_zone,3,False,headline|logo,True,,True,False,,source: cannot fix automatically: low_contrast
+c018_4x5_product_dark_safe.png,reels_9x16,needs_human,fit_into_safe_zone,3,False,headline|logo,True,,True,False,,source: cannot fix automatically: low_contrast
+c018_4x5_product_dark_safe.png,feed_1x1,needs_human,smart_crop,1,False,logo,True,,True,False,,source: cannot fix automatically: low_contrast
+c018_4x5_product_dark_safe.png,youtube_16x9,needs_human,fit_into_safe_zone,3,False,headline|logo,True,,True,False,,source: cannot fix automatically: low_contrast
+c018_4x5_product_dark_safe.png,display_300x250,needs_human,fit_into_safe_zone,3,False,logo,True,,False,False,text_too_small,source: cannot fix automatically: low_contrast / placement: text_too_small
+c019_4x5_product_blur_severe_safe.png,stories_9x16,auto_fixed,fit_into_safe_zone,3,False,headline|logo,True,,True,False,,
+c019_4x5_product_blur_severe_safe.png,reels_9x16,auto_fixed,fit_into_safe_zone,3,False,headline|logo,True,,True,False,,
+c019_4x5_product_blur_severe_safe.png,feed_1x1,auto_fixed,smart_crop,1,False,logo,True,,True,False,,
+c019_4x5_product_blur_severe_safe.png,youtube_16x9,auto_fixed,fit_into_safe_zone,3,False,headline|logo,True,,True,False,,
+c019_4x5_product_blur_severe_safe.png,display_300x250,needs_human,fit_into_safe_zone,3,False,logo,True,,False,False,text_too_small,placement: text_too_small
+c020_1x1_rocket_blur_mild_safe.png,stories_9x16,needs_human,fit_into_safe_zone,3,False,headline|logo|subject,True,,True,False,,source: cannot fix automatically: low_contrast
+c020_1x1_rocket_blur_mild_safe.png,reels_9x16,needs_human,fit_into_safe_zone,3,False,headline|logo|subject,True,,True,False,,source: cannot fix automatically: low_contrast
+c020_1x1_rocket_blur_mild_safe.png,feed_1x1,needs_human,resize,1,True,,True,,True,False,,source: cannot fix automatically: low_contrast
+c020_1x1_rocket_blur_mild_safe.png,youtube_16x9,needs_human,fit_into_safe_zone,3,False,headline|logo,True,,True,False,,source: cannot fix automatically: low_contrast
+c020_1x1_rocket_blur_mild_safe.png,display_300x250,needs_human,smart_crop,1,False,logo,True,,True,False,,source: cannot fix automatically: low_contrast
+c021_16x9_coffee_none_distractor.png,stories_9x16,needs_human,fit_into_safe_zone,3,False,headline|subject,True,,True,False,,source: cannot fix automatically: logo_missing
+c021_16x9_coffee_none_distractor.png,reels_9x16,needs_human,fit_into_safe_zone,3,False,headline|subject,True,,True,False,,source: cannot fix automatically: logo_missing
+c021_16x9_coffee_none_distractor.png,feed_1x1,needs_human,fit_into_safe_zone,3,False,headline|subject,True,,True,False,,source: cannot fix automatically: logo_missing
+c021_16x9_coffee_none_distractor.png,youtube_16x9,needs_human,resize,1,True,,True,,True,False,,source: cannot fix automatically: logo_missing
+c021_16x9_coffee_none_distractor.png,display_300x250,needs_human,fit_into_safe_zone,3,False,headline,True,,False,False,,source: cannot fix automatically: logo_missing
+c022_4x5_astronaut_none_safe.png,stories_9x16,auto_fixed,fit_into_safe_zone,3,False,headline|logo,True,,True,False,,
+c022_4x5_astronaut_none_safe.png,reels_9x16,auto_fixed,fit_into_safe_zone,3,False,headline|logo,True,,True,False,,
+c022_4x5_astronaut_none_safe.png,feed_1x1,auto_fixed,smart_crop,2,False,headline|logo,False,subject,True,True,,
+c022_4x5_astronaut_none_safe.png,youtube_16x9,auto_fixed,fit_into_safe_zone,3,False,headline|logo|subject,True,,True,False,,
+c022_4x5_astronaut_none_safe.png,display_300x250,auto_fixed,smart_crop,2,False,headline|logo,False,subject,True,True,,
+c023_4x5_astronaut_blur_mild_absent.png,stories_9x16,needs_human,fit_into_safe_zone,3,False,face|headline|subject,True,,True,False,,"source: cannot fix automatically: logo_missing, severely_blurry"
+c023_4x5_astronaut_blur_mild_absent.png,reels_9x16,needs_human,fit_into_safe_zone,3,False,face|headline|subject,True,,True,False,,"source: cannot fix automatically: logo_missing, severely_blurry"
+c023_4x5_astronaut_blur_mild_absent.png,feed_1x1,needs_human,smart_crop,1,False,face,True,,True,False,,"source: cannot fix automatically: logo_missing, severely_blurry"
+c023_4x5_astronaut_blur_mild_absent.png,youtube_16x9,needs_human,fit_into_safe_zone,3,False,face|subject,True,,True,False,,"source: cannot fix automatically: logo_missing, severely_blurry"
+c023_4x5_astronaut_blur_mild_absent.png,display_300x250,needs_human,smart_crop,1,False,face|subject,True,,True,False,,"source: cannot fix automatically: logo_missing, severely_blurry"
+c024_9x16_chelsea_blur_mild_safe.png,stories_9x16,auto_fixed,fit_into_safe_zone,2,False,headline|logo,True,,True,False,,
+c024_9x16_chelsea_blur_mild_safe.png,reels_9x16,auto_fixed,fit_into_safe_zone,2,False,headline|logo,True,,True,False,,
+c024_9x16_chelsea_blur_mild_safe.png,feed_1x1,auto_fixed,fit_into_safe_zone,3,False,headline|logo,True,,True,False,,
+c024_9x16_chelsea_blur_mild_safe.png,youtube_16x9,auto_fixed,fit_into_safe_zone,3,False,headline|logo|subject,True,,True,False,,
+c024_9x16_chelsea_blur_mild_safe.png,display_300x250,auto_fixed,fit_into_safe_zone,3,False,headline|logo|subject,True,,True,False,,
+c025_16x9_camera_none_edge.png,stories_9x16,auto_fixed,fit_into_safe_zone,3,False,headline|logo,True,,True,False,,
+c025_16x9_camera_none_edge.png,reels_9x16,auto_fixed,fit_into_safe_zone,3,False,headline|logo,True,,True,False,,
+c025_16x9_camera_none_edge.png,feed_1x1,auto_fixed,fit_into_safe_zone,3,False,headline|logo,True,,True,False,,
+c025_16x9_camera_none_edge.png,youtube_16x9,auto_fixed,fit_into_safe_zone,2,False,logo,True,,True,False,,
+c025_16x9_camera_none_edge.png,display_300x250,needs_human,fit_into_safe_zone,3,False,headline|logo,True,,True,False,logo_not_redetected,placement: logo_not_redetected
+c026_9x16_product_dark_safe.png,stories_9x16,needs_human,fit_into_safe_zone,2,False,logo,True,,True,False,,source: cannot fix automatically: low_contrast
+c026_9x16_product_dark_safe.png,reels_9x16,needs_human,fit_into_safe_zone,2,False,logo,True,,True,False,,source: cannot fix automatically: low_contrast
+c026_9x16_product_dark_safe.png,feed_1x1,needs_human,smart_crop,1,False,logo|subject,True,,True,False,,source: cannot fix automatically: low_contrast
+c026_9x16_product_dark_safe.png,youtube_16x9,needs_human,fit_into_safe_zone,3,False,logo|subject,True,,True,False,,source: cannot fix automatically: low_contrast
+c026_9x16_product_dark_safe.png,display_300x250,needs_human,fit_into_safe_zone,3,False,logo|subject,True,,False,False,text_too_small,source: cannot fix automatically: low_contrast / placement: text_too_small
+c027_4x5_coffee_text_heavy_distractor.png,stories_9x16,needs_human,fit_into_safe_zone,3,False,headline|subject,True,,True,False,,"source: cannot fix automatically: logo_missing, text_heavy"
+c027_4x5_coffee_text_heavy_distractor.png,reels_9x16,needs_human,fit_into_safe_zone,3,False,headline|subject,True,,True,False,,"source: cannot fix automatically: logo_missing, text_heavy"
+c027_4x5_coffee_text_heavy_distractor.png,feed_1x1,needs_human,fit_into_safe_zone,3,True,,True,,True,False,,"source: cannot fix automatically: logo_missing, text_heavy"
+c027_4x5_coffee_text_heavy_distractor.png,youtube_16x9,needs_human,fit_into_safe_zone,3,False,subject,True,,True,False,,"source: cannot fix automatically: logo_missing, text_heavy"
+c027_4x5_coffee_text_heavy_distractor.png,display_300x250,needs_human,fit_into_safe_zone,3,False,subject,True,,True,False,,"source: cannot fix automatically: logo_missing, text_heavy"
+c028_1x1_astronaut_dark_edge.png,stories_9x16,auto_fixed,fit_into_safe_zone,3,False,headline|logo|subject,True,,True,False,,
+c028_1x1_astronaut_dark_edge.png,reels_9x16,auto_fixed,fit_into_safe_zone,3,False,face|headline|logo|subject,True,,True,False,,
+c028_1x1_astronaut_dark_edge.png,feed_1x1,auto_fixed,fit_into_safe_zone,2,False,logo,True,,True,False,,
+c028_1x1_astronaut_dark_edge.png,youtube_16x9,auto_fixed,fit_into_safe_zone,3,False,headline|logo,True,,True,False,,
+c028_1x1_astronaut_dark_edge.png,display_300x250,auto_fixed,fit_into_safe_zone,3,False,logo,True,,True,False,,
+c029_1x1_product_none_safe.png,stories_9x16,auto_fixed,fit_into_safe_zone,3,False,headline|logo,True,,True,False,,
+c029_1x1_product_none_safe.png,reels_9x16,auto_fixed,fit_into_safe_zone,3,False,headline|logo,True,,True,False,,
+c029_1x1_product_none_safe.png,feed_1x1,auto_fixed,resize,1,True,,True,,True,False,,
+c029_1x1_product_none_safe.png,youtube_16x9,auto_fixed,fit_into_safe_zone,3,False,headline|logo|subject,True,,True,False,,
+c029_1x1_product_none_safe.png,display_300x250,auto_fixed,smart_crop,1,False,logo,True,,True,False,,
+c030_1x1_camera_blur_mild_safe.png,stories_9x16,auto_fixed,fit_into_safe_zone,3,False,face|headline|logo|subject,True,,True,False,,
+c030_1x1_camera_blur_mild_safe.png,reels_9x16,auto_fixed,fit_into_safe_zone,3,False,face|headline|logo|subject,True,,True,False,,
+c030_1x1_camera_blur_mild_safe.png,feed_1x1,auto_fixed,resize,1,True,,True,,True,False,,
+c030_1x1_camera_blur_mild_safe.png,youtube_16x9,auto_fixed,smart_crop,2,False,headline|logo,False,subject,True,True,,
+c030_1x1_camera_blur_mild_safe.png,display_300x250,auto_fixed,smart_crop,1,False,logo,True,,True,False,,
+c031_1x1_product_text_heavy_safe.png,stories_9x16,needs_human,fit_into_safe_zone,3,False,headline|logo|subject,True,,True,False,,source: cannot fix automatically: text_heavy
+c031_1x1_product_text_heavy_safe.png,reels_9x16,needs_human,fit_into_safe_zone,3,False,headline|logo|subject,True,,True,False,,source: cannot fix automatically: text_heavy
+c031_1x1_product_text_heavy_safe.png,feed_1x1,needs_human,resize,1,True,,True,,True,False,,source: cannot fix automatically: text_heavy
+c031_1x1_product_text_heavy_safe.png,youtube_16x9,needs_human,fit_into_safe_zone,3,False,headline|logo,True,,True,False,,source: cannot fix automatically: text_heavy
+c031_1x1_product_text_heavy_safe.png,display_300x250,needs_human,fit_into_safe_zone,3,False,logo,True,,False,False,,source: cannot fix automatically: text_heavy
+c032_9x16_camera_dark_safe.png,stories_9x16,needs_human,fit_into_safe_zone,2,False,logo,True,,True,False,,source: cannot fix automatically: low_contrast
+c032_9x16_camera_dark_safe.png,reels_9x16,needs_human,fit_into_safe_zone,2,False,logo,True,,True,False,,source: cannot fix automatically: low_contrast
+c032_9x16_camera_dark_safe.png,feed_1x1,needs_human,smart_crop,1,False,face|logo|subject,True,,True,False,,source: cannot fix automatically: low_contrast
+c032_9x16_camera_dark_safe.png,youtube_16x9,needs_human,fit_into_safe_zone,3,False,face|logo|subject,True,,True,False,,source: cannot fix automatically: low_contrast
+c032_9x16_camera_dark_safe.png,display_300x250,needs_human,fit_into_safe_zone,3,False,face|logo|subject,True,,False,False,text_too_small,source: cannot fix automatically: low_contrast / placement: text_too_small
+c033_9x16_coffee_dark_safe.png,stories_9x16,needs_human,fit_into_safe_zone,2,False,logo,True,,True,False,,source: cannot fix automatically: low_contrast
+c033_9x16_coffee_dark_safe.png,reels_9x16,needs_human,fit_into_safe_zone,2,False,logo,True,,False,False,,source: cannot fix automatically: low_contrast
+c033_9x16_coffee_dark_safe.png,feed_1x1,needs_human,smart_crop,2,False,headline|logo,True,,True,False,,source: cannot fix automatically: low_contrast
+c033_9x16_coffee_dark_safe.png,youtube_16x9,needs_human,fit_into_safe_zone,3,False,headline|logo,True,,False,False,,source: cannot fix automatically: low_contrast
+c033_9x16_coffee_dark_safe.png,display_300x250,needs_human,smart_crop,3,False,headline|logo,False,subject,True,False,subject_cut,source: cannot fix automatically: low_contrast / placement: subject_cut
+c034_4x5_rocket_dark_distractor.png,stories_9x16,needs_human,fit_into_safe_zone,3,False,headline,True,,True,False,,"source: cannot fix automatically: logo_missing, low_contrast"
+c034_4x5_rocket_dark_distractor.png,reels_9x16,needs_human,fit_into_safe_zone,3,False,headline,True,,True,False,,"source: cannot fix automatically: logo_missing, low_contrast"
+c034_4x5_rocket_dark_distractor.png,feed_1x1,needs_human,smart_crop,1,True,,True,,True,False,,"source: cannot fix automatically: logo_missing, low_contrast"
+c034_4x5_rocket_dark_distractor.png,youtube_16x9,needs_human,fit_into_safe_zone,3,False,headline,True,,True,False,,"source: cannot fix automatically: logo_missing, low_contrast"
+c034_4x5_rocket_dark_distractor.png,display_300x250,needs_human,smart_crop,1,True,,True,,True,False,,"source: cannot fix automatically: logo_missing, low_contrast"
+c035_16x9_chelsea_blur_mild_safe.png,stories_9x16,auto_fixed,fit_into_safe_zone,3,False,headline|logo|subject,True,,True,False,,
+c035_16x9_chelsea_blur_mild_safe.png,reels_9x16,auto_fixed,fit_into_safe_zone,3,False,headline|logo|subject,True,,True,False,,
+c035_16x9_chelsea_blur_mild_safe.png,feed_1x1,auto_fixed,fit_into_safe_zone,3,False,headline|logo|subject,True,,True,False,,
+c035_16x9_chelsea_blur_mild_safe.png,youtube_16x9,auto_fixed,resize,1,True,,True,,True,False,,
+c035_16x9_chelsea_blur_mild_safe.png,display_300x250,auto_fixed,fit_into_safe_zone,3,False,headline|logo,True,,True,False,,
+c036_9x16_camera_blur_mild_edge.png,stories_9x16,auto_fixed,fit_into_safe_zone,2,False,logo,True,,True,False,,
+c036_9x16_camera_blur_mild_edge.png,reels_9x16,needs_human,fit_into_safe_zone,2,False,headline|logo,True,,False,False,text_too_small,placement: text_too_small
+c036_9x16_camera_blur_mild_edge.png,feed_1x1,auto_fixed,fit_into_safe_zone,3,False,headline|logo,True,,True,False,,
+c036_9x16_camera_blur_mild_edge.png,youtube_16x9,needs_human,fit_into_safe_zone,3,False,headline|logo,True,,False,False,text_too_small,placement: text_too_small
+c036_9x16_camera_blur_mild_edge.png,display_300x250,needs_human,fit_into_safe_zone,3,False,headline|logo,True,,False,False,text_too_small,placement: text_too_small
+c037_16x9_product_blur_mild_edge.png,stories_9x16,auto_fixed,fit_into_safe_zone,3,False,headline|logo|subject,True,,True,False,,
+c037_16x9_product_blur_mild_edge.png,reels_9x16,auto_fixed,fit_into_safe_zone,3,False,headline|logo|subject,True,,True,False,,
+c037_16x9_product_blur_mild_edge.png,feed_1x1,auto_fixed,fit_into_safe_zone,3,False,headline|logo|subject,True,,True,False,,
+c037_16x9_product_blur_mild_edge.png,youtube_16x9,auto_fixed,fit_into_safe_zone,2,False,logo,True,,True,False,,
+c037_16x9_product_blur_mild_edge.png,display_300x250,needs_human,fit_into_safe_zone,3,False,headline|logo,True,,True,False,logo_not_redetected,placement: logo_not_redetected
+c038_9x16_rocket_dark_safe.png,stories_9x16,needs_human,fit_into_safe_zone,2,False,headline|logo,True,,True,False,,source: cannot fix automatically: low_contrast
+c038_9x16_rocket_dark_safe.png,reels_9x16,needs_human,fit_into_safe_zone,2,False,headline|logo,True,,True,False,,source: cannot fix automatically: low_contrast
+c038_9x16_rocket_dark_safe.png,feed_1x1,needs_human,fit_into_safe_zone,3,False,headline|logo,True,,True,False,,source: cannot fix automatically: low_contrast
+c038_9x16_rocket_dark_safe.png,youtube_16x9,needs_human,fit_into_safe_zone,3,False,headline|logo|subject,True,,True,False,,source: cannot fix automatically: low_contrast
+c038_9x16_rocket_dark_safe.png,display_300x250,needs_human,fit_into_safe_zone,3,False,headline|logo|subject,True,,False,False,text_too_small,source: cannot fix automatically: low_contrast / placement: text_too_small
+c039_1x1_coffee_dark_edge.png,stories_9x16,auto_fixed,fit_into_safe_zone,3,False,headline|logo|subject,True,,True,False,,
+c039_1x1_coffee_dark_edge.png,reels_9x16,auto_fixed,fit_into_safe_zone,3,False,headline|logo|subject,True,,True,False,,
+c039_1x1_coffee_dark_edge.png,feed_1x1,auto_fixed,fit_into_safe_zone,2,False,logo,True,,True,False,,
+c039_1x1_coffee_dark_edge.png,youtube_16x9,auto_fixed,fit_into_safe_zone,3,False,headline|logo|subject,True,,True,False,,
+c039_1x1_coffee_dark_edge.png,display_300x250,auto_fixed,fit_into_safe_zone,3,False,logo,True,,True,False,,
+c040_1x1_rocket_blur_severe_edge.png,stories_9x16,needs_human,fit_into_safe_zone,3,False,headline|logo|subject,True,,True,False,,source: cannot fix automatically: severely_blurry
+c040_1x1_rocket_blur_severe_edge.png,reels_9x16,needs_human,fit_into_safe_zone,3,False,headline|logo|subject,True,,True,False,,source: cannot fix automatically: severely_blurry
+c040_1x1_rocket_blur_severe_edge.png,feed_1x1,needs_human,fit_into_safe_zone,2,False,logo,True,,True,False,,source: cannot fix automatically: severely_blurry
+c040_1x1_rocket_blur_severe_edge.png,youtube_16x9,needs_human,fit_into_safe_zone,3,False,headline|logo|subject,True,,True,False,,source: cannot fix automatically: severely_blurry
+c040_1x1_rocket_blur_severe_edge.png,display_300x250,needs_human,fit_into_safe_zone,3,False,headline|logo,True,,True,False,,source: cannot fix automatically: severely_blurry
+c041_1x1_rocket_blur_severe_distractor.png,stories_9x16,needs_human,fit_into_safe_zone,3,False,headline|subject,True,,True,False,,"source: cannot fix automatically: logo_missing, severely_blurry"
+c041_1x1_rocket_blur_severe_distractor.png,reels_9x16,needs_human,fit_into_safe_zone,3,False,headline|subject,True,,True,False,,"source: cannot fix automatically: logo_missing, severely_blurry"
+c041_1x1_rocket_blur_severe_distractor.png,feed_1x1,needs_human,resize,1,True,,True,,True,False,,"source: cannot fix automatically: logo_missing, severely_blurry"
+c041_1x1_rocket_blur_severe_distractor.png,youtube_16x9,needs_human,fit_into_safe_zone,3,False,headline|subject,True,,True,False,,"source: cannot fix automatically: logo_missing, severely_blurry"
+c041_1x1_rocket_blur_severe_distractor.png,display_300x250,needs_human,smart_crop,2,False,headline,False,headline,True,False,,"source: cannot fix automatically: logo_missing, severely_blurry"
+c042_16x9_rocket_none_absent.png,stories_9x16,needs_human,fit_into_safe_zone,3,False,headline|subject,True,,True,False,,source: cannot fix automatically: logo_missing
+c042_16x9_rocket_none_absent.png,reels_9x16,needs_human,fit_into_safe_zone,3,False,headline|subject,True,,True,False,,source: cannot fix automatically: logo_missing
+c042_16x9_rocket_none_absent.png,feed_1x1,needs_human,fit_into_safe_zone,3,False,headline|subject,True,,True,False,,source: cannot fix automatically: logo_missing
+c042_16x9_rocket_none_absent.png,youtube_16x9,needs_human,resize,1,True,,True,,True,False,,source: cannot fix automatically: logo_missing
+c042_16x9_rocket_none_absent.png,display_300x250,needs_human,fit_into_safe_zone,3,False,headline|subject,True,,True,False,,source: cannot fix automatically: logo_missing
+c043_1x1_coffee_blur_mild_edge.png,stories_9x16,needs_human,fit_into_safe_zone,3,False,headline|logo|subject,True,,True,False,,source: cannot fix automatically: severely_blurry
+c043_1x1_coffee_blur_mild_edge.png,reels_9x16,needs_human,fit_into_safe_zone,3,False,headline|logo|subject,True,,True,False,,source: cannot fix automatically: severely_blurry
+c043_1x1_coffee_blur_mild_edge.png,feed_1x1,needs_human,fit_into_safe_zone,2,False,logo,True,,True,False,,source: cannot fix automatically: severely_blurry
+c043_1x1_coffee_blur_mild_edge.png,youtube_16x9,needs_human,fit_into_safe_zone,3,False,headline|logo,True,,True,False,,source: cannot fix automatically: severely_blurry
+c043_1x1_coffee_blur_mild_edge.png,display_300x250,needs_human,fit_into_safe_zone,3,False,logo,True,,False,False,text_too_small,source: cannot fix automatically: severely_blurry / placement: text_too_small
+c044_1x1_coffee_dark_safe.png,stories_9x16,auto_fixed,fit_into_safe_zone,3,False,headline|logo|subject,True,,True,False,,
+c044_1x1_coffee_dark_safe.png,reels_9x16,auto_fixed,fit_into_safe_zone,3,False,headline|logo|subject,True,,True,False,,
+c044_1x1_coffee_dark_safe.png,feed_1x1,auto_fixed,resize,1,True,,True,,True,False,,
+c044_1x1_coffee_dark_safe.png,youtube_16x9,auto_fixed,fit_into_safe_zone,3,False,headline|logo|subject,True,,True,False,,
+c044_1x1_coffee_dark_safe.png,display_300x250,auto_fixed,fit_into_safe_zone,3,False,headline|logo,True,,True,False,,
+c045_1x1_camera_none_safe.png,stories_9x16,auto_fixed,fit_into_safe_zone,3,False,face|headline|logo|subject,True,,True,False,,
+c045_1x1_camera_none_safe.png,reels_9x16,auto_fixed,fit_into_safe_zone,3,False,face|headline|logo|subject,True,,True,False,,
+c045_1x1_camera_none_safe.png,feed_1x1,pass,resize,1,True,,True,,True,False,,
+c045_1x1_camera_none_safe.png,youtube_16x9,auto_fixed,smart_crop,2,False,headline|logo,False,subject,True,True,,
+c045_1x1_camera_none_safe.png,display_300x250,auto_fixed,smart_crop,1,False,logo,True,,True,False,,
+c046_4x5_camera_none_safe.png,stories_9x16,auto_fixed,fit_into_safe_zone,3,False,headline|logo,True,,True,False,,
+c046_4x5_camera_none_safe.png,reels_9x16,auto_fixed,fit_into_safe_zone,3,False,headline|logo,True,,True,False,,
+c046_4x5_camera_none_safe.png,feed_1x1,auto_fixed,smart_crop,2,False,headline|logo,False,subject,True,True,,
+c046_4x5_camera_none_safe.png,youtube_16x9,auto_fixed,fit_into_safe_zone,3,False,headline|logo|subject,True,,True,False,,
+c046_4x5_camera_none_safe.png,display_300x250,auto_fixed,smart_crop,2,False,headline|logo,False,subject,True,True,,
+c047_4x5_chelsea_none_safe.png,stories_9x16,auto_fixed,fit_into_safe_zone,3,False,headline|logo,True,,True,False,,
+c047_4x5_chelsea_none_safe.png,reels_9x16,auto_fixed,fit_into_safe_zone,3,False,headline|logo,True,,True,False,,
+c047_4x5_chelsea_none_safe.png,feed_1x1,auto_fixed,fit_into_safe_zone,3,False,headline|logo,True,,True,False,,
+c047_4x5_chelsea_none_safe.png,youtube_16x9,auto_fixed,fit_into_safe_zone,3,False,headline|logo|subject,True,,True,False,,
+c047_4x5_chelsea_none_safe.png,display_300x250,auto_fixed,fit_into_safe_zone,3,False,headline|logo,True,,True,False,,
+c048_1x1_astronaut_blur_mild_absent.png,stories_9x16,needs_human,fit_into_safe_zone,3,False,face|headline|subject,True,,True,False,,"source: cannot fix automatically: logo_missing, severely_blurry"
+c048_1x1_astronaut_blur_mild_absent.png,reels_9x16,needs_human,fit_into_safe_zone,3,False,face|headline|subject,True,,True,False,,"source: cannot fix automatically: logo_missing, severely_blurry"
+c048_1x1_astronaut_blur_mild_absent.png,feed_1x1,needs_human,resize,1,True,,True,,True,False,,"source: cannot fix automatically: logo_missing, severely_blurry"
+c048_1x1_astronaut_blur_mild_absent.png,youtube_16x9,needs_human,fit_into_safe_zone,3,False,face|subject,True,,True,False,,"source: cannot fix automatically: logo_missing, severely_blurry"
+c048_1x1_astronaut_blur_mild_absent.png,display_300x250,needs_human,smart_crop,1,False,face,True,,True,False,,"source: cannot fix automatically: logo_missing, severely_blurry"
+c049_4x5_camera_none_edge.png,stories_9x16,auto_fixed,fit_into_safe_zone,3,False,headline|logo,True,,True,False,,
+c049_4x5_camera_none_edge.png,reels_9x16,auto_fixed,fit_into_safe_zone,3,False,headline|logo,True,,True,False,,
+c049_4x5_camera_none_edge.png,feed_1x1,auto_fixed,fit_into_safe_zone,3,False,logo,True,,True,False,,
+c049_4x5_camera_none_edge.png,youtube_16x9,auto_fixed,fit_into_safe_zone,3,False,headline|logo,True,,False,False,,
+c049_4x5_camera_none_edge.png,display_300x250,auto_fixed,fit_into_safe_zone,3,False,logo,True,,False,False,,
+c050_1x1_chelsea_blur_severe_edge.png,stories_9x16,needs_human,fit_into_safe_zone,3,False,headline|logo|subject,True,,True,False,,source: cannot fix automatically: severely_blurry
+c050_1x1_chelsea_blur_severe_edge.png,reels_9x16,needs_human,fit_into_safe_zone,3,False,headline|logo|subject,True,,True,False,,source: cannot fix automatically: severely_blurry
+c050_1x1_chelsea_blur_severe_edge.png,feed_1x1,needs_human,fit_into_safe_zone,2,False,logo,True,,True,False,,source: cannot fix automatically: severely_blurry
+c050_1x1_chelsea_blur_severe_edge.png,youtube_16x9,needs_human,fit_into_safe_zone,3,False,headline|logo,True,,True,False,text_too_small,source: cannot fix automatically: severely_blurry / placement: text_too_small
+c050_1x1_chelsea_blur_severe_edge.png,display_300x250,needs_human,fit_into_safe_zone,3,False,logo,True,,False,False,text_too_small,source: cannot fix automatically: severely_blurry / placement: text_too_small
+c051_1x1_coffee_blur_mild_edge.png,stories_9x16,needs_human,fit_into_safe_zone,3,False,headline|logo|subject,True,,True,False,,source: cannot fix automatically: severely_blurry
+c051_1x1_coffee_blur_mild_edge.png,reels_9x16,needs_human,fit_into_safe_zone,3,False,headline|logo|subject,True,,True,False,,source: cannot fix automatically: severely_blurry
+c051_1x1_coffee_blur_mild_edge.png,feed_1x1,needs_human,fit_into_safe_zone,2,False,logo,True,,True,False,,source: cannot fix automatically: severely_blurry
+c051_1x1_coffee_blur_mild_edge.png,youtube_16x9,needs_human,fit_into_safe_zone,3,False,headline|logo,True,,True,False,,source: cannot fix automatically: severely_blurry
+c051_1x1_coffee_blur_mild_edge.png,display_300x250,needs_human,fit_into_safe_zone,3,False,logo,True,,False,False,,source: cannot fix automatically: severely_blurry
+c052_16x9_rocket_none_absent.png,stories_9x16,needs_human,fit_into_safe_zone,3,False,headline|subject,True,,True,False,,source: cannot fix automatically: logo_missing
+c052_16x9_rocket_none_absent.png,reels_9x16,needs_human,fit_into_safe_zone,3,False,headline|subject,True,,True,False,,source: cannot fix automatically: logo_missing
+c052_16x9_rocket_none_absent.png,feed_1x1,needs_human,fit_into_safe_zone,3,False,headline,True,,True,False,,source: cannot fix automatically: logo_missing
+c052_16x9_rocket_none_absent.png,youtube_16x9,needs_human,resize,1,True,,True,,True,False,,source: cannot fix automatically: logo_missing
+c052_16x9_rocket_none_absent.png,display_300x250,needs_human,smart_crop,1,False,headline,True,,True,False,,source: cannot fix automatically: logo_missing
+c053_9x16_camera_blur_mild_safe.png,stories_9x16,auto_fixed,fit_into_safe_zone,2,False,logo,True,,True,False,,
+c053_9x16_camera_blur_mild_safe.png,reels_9x16,auto_fixed,fit_into_safe_zone,2,False,headline|logo,True,,True,False,,
+c053_9x16_camera_blur_mild_safe.png,feed_1x1,auto_fixed,fit_into_safe_zone,3,False,face|logo|subject,True,,True,False,,
+c053_9x16_camera_blur_mild_safe.png,youtube_16x9,auto_fixed,fit_into_safe_zone,3,False,face|headline|logo|subject,True,,True,False,,
+c053_9x16_camera_blur_mild_safe.png,display_300x250,needs_human,fit_into_safe_zone,3,False,face|logo|subject,True,,False,False,text_too_small,placement: text_too_small
+c054_1x1_chelsea_none_edge.png,stories_9x16,auto_fixed,fit_into_safe_zone,3,False,headline|logo|subject,True,,True,False,,
+c054_1x1_chelsea_none_edge.png,reels_9x16,auto_fixed,fit_into_safe_zone,3,False,headline|logo|subject,True,,True,False,,
+c054_1x1_chelsea_none_edge.png,feed_1x1,auto_fixed,fit_into_safe_zone,2,False,logo,True,,True,False,,
+c054_1x1_chelsea_none_edge.png,youtube_16x9,auto_fixed,fit_into_safe_zone,3,False,headline|logo,True,,True,False,,
+c054_1x1_chelsea_none_edge.png,display_300x250,needs_human,fit_into_safe_zone,3,False,logo,True,,False,False,text_too_small,placement: text_too_small
+c055_9x16_camera_none_edge.png,stories_9x16,auto_fixed,fit_into_safe_zone,2,False,logo,True,,True,False,,
+c055_9x16_camera_none_edge.png,reels_9x16,auto_fixed,fit_into_safe_zone,2,False,logo,True,,True,False,,
+c055_9x16_camera_none_edge.png,feed_1x1,auto_fixed,fit_into_safe_zone,3,False,face|logo|subject,True,,True,False,,
+c055_9x16_camera_none_edge.png,youtube_16x9,auto_fixed,fit_into_safe_zone,3,False,face|logo|subject,True,,True,False,,
+c055_9x16_camera_none_edge.png,display_300x250,needs_human,fit_into_safe_zone,3,False,face|logo|subject,True,,False,False,logo_not_redetected,placement: logo_not_redetected
+c056_16x9_astronaut_text_heavy_safe.png,stories_9x16,needs_human,fit_into_safe_zone,3,False,face|headline|logo,True,,True,False,,source: cannot fix automatically: text_heavy
+c056_16x9_astronaut_text_heavy_safe.png,reels_9x16,needs_human,fit_into_safe_zone,3,False,face|headline|logo,True,,True,False,,source: cannot fix automatically: text_heavy
+c056_16x9_astronaut_text_heavy_safe.png,feed_1x1,needs_human,fit_into_safe_zone,3,False,headline|logo,True,,True,False,,source: cannot fix automatically: text_heavy
+c056_16x9_astronaut_text_heavy_safe.png,youtube_16x9,needs_human,fit_into_safe_zone,2,True,,True,,True,False,,source: cannot fix automatically: text_heavy
+c056_16x9_astronaut_text_heavy_safe.png,display_300x250,needs_human,fit_into_safe_zone,3,False,headline|logo,True,,True,False,,source: cannot fix automatically: text_heavy
+c057_4x5_product_none_distractor.png,stories_9x16,auto_fixed,fit_into_safe_zone,3,False,headline,True,,True,False,,
+c057_4x5_product_none_distractor.png,reels_9x16,auto_fixed,fit_into_safe_zone,3,False,headline,True,,True,False,,
+c057_4x5_product_none_distractor.png,feed_1x1,auto_fixed,smart_crop,1,True,,True,,True,False,,
+c057_4x5_product_none_distractor.png,youtube_16x9,needs_human,fit_into_safe_zone,3,False,headline,True,,False,False,text_too_small,placement: text_too_small
+c057_4x5_product_none_distractor.png,display_300x250,needs_human,smart_crop,1,True,,True,,True,False,logo_not_redetected,placement: logo_not_redetected
+c058_9x16_astronaut_none_distractor.png,stories_9x16,needs_human,fit_into_safe_zone,2,False,face,True,,True,False,logo_not_redetected,placement: logo_not_redetected
+c058_9x16_astronaut_none_distractor.png,reels_9x16,needs_human,fit_into_safe_zone,2,False,face,True,,True,False,logo_not_redetected,placement: logo_not_redetected
+c058_9x16_astronaut_none_distractor.png,feed_1x1,needs_human,smart_crop,1,False,face|subject,True,,True,False,logo_not_redetected,placement: logo_not_redetected
+c058_9x16_astronaut_none_distractor.png,youtube_16x9,needs_human,fit_into_safe_zone,3,False,face|subject,True,,True,False,logo_not_redetected,placement: logo_not_redetected
+c058_9x16_astronaut_none_distractor.png,display_300x250,needs_human,fit_into_safe_zone,3,False,face|subject,True,,False,False,logo_not_redetected,placement: logo_not_redetected
+c059_1x1_astronaut_blur_severe_absent.png,stories_9x16,needs_human,fit_into_safe_zone,3,False,headline|subject,True,,True,False,,"source: cannot fix automatically: logo_missing, severely_blurry"
+c059_1x1_astronaut_blur_severe_absent.png,reels_9x16,needs_human,fit_into_safe_zone,3,False,face|headline|subject,True,,True,False,,"source: cannot fix automatically: logo_missing, severely_blurry"
+c059_1x1_astronaut_blur_severe_absent.png,feed_1x1,needs_human,resize,1,True,,True,,True,False,,"source: cannot fix automatically: logo_missing, severely_blurry"
+c059_1x1_astronaut_blur_severe_absent.png,youtube_16x9,needs_human,smart_crop,2,False,headline,True,,True,False,,"source: cannot fix automatically: logo_missing, severely_blurry"
+c059_1x1_astronaut_blur_severe_absent.png,display_300x250,needs_human,smart_crop,1,True,,True,,True,False,,"source: cannot fix automatically: logo_missing, severely_blurry"

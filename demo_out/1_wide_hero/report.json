@@ -1,0 +1,394 @@
+{
+  "creative": "1_wide_hero.jpg",
+  "planner": "rules",
+  "runtime_ms": 2114.4,
+  "source": {
+    "size": [
+      1920,
+      1080
+    ],
+    "quality_before": {
+      "sharpness": 2.812,
+      "brightness": 97.3,
+      "contrast": 56.2,
+      "dark_share": 0.071,
+      "clipped_share": 0.039
+    },
+    "quality_after": {
+      "sharpness": 2.812,
+      "brightness": 97.3,
+      "contrast": 56.2,
+      "dark_share": 0.071,
+      "clipped_share": 0.039
+    },
+    "fixes_applied": [],
+    "escalation": null,
+    "text_share": 0.05,
+    "faces": 1,
+    "logo": {
+      "found": true,
+      "box": [
+        10,
+        916,
+        390,
+        151
+      ],
+      "method": "orb_homography",
+      "score": 58.0
+    },
+    "detectors": {
+      "text": "db_ppocrv3",
+      "faces": "yunet"
+    }
+  },
+  "placements": [
+    {
+      "placement": "stories_9x16",
+      "label": "Stories 9:16 (1080x1920)",
+      "status": "auto_fixed",
+      "reasons": [],
+      "final_tool": "fit_into_safe_zone",
+      "transform": {
+        "kind": "fit",
+        "scale": 0.495,
+        "offset": [
+          64.8,
+          635.1
+        ]
+      },
+      "issues": [],
+      "checks": {
+        "faces": [
+          {
+            "box": [
+              728.3,
+              743.9,
+              67.8,
+              83.7
+            ],
+            "kept": 1.0,
+            "under_ui": 0.0
+          }
+        ],
+        "logo": {
+          "box": [
+            69.8,
+            1088.5,
+            193.1,
+            74.7
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0,
+          "redetected": true
+        },
+        "text": [
+          {
+            "box": [
+              98.5,
+              868.7,
+              322.7,
+              28.7
+            ],
+            "kept": 1.0,
+            "under_ui": 0.0
+          },
+          {
+            "box": [
+              99.4,
+              803.4,
+              452.4,
+              35.6
+            ],
+            "kept": 1.0,
+            "under_ui": 0.0
+          }
+        ],
+        "redetected_faces": 1,
+        "redetected_text_boxes": 2
+      },
+      "agent_steps": 3,
+      "asset": "stories_9x16.jpg",
+      "preview": "stories_9x16_preview.jpg"
+    },
+    {
+      "placement": "reels_9x16",
+      "label": "Reels / TikTok 9:16 (1080x1920)",
+      "status": "auto_fixed",
+      "reasons": [],
+      "final_tool": "fit_into_safe_zone",
+      "transform": {
+        "kind": "fit",
+        "scale": 0.43875,
+        "offset": [
+          64.8,
+          521.5
+        ]
+      },
+      "issues": [],
+      "checks": {
+        "faces": [
+          {
+            "box": [
+              652.9,
+              617.9,
+              60.1,
+              74.2
+            ],
+            "kept": 1.0,
+            "under_ui": 0.0
+          }
+        ],
+        "logo": {
+          "box": [
+            69.2,
+            923.4,
+            171.1,
+            66.3
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0,
+          "redetected": true
+        },
+        "text": [
+          {
+            "box": [
+              94.6,
+              728.6,
+              286.1,
+              25.4
+            ],
+            "kept": 1.0,
+            "under_ui": 0.0
+          },
+          {
+            "box": [
+              95.5,
+              670.7,
+              401.0,
+              31.6
+            ],
+            "kept": 1.0,
+            "under_ui": 0.0
+          }
+        ],
+        "redetected_faces": 1,
+        "redetected_text_boxes": 2
+      },
+      "agent_steps": 3,
+      "asset": "reels_9x16.jpg",
+      "preview": "reels_9x16_preview.jpg"
+    },
+    {
+      "placement": "feed_1x1",
+      "label": "Feed 1:1 (1080x1080)",
+      "status": "auto_fixed",
+      "reasons": [],
+      "final_tool": "fit_into_safe_zone",
+      "transform": {
+        "kind": "fit",
+        "scale": 0.52875,
+        "offset": [
+          32.4,
+          254.5
+        ]
+      },
+      "issues": [],
+      "checks": {
+        "faces": [
+          {
+            "box": [
+              741.1,
+              370.7,
+              72.4,
+              89.4
+            ],
+            "kept": 1.0,
+            "under_ui": 0.0
+          }
+        ],
+        "logo": {
+          "box": [
+            37.7,
+            738.8,
+            206.2,
+            79.8
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0,
+          "redetected": true
+        },
+        "text": [
+          {
+            "box": [
+              68.4,
+              504.1,
+              344.7,
+              30.7
+            ],
+            "kept": 1.0,
+            "under_ui": 0.0
+          },
+          {
+            "box": [
+              69.4,
+              434.3,
+              483.3,
+              38.1
+            ],
+            "kept": 1.0,
+            "under_ui": 0.0
+          }
+        ],
+        "redetected_faces": 1,
+        "redetected_text_boxes": 2
+      },
+      "agent_steps": 3,
+      "asset": "feed_1x1.jpg",
+      "preview": "feed_1x1_preview.jpg"
+    },
+    {
+      "placement": "youtube_16x9",
+      "label": "YouTube in-stream 16:9 (1920x1080)",
+      "status": "auto_fixed",
+      "reasons": [],
+      "final_tool": "fit_into_safe_zone",
+      "transform": {
+        "kind": "fit",
+        "scale": 0.74,
+        "offset": [
+          249.6,
+          86.4
+        ]
+      },
+      "issues": [],
+      "checks": {
+        "faces": [
+          {
+            "box": [
+              1241.5,
+              249.0,
+              101.3,
+              125.1
+            ],
+            "kept": 1.0,
+            "under_ui": 0.0
+          }
+        ],
+        "logo": {
+          "box": [
+            257.0,
+            764.2,
+            288.6,
+            111.7
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0,
+          "redetected": true
+        },
+        "text": [
+          {
+            "box": [
+              299.9,
+              435.7,
+              482.5,
+              42.9
+            ],
+            "kept": 1.0,
+            "under_ui": 0.0
+          },
+          {
+            "box": [
+              301.4,
+              338.0,
+              676.4,
+              53.3
+            ],
+            "kept": 1.0,
+            "under_ui": 0.0
+          }
+        ],
+        "redetected_faces": 1,
+        "redetected_text_boxes": 2
+      },
+      "agent_steps": 2,
+      "asset": "youtube_16x9.jpg",
+      "preview": "youtube_16x9_preview.jpg"
+    },
+    {
+      "placement": "display_300x250",
+      "label": "Display MPU 300x250",
+      "status": "needs_human",
+      "reasons": [
+        "placement: logo_not_redetected"
+      ],
+      "final_tool": "fit_into_safe_zone",
+      "transform": {
+        "kind": "fit",
+        "scale": 0.14375,
+        "offset": [
+          12.0,
+          47.4
+        ]
+      },
+      "issues": [
+        {
+          "code": "logo_not_redetected",
+          "detail": "logo is in frame but too small or damaged to be recognised"
+        }
+      ],
+      "checks": {
+        "faces": [
+          {
+            "box": [
+              204.7,
+              79.0,
+              19.7,
+              24.3
+            ],
+            "kept": 1.0,
+            "under_ui": 0.0
+          }
+        ],
+        "logo": {
+          "box": [
+            13.4,
+            179.1,
+            56.1,
+            21.7
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0,
+          "redetected": false
+        },
+        "text": [
+          {
+            "box": [
+              21.8,
+              115.2,
+              93.7,
+              8.3
+            ],
+            "kept": 1.0,
+            "under_ui": 0.0
+          },
+          {
+            "box": [
+              22.1,
+              96.3,
+              131.4,
+              10.3
+            ],
+            "kept": 1.0,
+            "under_ui": 0.0
+          }
+        ],
+        "redetected_faces": 1,
+        "redetected_text_boxes": 4
+      },
+      "agent_steps": 3,
+      "asset": "display_300x250_PROPOSED.jpg",
+      "preview": "display_300x250_preview.jpg"
+    }
+  ],
+  "needs_human": true
+}

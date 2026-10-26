@@ -1,0 +1,1376 @@
+[
+  {
+    "stage": "source",
+    "placement": null,
+    "observation": {
+      "quality": {
+        "sharpness": 3.236,
+        "brightness": 29.9,
+        "contrast": 23.9,
+        "dark_share": 0.726,
+        "clipped_share": 0.0
+      },
+      "text_share": 0.052,
+      "text_boxes": 2,
+      "faces": 0,
+      "logo_found": true,
+      "subject": [
+        94.5,
+        739.8,
+        918.0,
+        340.2
+      ]
+    },
+    "issues": [
+      {
+        "code": "dark",
+        "detail": "brightness 29.9, contrast 23.9"
+      },
+      {
+        "code": "low_contrast",
+        "detail": "brightness 29.9, contrast 23.9"
+      }
+    ],
+    "decision": {
+      "action": "enhance_exposure",
+      "args": {},
+      "reason": "image is dark or flat: lift exposure, then re-check"
+    },
+    "result": {
+      "tool": "enhance_exposure",
+      "new_issues": [],
+      "new_quality": {
+        "sharpness": 3.58,
+        "brightness": 108.5,
+        "contrast": 33.8,
+        "dark_share": 0.0,
+        "clipped_share": 0.0
+      }
+    },
+    "step": 1,
+    "t_ms": 560.0
+  },
+  {
+    "stage": "source",
+    "placement": null,
+    "observation": {
+      "quality": {
+        "sharpness": 3.58,
+        "brightness": 108.5,
+        "contrast": 33.8,
+        "dark_share": 0.0,
+        "clipped_share": 0.0
+      },
+      "text_share": 0.049,
+      "text_boxes": 2,
+      "faces": 0,
+      "logo_found": true,
+      "subject": [
+        97.2,
+        739.8,
+        915.3,
+        340.2
+      ]
+    },
+    "issues": [],
+    "decision": {
+      "action": "accept",
+      "args": {},
+      "reason": "source passes all quality checks"
+    },
+    "result": "accepted",
+    "step": 2,
+    "t_ms": 560.0
+  },
+  {
+    "stage": "placement",
+    "placement": "stories_9x16",
+    "observation": null,
+    "issues": [
+      {
+        "code": "aspect_mismatch",
+        "detail": "source 1080x1080"
+      }
+    ],
+    "decision": {
+      "action": "smart_crop",
+      "args": {
+        "strategy": "all"
+      },
+      "reason": "aspect differs: crop around faces, logo, text and subject"
+    },
+    "result": {
+      "tool": "smart_crop",
+      "args": {
+        "strategy": "all"
+      },
+      "transform": {
+        "kind": "crop",
+        "rect": [
+          254.9,
+          0.0,
+          607.5,
+          1080.0
+        ]
+      },
+      "keep_box_fits_safe_zone": false,
+      "new_issues": [
+        "logo_cut",
+        "logo_in_ui_zone",
+        "text_cut",
+        "subject_cut"
+      ]
+    },
+    "step": 3,
+    "t_ms": 752.0
+  },
+  {
+    "stage": "placement",
+    "placement": "stories_9x16",
+    "observation": {
+      "faces": [],
+      "logo": {
+        "box": [
+          773.5,
+          1653.3,
+          586.7,
+          225.8
+        ],
+        "kept": 0.522,
+        "under_ui": 1.0,
+        "redetected": false
+      },
+      "text": [
+        {
+          "box": [
+            -239.1,
+            1336.0,
+            1522.0,
+            110.0
+          ],
+          "kept": 0.71,
+          "under_ui": 0.12
+        },
+        {
+          "box": [
+            416.9,
+            764.1,
+            184.0,
+            66.0
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        }
+      ],
+      "subject": {
+        "box": [
+          -280.4,
+          1315.2,
+          1627.2,
+          604.8
+        ],
+        "kept": 0.664
+      },
+      "redetected_faces": 0,
+      "redetected_text_boxes": 4
+    },
+    "issues": [
+      {
+        "code": "logo_cut",
+        "detail": "logo 48% outside the frame"
+      },
+      {
+        "code": "logo_in_ui_zone",
+        "detail": "logo 100% under platform UI"
+      },
+      {
+        "code": "text_cut",
+        "detail": "text 29% outside the frame"
+      },
+      {
+        "code": "subject_cut",
+        "detail": "main subject 34% outside the frame"
+      }
+    ],
+    "decision": {
+      "action": "smart_crop",
+      "args": {
+        "strategy": "priority"
+      },
+      "reason": "full crop failed: keep faces and logo first, let text/subject edges go"
+    },
+    "result": {
+      "tool": "smart_crop",
+      "args": {
+        "strategy": "priority"
+      },
+      "transform": {
+        "kind": "crop",
+        "rect": [
+          472.5,
+          0.0,
+          607.5,
+          1080.0
+        ]
+      },
+      "keep_box_fits_safe_zone": true,
+      "new_issues": [
+        "logo_in_ui_zone",
+        "text_cut",
+        "text_in_ui_zone",
+        "subject_cut"
+      ]
+    },
+    "step": 4,
+    "t_ms": 862.2
+  },
+  {
+    "stage": "placement",
+    "placement": "stories_9x16",
+    "observation": {
+      "faces": [],
+      "logo": {
+        "box": [
+          386.7,
+          1653.3,
+          586.7,
+          225.8
+        ],
+        "kept": 1.0,
+        "under_ui": 1.0,
+        "redetected": true
+      },
+      "text": [
+        {
+          "box": [
+            -626.0,
+            1336.0,
+            1522.0,
+            110.0
+          ],
+          "kept": 0.589,
+          "under_ui": 0.072
+        },
+        {
+          "box": [
+            30.0,
+            764.1,
+            184.0,
+            66.0
+          ],
+          "kept": 1.0,
+          "under_ui": 0.189
+        }
+      ],
+      "subject": {
+        "box": [
+          -667.2,
+          1315.2,
+          1627.2,
+          604.8
+        ],
+        "kept": 0.59
+      },
+      "redetected_faces": 0,
+      "redetected_text_boxes": 2
+    },
+    "issues": [
+      {
+        "code": "logo_in_ui_zone",
+        "detail": "logo 100% under platform UI"
+      },
+      {
+        "code": "text_cut",
+        "detail": "text 41% outside the frame"
+      },
+      {
+        "code": "text_in_ui_zone",
+        "detail": "text 19% under platform UI"
+      },
+      {
+        "code": "subject_cut",
+        "detail": "main subject 41% outside the frame"
+      }
+    ],
+    "decision": {
+      "action": "fit_into_safe_zone",
+      "args": {},
+      "reason": "crops cannot keep it all in the safe zone: shrink into the safe zone on a blurred backdrop"
+    },
+    "result": {
+      "tool": "fit_into_safe_zone",
+      "args": {},
+      "transform": {
+        "kind": "fit",
+        "scale": 0.88,
+        "offset": [
+          64.8,
+          427.2
+        ]
+      },
+      "keep_box_fits_safe_zone": true,
+      "new_issues": []
+    },
+    "step": 5,
+    "t_ms": 990.2
+  },
+  {
+    "stage": "placement",
+    "placement": "stories_9x16",
+    "observation": {
+      "faces": [],
+      "logo": {
+        "box": [
+          672.0,
+          1245.6,
+          290.4,
+          111.8
+        ],
+        "kept": 1.0,
+        "under_ui": 0.0,
+        "redetected": true
+      },
+      "text": [
+        {
+          "box": [
+            170.8,
+            1088.5,
+            753.4,
+            54.5
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            495.5,
+            805.4,
+            91.1,
+            32.6
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        }
+      ],
+      "subject": {
+        "box": [
+          150.3,
+          1078.2,
+          805.5,
+          299.4
+        ],
+        "kept": 1.0
+      },
+      "redetected_faces": 0,
+      "redetected_text_boxes": 2
+    },
+    "issues": [],
+    "decision": {
+      "action": "accept",
+      "args": {},
+      "reason": "candidate passes every placement check"
+    },
+    "result": "accepted",
+    "step": 6,
+    "t_ms": 990.2
+  },
+  {
+    "stage": "placement",
+    "placement": "reels_9x16",
+    "observation": null,
+    "issues": [
+      {
+        "code": "aspect_mismatch",
+        "detail": "source 1080x1080"
+      }
+    ],
+    "decision": {
+      "action": "smart_crop",
+      "args": {
+        "strategy": "all"
+      },
+      "reason": "aspect differs: crop around faces, logo, text and subject"
+    },
+    "result": {
+      "tool": "smart_crop",
+      "args": {
+        "strategy": "all"
+      },
+      "transform": {
+        "kind": "crop",
+        "rect": [
+          285.2,
+          0.0,
+          607.5,
+          1080.0
+        ]
+      },
+      "keep_box_fits_safe_zone": false,
+      "new_issues": [
+        "logo_cut",
+        "logo_in_ui_zone",
+        "text_cut",
+        "text_in_ui_zone",
+        "subject_cut"
+      ]
+    },
+    "step": 7,
+    "t_ms": 1177.7
+  },
+  {
+    "stage": "placement",
+    "placement": "reels_9x16",
+    "observation": {
+      "faces": [],
+      "logo": {
+        "box": [
+          719.6,
+          1653.3,
+          586.7,
+          225.8
+        ],
+        "kept": 0.614,
+        "under_ui": 1.0,
+        "redetected": false
+      },
+      "text": [
+        {
+          "box": [
+            -293.0,
+            1336.0,
+            1522.0,
+            110.0
+          ],
+          "kept": 0.71,
+          "under_ui": 1.0
+        },
+        {
+          "box": [
+            363.0,
+            764.1,
+            184.0,
+            66.0
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        }
+      ],
+      "subject": {
+        "box": [
+          -334.2,
+          1315.2,
+          1627.2,
+          604.8
+        ],
+        "kept": 0.664
+      },
+      "redetected_faces": 0,
+      "redetected_text_boxes": 4
+    },
+    "issues": [
+      {
+        "code": "logo_cut",
+        "detail": "logo 39% outside the frame"
+      },
+      {
+        "code": "logo_in_ui_zone",
+        "detail": "logo 100% under platform UI"
+      },
+      {
+        "code": "text_cut",
+        "detail": "text 29% outside the frame"
+      },
+      {
+        "code": "text_in_ui_zone",
+        "detail": "text 100% under platform UI"
+      },
+      {
+        "code": "subject_cut",
+        "detail": "main subject 34% outside the frame"
+      }
+    ],
+    "decision": {
+      "action": "smart_crop",
+      "args": {
+        "strategy": "priority"
+      },
+      "reason": "full crop failed: keep faces and logo first, let text/subject edges go"
+    },
+    "result": {
+      "tool": "smart_crop",
+      "args": {
+        "strategy": "priority"
+      },
+      "transform": {
+        "kind": "crop",
+        "rect": [
+          472.5,
+          0.0,
+          607.5,
+          1080.0
+        ]
+      },
+      "keep_box_fits_safe_zone": true,
+      "new_issues": [
+        "logo_in_ui_zone",
+        "text_cut",
+        "text_in_ui_zone",
+        "subject_cut"
+      ]
+    },
+    "step": 8,
+    "t_ms": 1295.4
+  },
+  {
+    "stage": "placement",
+    "placement": "reels_9x16",
+    "observation": {
+      "faces": [],
+      "logo": {
+        "box": [
+          386.7,
+          1653.3,
+          586.7,
+          225.8
+        ],
+        "kept": 1.0,
+        "under_ui": 1.0,
+        "redetected": true
+      },
+      "text": [
+        {
+          "box": [
+            -626.0,
+            1336.0,
+            1522.0,
+            110.0
+          ],
+          "kept": 0.589,
+          "under_ui": 1.0
+        },
+        {
+          "box": [
+            30.0,
+            764.1,
+            184.0,
+            66.0
+          ],
+          "kept": 1.0,
+          "under_ui": 0.189
+        }
+      ],
+      "subject": {
+        "box": [
+          -667.2,
+          1315.2,
+          1627.2,
+          604.8
+        ],
+        "kept": 0.59
+      },
+      "redetected_faces": 0,
+      "redetected_text_boxes": 2
+    },
+    "issues": [
+      {
+        "code": "logo_in_ui_zone",
+        "detail": "logo 100% under platform UI"
+      },
+      {
+        "code": "text_cut",
+        "detail": "text 41% outside the frame"
+      },
+      {
+        "code": "text_in_ui_zone",
+        "detail": "text 100% under platform UI"
+      },
+      {
+        "code": "subject_cut",
+        "detail": "main subject 41% outside the frame"
+      }
+    ],
+    "decision": {
+      "action": "fit_into_safe_zone",
+      "args": {},
+      "reason": "crops cannot keep it all in the safe zone: shrink into the safe zone on a blurred backdrop"
+    },
+    "result": {
+      "tool": "fit_into_safe_zone",
+      "args": {},
+      "transform": {
+        "kind": "fit",
+        "scale": 0.78,
+        "offset": [
+          64.8,
+          337.2
+        ]
+      },
+      "keep_box_fits_safe_zone": true,
+      "new_issues": []
+    },
+    "step": 9,
+    "t_ms": 1434.5
+  },
+  {
+    "stage": "placement",
+    "placement": "reels_9x16",
+    "observation": {
+      "faces": [],
+      "logo": {
+        "box": [
+          603.0,
+          1062.6,
+          257.4,
+          99.1
+        ],
+        "kept": 1.0,
+        "under_ui": 0.0,
+        "redetected": true
+      },
+      "text": [
+        {
+          "box": [
+            158.7,
+            923.4,
+            667.8,
+            48.3
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            446.5,
+            672.4,
+            80.7,
+            28.9
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        }
+      ],
+      "subject": {
+        "box": [
+          140.6,
+          914.2,
+          713.9,
+          265.4
+        ],
+        "kept": 1.0
+      },
+      "redetected_faces": 0,
+      "redetected_text_boxes": 2
+    },
+    "issues": [],
+    "decision": {
+      "action": "accept",
+      "args": {},
+      "reason": "candidate passes every placement check"
+    },
+    "result": "accepted",
+    "step": 10,
+    "t_ms": 1434.5
+  },
+  {
+    "stage": "placement",
+    "placement": "feed_1x1",
+    "observation": null,
+    "issues": [],
+    "decision": {
+      "action": "resize",
+      "args": {},
+      "reason": "aspect already matches: plain resize"
+    },
+    "result": {
+      "tool": "resize",
+      "args": {},
+      "transform": {
+        "kind": "crop",
+        "rect": [
+          0,
+          0,
+          1080,
+          1080
+        ]
+      },
+      "keep_box_fits_safe_zone": true,
+      "new_issues": [
+        "logo_in_ui_zone"
+      ]
+    },
+    "step": 11,
+    "t_ms": 1605.3
+  },
+  {
+    "stage": "placement",
+    "placement": "feed_1x1",
+    "observation": {
+      "faces": [],
+      "logo": {
+        "box": [
+          690.0,
+          930.0,
+          330.0,
+          127.0
+        ],
+        "kept": 1.0,
+        "under_ui": 0.074,
+        "redetected": true
+      },
+      "text": [
+        {
+          "box": [
+            120.4,
+            751.5,
+            856.1,
+            61.9
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            489.4,
+            429.8,
+            103.5,
+            37.1
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        }
+      ],
+      "subject": {
+        "box": [
+          97.2,
+          739.8,
+          915.3,
+          340.2
+        ],
+        "kept": 1.0
+      },
+      "redetected_faces": 0,
+      "redetected_text_boxes": 2
+    },
+    "issues": [
+      {
+        "code": "logo_in_ui_zone",
+        "detail": "logo 7% under platform UI"
+      }
+    ],
+    "decision": {
+      "action": "fit_into_safe_zone",
+      "args": {},
+      "reason": "crops cannot keep it all in the safe zone: shrink into the safe zone on a blurred backdrop"
+    },
+    "result": {
+      "tool": "fit_into_safe_zone",
+      "args": {},
+      "transform": {
+        "kind": "fit",
+        "scale": 0.94,
+        "offset": [
+          32.4,
+          32.4
+        ]
+      },
+      "keep_box_fits_safe_zone": true,
+      "new_issues": []
+    },
+    "step": 12,
+    "t_ms": 1782.4
+  },
+  {
+    "stage": "placement",
+    "placement": "feed_1x1",
+    "observation": {
+      "faces": [],
+      "logo": {
+        "box": [
+          681.0,
+          906.6,
+          310.2,
+          119.4
+        ],
+        "kept": 1.0,
+        "under_ui": 0.0,
+        "redetected": true
+      },
+      "text": [
+        {
+          "box": [
+            145.6,
+            738.8,
+            804.7,
+            58.2
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            492.4,
+            436.4,
+            97.3,
+            34.9
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        }
+      ],
+      "subject": {
+        "box": [
+          123.8,
+          727.8,
+          860.4,
+          319.8
+        ],
+        "kept": 1.0
+      },
+      "redetected_faces": 0,
+      "redetected_text_boxes": 2
+    },
+    "issues": [],
+    "decision": {
+      "action": "accept",
+      "args": {},
+      "reason": "candidate passes every placement check"
+    },
+    "result": "accepted",
+    "step": 13,
+    "t_ms": 1782.4
+  },
+  {
+    "stage": "placement",
+    "placement": "youtube_16x9",
+    "observation": null,
+    "issues": [
+      {
+        "code": "aspect_mismatch",
+        "detail": "source 1080x1080"
+      }
+    ],
+    "decision": {
+      "action": "smart_crop",
+      "args": {
+        "strategy": "all"
+      },
+      "reason": "aspect differs: crop around faces, logo, text and subject"
+    },
+    "result": {
+      "tool": "smart_crop",
+      "args": {
+        "strategy": "all"
+      },
+      "transform": {
+        "kind": "crop",
+        "rect": [
+          0,
+          472.5,
+          1080,
+          607.5
+        ]
+      },
+      "keep_box_fits_safe_zone": false,
+      "new_issues": [
+        "logo_in_ui_zone",
+        "text_cut"
+      ]
+    },
+    "step": 14,
+    "t_ms": 1892.5
+  },
+  {
+    "stage": "placement",
+    "placement": "youtube_16x9",
+    "observation": {
+      "faces": [],
+      "logo": {
+        "box": [
+          1226.7,
+          813.3,
+          586.7,
+          225.8
+        ],
+        "kept": 1.0,
+        "under_ui": 0.68,
+        "redetected": true
+      },
+      "text": [
+        {
+          "box": [
+            214.0,
+            496.0,
+            1522.0,
+            110.0
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            870.0,
+            -75.9,
+            184.0,
+            66.0
+          ],
+          "kept": 0.0,
+          "under_ui": 0.0
+        }
+      ],
+      "subject": {
+        "box": [
+          172.8,
+          475.2,
+          1627.2,
+          604.8
+        ],
+        "kept": 1.0
+      },
+      "redetected_faces": 0,
+      "redetected_text_boxes": 1
+    },
+    "issues": [
+      {
+        "code": "logo_in_ui_zone",
+        "detail": "logo 68% under platform UI"
+      },
+      {
+        "code": "text_cut",
+        "detail": "text 100% outside the frame"
+      }
+    ],
+    "decision": {
+      "action": "smart_crop",
+      "args": {
+        "strategy": "priority"
+      },
+      "reason": "full crop failed: keep faces and logo first, let text/subject edges go"
+    },
+    "result": {
+      "tool": "smart_crop",
+      "args": {
+        "strategy": "priority"
+      },
+      "transform": {
+        "kind": "crop",
+        "rect": [
+          0,
+          472.5,
+          1080,
+          607.5
+        ]
+      },
+      "keep_box_fits_safe_zone": true,
+      "new_issues": [
+        "logo_in_ui_zone",
+        "text_cut"
+      ]
+    },
+    "step": 15,
+    "t_ms": 2007.2
+  },
+  {
+    "stage": "placement",
+    "placement": "youtube_16x9",
+    "observation": {
+      "faces": [],
+      "logo": {
+        "box": [
+          1226.7,
+          813.3,
+          586.7,
+          225.8
+        ],
+        "kept": 1.0,
+        "under_ui": 0.68,
+        "redetected": true
+      },
+      "text": [
+        {
+          "box": [
+            214.0,
+            496.0,
+            1522.0,
+            110.0
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            870.0,
+            -75.9,
+            184.0,
+            66.0
+          ],
+          "kept": 0.0,
+          "under_ui": 0.0
+        }
+      ],
+      "subject": {
+        "box": [
+          172.8,
+          475.2,
+          1627.2,
+          604.8
+        ],
+        "kept": 1.0
+      },
+      "redetected_faces": 0,
+      "redetected_text_boxes": 1
+    },
+    "issues": [
+      {
+        "code": "logo_in_ui_zone",
+        "detail": "logo 68% under platform UI"
+      },
+      {
+        "code": "text_cut",
+        "detail": "text 100% outside the frame"
+      }
+    ],
+    "decision": {
+      "action": "fit_into_safe_zone",
+      "args": {},
+      "reason": "crops cannot keep it all in the safe zone: shrink into the safe zone on a blurred backdrop"
+    },
+    "result": {
+      "tool": "fit_into_safe_zone",
+      "args": {},
+      "transform": {
+        "kind": "fit",
+        "scale": 0.74,
+        "offset": [
+          560.4,
+          86.4
+        ]
+      },
+      "keep_box_fits_safe_zone": true,
+      "new_issues": []
+    },
+    "step": 16,
+    "t_ms": 2141.7
+  },
+  {
+    "stage": "placement",
+    "placement": "youtube_16x9",
+    "observation": {
+      "faces": [],
+      "logo": {
+        "box": [
+          1071.0,
+          774.6,
+          244.2,
+          94.0
+        ],
+        "kept": 1.0,
+        "under_ui": 0.0,
+        "redetected": true
+      },
+      "text": [
+        {
+          "box": [
+            649.5,
+            642.5,
+            633.5,
+            45.8
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            922.6,
+            404.5,
+            76.6,
+            27.5
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        }
+      ],
+      "subject": {
+        "box": [
+          632.3,
+          633.9,
+          677.3,
+          251.7
+        ],
+        "kept": 1.0
+      },
+      "redetected_faces": 0,
+      "redetected_text_boxes": 2
+    },
+    "issues": [],
+    "decision": {
+      "action": "accept",
+      "args": {},
+      "reason": "candidate passes every placement check"
+    },
+    "result": "accepted",
+    "step": 17,
+    "t_ms": 2141.7
+  },
+  {
+    "stage": "placement",
+    "placement": "display_300x250",
+    "observation": null,
+    "issues": [
+      {
+        "code": "aspect_mismatch",
+        "detail": "source 1080x1080"
+      }
+    ],
+    "decision": {
+      "action": "smart_crop",
+      "args": {
+        "strategy": "all"
+      },
+      "reason": "aspect differs: crop around faces, logo, text and subject"
+    },
+    "result": {
+      "tool": "smart_crop",
+      "args": {
+        "strategy": "all"
+      },
+      "transform": {
+        "kind": "crop",
+        "rect": [
+          0,
+          180.0,
+          1080,
+          900.0
+        ]
+      },
+      "keep_box_fits_safe_zone": true,
+      "new_issues": [
+        "logo_in_ui_zone"
+      ]
+    },
+    "step": 18,
+    "t_ms": 2170.4
+  },
+  {
+    "stage": "placement",
+    "placement": "display_300x250",
+    "observation": {
+      "faces": [],
+      "logo": {
+        "box": [
+          191.7,
+          208.3,
+          91.7,
+          35.3
+        ],
+        "kept": 1.0,
+        "under_ui": 0.102,
+        "redetected": true
+      },
+      "text": [
+        {
+          "box": [
+            33.4,
+            158.8,
+            237.8,
+            17.2
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            135.9,
+            69.4,
+            28.8,
+            10.3
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        }
+      ],
+      "subject": {
+        "box": [
+          27.0,
+          155.5,
+          254.2,
+          94.5
+        ],
+        "kept": 1.0
+      },
+      "redetected_faces": 0,
+      "redetected_text_boxes": 2
+    },
+    "issues": [
+      {
+        "code": "logo_in_ui_zone",
+        "detail": "logo 10% under platform UI"
+      }
+    ],
+    "decision": {
+      "action": "smart_crop",
+      "args": {
+        "strategy": "priority"
+      },
+      "reason": "full crop failed: keep faces and logo first, let text/subject edges go"
+    },
+    "result": {
+      "tool": "smart_crop",
+      "args": {
+        "strategy": "priority"
+      },
+      "transform": {
+        "kind": "crop",
+        "rect": [
+          0,
+          180.0,
+          1080,
+          900.0
+        ]
+      },
+      "keep_box_fits_safe_zone": true,
+      "new_issues": [
+        "logo_in_ui_zone"
+      ]
+    },
+    "step": 19,
+    "t_ms": 2204.2
+  },
+  {
+    "stage": "placement",
+    "placement": "display_300x250",
+    "observation": {
+      "faces": [],
+      "logo": {
+        "box": [
+          191.7,
+          208.3,
+          91.7,
+          35.3
+        ],
+        "kept": 1.0,
+        "under_ui": 0.102,
+        "redetected": true
+      },
+      "text": [
+        {
+          "box": [
+            33.4,
+            158.8,
+            237.8,
+            17.2
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            135.9,
+            69.4,
+            28.8,
+            10.3
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        }
+      ],
+      "subject": {
+        "box": [
+          27.0,
+          155.5,
+          254.2,
+          94.5
+        ],
+        "kept": 1.0
+      },
+      "redetected_faces": 0,
+      "redetected_text_boxes": 2
+    },
+    "issues": [
+      {
+        "code": "logo_in_ui_zone",
+        "detail": "logo 10% under platform UI"
+      }
+    ],
+    "decision": {
+      "action": "fit_into_safe_zone",
+      "args": {},
+      "reason": "crops cannot keep it all in the safe zone: shrink into the safe zone on a blurred backdrop"
+    },
+    "result": {
+      "tool": "fit_into_safe_zone",
+      "args": {},
+      "transform": {
+        "kind": "fit",
+        "scale": 0.21296,
+        "offset": [
+          35.0,
+          10.0
+        ]
+      },
+      "keep_box_fits_safe_zone": true,
+      "new_issues": []
+    },
+    "step": 20,
+    "t_ms": 2259.4
+  },
+  {
+    "stage": "placement",
+    "placement": "display_300x250",
+    "observation": {
+      "faces": [],
+      "logo": {
+        "box": [
+          181.9,
+          208.1,
+          70.3,
+          27.0
+        ],
+        "kept": 1.0,
+        "under_ui": 0.0,
+        "redetected": true
+      },
+      "text": [
+        {
+          "box": [
+            60.6,
+            170.0,
+            182.3,
+            13.2
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        },
+        {
+          "box": [
+            139.2,
+            101.5,
+            22.0,
+            7.9
+          ],
+          "kept": 1.0,
+          "under_ui": 0.0
+        }
+      ],
+      "subject": {
+        "box": [
+          55.7,
+          167.5,
+          194.9,
+          72.4
+        ],
+        "kept": 1.0
+      },
+      "redetected_faces": 0,
+      "redetected_text_boxes": 1
+    },
+    "issues": [],
+    "decision": {
+      "action": "accept",
+      "args": {},
+      "reason": "candidate passes every placement check"
+    },
+    "result": "accepted",
+    "step": 21,
+    "t_ms": 2259.4
+  }
+]

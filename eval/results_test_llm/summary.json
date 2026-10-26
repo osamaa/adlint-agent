@@ -1,0 +1,196 @@
+{
+  "planner": "llm",
+  "creatives": 20,
+  "placements_per_creative": 5,
+  "thresholds": {
+    "sharpness_blurry": 2.3,
+    "sharpness_severe": 0.8,
+    "brightness_dark": 60.0,
+    "dark_pixel_share": 0.5,
+    "contrast_low": 28.0,
+    "clipped_share": 0.3,
+    "text_heavy_share": 0.25,
+    "logo_min_inliers": 12,
+    "logo_template_score": 0.8
+  },
+  "detection": [
+    {
+      "check": "blurry",
+      "positives": 4,
+      "tp": 4,
+      "fp": 1,
+      "fn": 0,
+      "tn": 15,
+      "precision": 0.8,
+      "recall": 1.0
+    },
+    {
+      "check": "severely_blurry",
+      "positives": 2,
+      "tp": 1,
+      "fp": 0,
+      "fn": 1,
+      "tn": 18,
+      "precision": 1.0,
+      "recall": 0.5
+    },
+    {
+      "check": "dark",
+      "positives": 7,
+      "tp": 7,
+      "fp": 0,
+      "fn": 0,
+      "tn": 13,
+      "precision": 1.0,
+      "recall": 1.0
+    },
+    {
+      "check": "text_heavy",
+      "positives": 2,
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "tn": 18,
+      "precision": 1.0,
+      "recall": 1.0
+    },
+    {
+      "check": "logo_present",
+      "positives": 14,
+      "tp": 14,
+      "fp": 0,
+      "fn": 0,
+      "tn": 6,
+      "precision": 1.0,
+      "recall": 1.0
+    },
+    {
+      "check": "face_present",
+      "positives": 6,
+      "tp": 6,
+      "fp": 0,
+      "fn": 0,
+      "tn": 14,
+      "precision": 1.0,
+      "recall": 1.0
+    }
+  ],
+  "source_escalation": {
+    "check": "source escalated to human",
+    "positives": 9,
+    "tp": 8,
+    "fp": 4,
+    "fn": 1,
+    "tn": 7,
+    "precision": 0.6666666666666666,
+    "recall": 0.8888888888888888
+  },
+  "reframing": [
+    {
+      "placement": "stories_9x16",
+      "n": 20,
+      "centre_crop_ok": 0.05,
+      "agent_ok": 1.0,
+      "agent_auto_accepted": 0.4,
+      "agent_ok_when_accepted": 1.0,
+      "false_accepts": 0,
+      "headline_legible": 1.0,
+      "mean_steps": 1.95,
+      "max_steps": 2
+    },
+    {
+      "placement": "reels_9x16",
+      "n": 20,
+      "centre_crop_ok": 0.05,
+      "agent_ok": 1.0,
+      "agent_auto_accepted": 0.4,
+      "agent_ok_when_accepted": 1.0,
+      "false_accepts": 0,
+      "headline_legible": 0.95,
+      "mean_steps": 1.95,
+      "max_steps": 2
+    },
+    {
+      "placement": "feed_1x1",
+      "n": 20,
+      "centre_crop_ok": 0.15,
+      "agent_ok": 1.0,
+      "agent_auto_accepted": 0.4,
+      "agent_ok_when_accepted": 1.0,
+      "false_accepts": 0,
+      "headline_legible": 1.0,
+      "mean_steps": 1.75,
+      "max_steps": 4
+    },
+    {
+      "placement": "youtube_16x9",
+      "n": 20,
+      "centre_crop_ok": 0.2,
+      "agent_ok": 1.0,
+      "agent_auto_accepted": 0.35,
+      "agent_ok_when_accepted": 1.0,
+      "false_accepts": 0,
+      "headline_legible": 0.95,
+      "mean_steps": 2.15,
+      "max_steps": 3
+    },
+    {
+      "placement": "display_300x250",
+      "n": 20,
+      "centre_crop_ok": 0.0,
+      "agent_ok": 0.95,
+      "agent_auto_accepted": 0.15,
+      "agent_ok_when_accepted": 1.0,
+      "false_accepts": 0,
+      "headline_legible": 0.65,
+      "mean_steps": 2.15,
+      "max_steps": 3
+    }
+  ],
+  "overall": {
+    "centre_crop_ok": 0.09,
+    "agent_ok": 0.99,
+    "false_accepts": 0,
+    "outputs": 100,
+    "escalated": 66
+  },
+  "runtime_seconds": {
+    "mean": 20.1015,
+    "median": 19.77,
+    "max": 27.78
+  },
+  "face_box_iou_mean": 0.9081666666666667,
+  "logo_box_iou_mean": 0.974,
+  "failures": [
+    {
+      "file": "c006_1x1_astronaut_none_absent.png",
+      "kind": "detection",
+      "wrong": [
+        "blurry"
+      ],
+      "quality": {
+        "sharpness": 1.985,
+        "brightness": 112.1,
+        "contrast": 51.2,
+        "dark_share": 0.068,
+        "clipped_share": 0.027
+      },
+      "text_share": 0.063
+    },
+    {
+      "file": "c019_4x5_product_blur_severe_safe.png",
+      "kind": "detection",
+      "wrong": [
+        "severely_blurry"
+      ],
+      "quality": {
+        "sharpness": 2.053,
+        "brightness": 100.6,
+        "contrast": 70.9,
+        "dark_share": 0.0,
+        "clipped_share": 0.016
+      },
+      "text_share": 0.02
+    }
+  ]
+}
